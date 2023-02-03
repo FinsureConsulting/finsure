@@ -96,6 +96,26 @@ jQuery(function () {
 							html_tag.toggleClass('menu-active');
 							return false;
 						});
+						nav_id.find('li > ul').parent().addClass('sub').each(function () {
+							$(this).children('a:first').after('<a class="toggle" href="' + $(this).children('a:first').attr('href') + '">Toggle ' + $(this).children('a:first').text() + '</a>');
+						}).children('a.toggle').on('click', function () {
+							if ($(this).parent().is('.toggle')) {
+								$(this).attr('aria-expanded', false).parent().removeClass('toggle').children('ul').attr({
+									'aria-hidden': true,
+									'focusable': false
+								});
+							} else {
+								$(this).attr('aria-expanded', false).parents('ul:first').children('li.toggle').removeClass('toggle').children('ul').attr({
+									'aria-hidden': true,
+									'focusable': false
+								});
+								$(this).attr('aria-expanded', true).parent().addClass('toggle').children('ul').attr({
+									'aria-hidden': false,
+									'focusable': true
+								});
+							}
+							return false;
+						});
 					}
 					if (form_filters.length) {
 						form_filters.find('p a').on('click', function () {
