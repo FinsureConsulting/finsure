@@ -161,3 +161,4 @@ jQuery(function () {
 });
 
 /*!*/
+hljs.highlightAll();
