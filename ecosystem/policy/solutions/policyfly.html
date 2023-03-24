@@ -147,21 +147,21 @@
 							<p>As for performance, PolicyFly is built on microservices, like most of its peers. But also in its favor, it's the only vendor we've seen to prefer <a href="/ecosystem/policy/consider/apis.html">gRPC</a> and Protobuf messages internally to <a href="/ecosystem/policy/consider/apis.html">JSON/REST</a>. Protobuf is a binary—i.e. small and fast—format developed at Google and used for streaming at Netflix, Cisco, and Square. (PolicyFly also offers JSON externally, in case you're worried about integrations.)</p>
 							<hr class="compact">
 							<h3>Insurance Product Library</h3>
-							<p>Here we paste in a section from the <a href="./">InsureMO</a> draft that has headings down to the fourth level.</p>
+							<p>Here we paste in a section from the <a href=".">InsureMO</a> draft that has headings down to the fourth level.</p>
 							<h4>US &amp; Global Insurance Products</h4>
 							<p>InsureMO comes with a pre-built library of insurance products to draw from. The selection is wide, including both P&C and life and health, commercial lines and personal. InsureMO also has a sizable international footprint, in case you're either starting outside the US or considering later expansions.</p>
 							<p>All these products come with forms, rates, rules, and the data structure to back them up: coverages, limits, deductibles, risk objects, attributes, and the like. You can use any of their products off the shelf or make a copy and modify them to your purposes. This beats building them all from scratch.</p>
 							<h4>ISO Electronic Rating Content</h4>
-							<p>In US commercial P&amp;C, for any of a dozen lines of business, it's common to use variations of Verisk's ISO rates, forms, and rules. (See our write-up on <a href="./">bureau integrations</a> or more on this.) InsureMO integrates with ISO to make these products available out of the box.</p>
+							<p>In US commercial P&amp;C, for any of a dozen lines of business, it's common to use variations of Verisk's ISO rates, forms, and rules. (See our write-up on <a href=".">bureau integrations</a> or more on this.) InsureMO integrates with ISO to make these products available out of the box.</p>
 							<p>Since insurance costs and regulations change over time, ISO also keeps their products current updates via frequent circulars, or update notices. If you use an ISO product through InsureMO, you can accept these updates automatically as they come in with a click of a button.</p>
 							<p>This also works seamlessly if you modify the product. Any changes you make are stored in their own layer, separate from the underlying ISO product. When a new automated update comes in, it only affects the ISO layer, leaving your changes intact. You get to resolve any conflicts manually if your modifications clash with the update—say if you'd changed a rating factor, and that factor's now removed.</p>
 							<h4>Universal Product Data Model</h4>
-							<p>Insurance products across InsureMO follow a common data model. This simplifies the developer experience, since what your team learns in one part of the platform will apply everywhere. It also simplifies any back-end integrations, if you're using InsureMO alongside a policy admin system (see <a href="./">cc</a> below). And it means you can use the same data model to build your own insurance product from scratch, if it's truly not close to anything in the InsureMO library.</p>
+							<p>Insurance products across InsureMO follow a common data model. This simplifies the developer experience, since what your team learns in one part of the platform will apply everywhere. It also simplifies any back-end integrations, if you're using InsureMO alongside a policy admin system (see <a href=".">cc</a> below). And it means you can use the same data model to build your own insurance product from scratch, if it's truly not close to anything in the InsureMO library.</p>
 						</section>
 						<hr>
 						<section id="section-c">
 							<h2>How to Work With Them</h2>
-							<p>PolicyFly takes a consultative approach with customers. Paraphrasing from their succinct <a rel="external" href="./">approach</a> page:</p>
+							<p>PolicyFly takes a consultative approach with customers. Paraphrasing from their succinct <a rel="external" href=".">approach</a> page:</p>
 							<ul class="compact">
 								<li>They start by understanding your program. How can they streamline the process? What data providers can they use to cut down on questions?</li>
 								<li>From application to bind, they design the fastest way for agents or customers to interface with your program.</li>
@@ -247,7 +247,7 @@ await fileStream.close();
 										<li>Sub-points should probably use lowercase letters instead of numbers, though I'm open to notes from the designer on that.</li>
 									</ol>
 								</li>
-								<li>Make it impossible in your <a href="./" class="text-underline">front end</a> for an agent or consumer to bind insurance.</li>
+								<li>Make it impossible in your <a href="." class="text-underline">front end</a> for an agent or consumer to bind insurance.</li>
 								<li>Make it impossible in your back end, regardless of where the request is coming from.</li>
 							</ol>
 							<p>The key is you want to ensure that your binding restrictions are reliable and that there are no surprises.</p>
