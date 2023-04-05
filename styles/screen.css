@@ -673,7 +673,7 @@ svg:not(:root) { overflow: hidden; }
 
 
 /*! Icons --------- */
-@font-face { font-family: 'i'; src: url('icons/icomoon.woff2') format('woff2'), url('icons/icomoon.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'i'; src: url('fonts/icomoon.woff2') format('woff2'), url('fonts/icomoon.woff') format('woff'); font-display: swap; }
 [class*="icon-"] { font-family: 'i' !important; speak: none; font-style: normal; font-weight: 400; font-variant: normal; text-transform: none; line-height: 1; letter-spacing: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 	.icon-api:before { content: "\e931"; }
 	.icon-arrow:before { content: "\e90a"; }
