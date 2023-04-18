@@ -109,13 +109,17 @@
 					<header>
 						<form action="./" method="post" class="form-filters a">
 							<p>
-								<label for="ffi" class="hidden">Search anything from Finsure</label>
-								<span class="input-search">
-									<input type="search" id="ffi" name="ffi" placeholder="Search anything from Finsure" required>
-								</span>
-								<button type="submit">Search</button>
+								<script async src="https://cse.google.com/cse.js?cx=c0b7ee2f909654a72"></script>
+								<div class="gcse-search"></div>
+								<!-- original search box:
+									<label for="ffi" class="hidden">Search anything from Finsure</label>
+									<span class="input-search">
+										<input type="search" id="ffi" name="ffi" placeholder="Search anything from Finsure" required>
+									</span>
+									<button type="submit">Search</button>
+								-->
 							</p>
-							<ul class="check box">
+							<ul hidden><!-- originally <ul class="check box"> -->
 								<li><input type="checkbox" id="ffa" name="ffa" data-filter=".filter-a"> <label for="ffa">Policy admin</label></li>
 								<li><input type="checkbox" id="ffb" name="ffb" data-filter=".filter-b"> <label for="ffb">Claims Admin</label></li>
 								<li><input type="checkbox" id="ffc" name="ffc" data-filter=".filter-c"> <label for="ffc">Billing</label></li>
