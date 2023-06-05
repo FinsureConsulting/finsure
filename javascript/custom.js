@@ -73,7 +73,7 @@ jQuery(function () {
 				},
 				done: function () {
 					var tag = document.createElement('script');
-					tag.src = "javascript/scripts-async.js";
+					tag.src = "/javascript/scripts-async.js";
 					document.body.appendChild(tag);
 				},
 				miscellaneous: function () {
@@ -161,3 +161,4 @@ jQuery(function () {
 });
 
 /*!*/
+hljs.highlightAll();
