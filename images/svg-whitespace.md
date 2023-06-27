@@ -14,6 +14,7 @@ My script managed 59 files with no trouble:
 
 filepath | result
 -------- | ------
+images/ams/ams-360.svg | 49.42% smaller
 /images/ams/novidea.svg | 49.95% smaller
 /images/billing-software/cogitate.svg | 32.42% smaller
 /images/billing-software/DCT.svg | 34.61% smaller
