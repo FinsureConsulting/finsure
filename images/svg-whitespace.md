@@ -75,7 +75,7 @@ images/ams/ams-360.svg | 49.42% smaller
 /images/logo-51.svg | 7.63% smaller
 /images/logo.svg | 12.32% smaller
 
-Unfortunately there were another 103 files it did not manage to trim automatically, including most of the article logos.
+Unfortunately there were another 102 files it did not manage to trim automatically, including most of the article logos.
 I'll walk you through how to troubleshoot these below.
 
 filename | error row and column
