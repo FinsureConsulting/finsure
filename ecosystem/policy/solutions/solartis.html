@@ -1,356 +1,810 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Solartis</title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="theme-color" content="#7551c3">
-		<meta name="MobileOptimized" content="320">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no">
-		<meta name="author" content="https://psdhtml.me">
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="preload" as="style" href="/styles/screen.css">
-		<link rel="preload" as="font" href="/styles/fonts/icomoon.woff2" crossOrigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="stylesheet" href="/styles/screen.css">
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e">	
-		<link rel="manifest" href="/manifest.json">		
-		<link rel="preconnect" href="//ajax.googleapis.com">
-		<link rel="preconnect" href="//fonts.googleapis.com">
-		<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-		<meta name="msapplication-config" content="browserconfig.xml">
-		<meta property="og:title" content="Solartis">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="">
-		<meta property="og:site_name" content="Finsure">
-		<meta property="og:url" content="https://finsure.us/">
-		<meta property="og:image" content="">		
-		<meta name="twitter:title" content="Solartis">
-		<meta name="twitter:description" content="">
-		<meta name="twitter:site" content="Finsure">
-		<meta name="twitter:card" content="">
-		<meta name="twitter:image" content="">
-		<script type="application/ld+json">
-			[
-				{
-					"@context": "http://schema.org/",
-					"@type": "Organization",
-					"url": "https://finsure.us/",
-					"name": "Finsure",
-					"legalName": "Finsure",
-					"description": "",
-					"logo": "",
-					"image": "",
-					"contactPoint": {
-						"@type": "ContactPoint",
-						"contactType": "Customer service",
-						"telephone": ""
-					},
-					"address": {
-						"@type": "PostalAddress",
-						"streetAddress": "",
-						"addressLocality": "",
-						"addressRegion": "",
-						"postalCode": "",
-						"addressCountry": ""
-					}
-				},
-				{ 
-					"@context": "http://schema.org", 
-					"@type": "WebSite", 
-					"url": "https://finsure.us/", 
-					"name": "Finsure",
-					"description": "",
-					"author": {
-						"@type": "Organization",
-						"url": "https://psdhtml.me",
-						"name": "psdHTML.me",
-						"description": "Figma to responsive HTML coding"
-					}
-				}
-			]
-		</script>
-	</head>
-	<body>
-		<div id="root">
-			<header id="top">
-				<p id="logo"><a href="/" accesskey="h">Finsure</a></p>
-				<nav id="skip">
-					<ul>
-						<li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
-						<li><a href="#content" accesskey="c">Skip to content (c)</a></li>
-						<li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
-					</ul>
-				</nav>
-				<nav id="nav" aria-label="Navigation">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em></li>
-						<li><a accesskey="2" href="/events.html">Events</a> <em>(2)</em></li>
-						<li class="sub"><a accesskey="3" href="/coming-soon.html">Insurtech ecosystem</a> <em>(3)</em>
-							<ul>
-								<li><a href="/ecosystem/insurtech-guide-to.html">Insurtech guide to ...</a></li>
-								<li><a href="/ecosystem/policy/research.html">Research</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</header>             
-			<main id="content" class="width-1350">
-				<header class="header-wide">
-					<h1 class="size-55 margin-10">Solartis</h1>
-				</header>
-				<div class="cols-a">
-					<header>
-						<nav class="nav-aside">
-							<ul>
-								<!-- add section headers here -->
-								<!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
-								<!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
-								<!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
-								<li class="active"><a href="#who-they-serve">Who They Serve</a></li>
-								<li><a href="#what-they-do">What They Do</a></li>
-								<li><a href="#how-to-work-with-them">How to Work With Them</a></li>
-								<li><a href="#products">Products</a></li>
-								<li><a href="#locations">Locations</a></li>
-								<li><a href="#featured-customers">Featured Customers</a></li>
-							</ul>
-						</nav>
-					</header>
-					<article>
-						<!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
-						<section id="who-they-serve">
-							<h2>Who They Serve</h2>
-							<p>Solartis appeals to a few distinct personas. All are broadly within the world of US and UK P&amp;C insurance.</p>
-							<ul>
-								<li>You're an MGA or carrier with developers on hand. You're looking for a <a href="/ecosystem/policy/consider/system-of-record.html">system of record</a> and <a href="/ecosystem/policy/consider/workflow-orchestration.html">workflow orchestration layer</a> that you can configure and build on. You're ready to code your own <a href="/ecosystem/policy/consider/front-end.html">front end(s)</a> and prefer a back end with well documented JSON/REST APIs and a microservices architecture. You might also value insurance industry longevity from a platform partner.</li>
-								<li>You're looking for a more managed policy admin system implementation: back end, front end, the whole kit and caboodle. You might like the ability to build your own front end down the line, and add your own integrations. For now, you have one or more business analysts to help with ongoing insurance product management.</li>
-								<li>You're looking to just split out certain functions—like rating, automatic underwriting, and forms logic and templates—into a separate, readily configurable system. See <a href="/ecosystem/policy/consider/modularity.html">modularity</a> for some reasons why you might try this.</li>
-							</ul>
-						</section>
-						<!-- notice the horizonal rule (hr) added after each section -->
-						<hr>
-						<section id="what-they-do">
-							<h2>What They Do</h2>
-							<p>Solartis Insure is a full-service policy administration system, or PAS. It’s built top-to-bottom on a microservices architecture. It’s fully integrated with ISO electronic rating content. Unique in the market, Solartis also offers back-office support to get your systems running while you build your integration. In fact this back-office support (called Solartis Administer) is available whether you use Solartis Insure or not at all.</p>
-							<p>See below for the full details.</p>
-							<!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
-							<hr class="compact">
-							<!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
-							<h3 id="industry-experience-modern-tech">Industry Experience, Modern Tech</h3>
-							<p>Solartis looks and feels like a large, established policy administration system vendor: They consider themselves a policy administration system, they've been around since 2004, and they have 500 to 1,000 employees worldwide. (For more on the employee count, though, see below!) It's true that you can usually count on a company with that kind of sustained focus on policy administration to be able to handle a lot of the nuances and edge cases you may run into as you build your business. Here, in a good way, Solartis fits the stereotype of a large policy admin system.</p>
-							<p>But given their age and size, you might also expect them to be slow, inflexible, and monolithic—and in this case you’d be wrong! We all know insurance in particular can be a slow industry to adopt recent trends. So coming into our research, Finsure didn't expect a modern microservices approach here. And yet Solartis has the word “microservices” all over their website. What's a team to make of it?</p>
-							<p>In our experience—from demos, docs, and correspondence—<strong>their microservices marketing is not hype</strong>. Solartis has undergone a full-on, <a rel="external" href="https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/">Amazon-style</a>, top-down rearchitecting. The platform is built on JSON/REST APIs, not SOAP/XML, and it's “microservices all the way down.”</p>
-							<p>This combination of industry longevity and microservices architecture likely positions Solartis as a contender for many teams.</p>
-							<hr class="compact">
-							<h3 id="three-layers-three-options">Three Layers, Three Options</h3>
-							<p>It's common to structure your core tech stack in three layers:</p>
-							<ul>
-								<li>Transaction-level microservices</li>
-								<li><a href="/ecosystem/policy/consider/workflow-orchestration.html">Workflow orchestration and integration layer</a></li>
-								<li><a href="/ecosystem/policy/consider/front-end.html">Front end(s)</a></li>
-							</ul>
-							<p>See our write-up on <a href="/ecosystem/policy/consider/workflow-orchestration.html">workflow orchestration</a> for a deeper dive on this pattern.</p>
-							<p>You can use Solartis for one, two, or all three of these layers.</p>
-							<ol>
-								<li><strong>Function-as-a-service</strong>: Solartis provides some or all of your transaction-level microservices. You might use Solaris just for rating, for example, or for forms and document generation. In this way you can use Solartis alongside an existing <a href="/ecosystem/policy/consider/system-of-record.html">system of record</a>. There are a number of use cases for this pattern; see <a href="/ecosystem/policy/consider/modularity.html">modularity</a> to learn why and how it works.</li>
-								<li><strong>Platform-as-a-Service</strong>: Solartis provides transaction-level microservices plus a configurable <a href="/ecosystem/policy/consider/workflow-orchestration.html">workflow orchestration layer</a>: a full policy administration solution, minus the <a href="/ecosystem/policy/consider/front-end.html">front ends</a> (sometimes referred to as <a rel="external" href="https://en.wikipedia.org/wiki/Headless_software">headless software</a>). You then develop your own front ends on top of Solartis APIs. For your own custom workflow orchestration and integrations, you can either build them within Solartis or code your own.</li>
-								<li><strong>Software-as-a-Service</strong>: Solartis also provides a full front end, including user experiences for agents, brokers, customer service reps, and underwriters. As you would expect of a modern architecture, Solartis's front ends are built on the same microservice APIs that you get with the headless solution above.</li>
-							</ol>
-							<hr class="compact">
-							<h3 id="product-management-toolkit">Product Management Toolkit</h3>
-							<p>To configure your product, Solartis provides a product management toolkit. (You may see it abbreviated PMT in their materials.) You use the toolkit to configure everything from your product data model to rates, forms, rules, and custom workflows. Most of the PMT is designed to be used by a business analyst. It has development, testing, and production areas; if a change you're making doesn't require changes to the rest of your ecosystem, you can test and release it all from within the toolkit.</p>
-							<p>While most of the toolkit is designed for a business analyst, power users can take advantage of more technical features as well:</p>
-							<ul>
-								<li><strong>Python scripts</strong>. These are optional, but they offer flexibility and power for a growing segment of code-savvy actuaries and insurance product owners.</li>
-								<li><strong>Drools rules</strong>. Despite the whimsical name, this well established, open-source rules engine framework is actually quite powerful. <a rel="external" href="https://en.wikipedia.org/wiki/Drools">Drools</a> is a highly scalable domain-specific language for expressing business rules—similar to if-then statements (and similarly straightforward) but more expressive. We've seen Drools used to negotiate intricate coverage rules in complex D2C quote environments.</li>
-								<li><strong>Business Process Modeling Notation (BPMN)</strong>. Solartis uses BPMN to express step by step workflows. If you haven't used <a rel="external" href="https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation">BPMN</a>, it looks much like a flow chart, with more structured conventions.</li>
-							</ul>
-							<p>Anything you configure in the toolkit is carried out throughout the Solartis system: transaction-level microservices, workflow orchestration layer, and front ends. As you should expect, if you add or edit a question in your product definition, the Solartis front end will reflect that change. Or if you're using Solartis as a headless solution (option 2 above), you can code your front end to do the same.</p>
-							<hr class="compact">
-							<h3 id="bureau-integrations">Bureau Integrations</h3>
-							<p>Several policy software vendors offer out-of-the-box integrations with rating bureaus, most commonly ISO. If this feature interests you, or if you want to learn more about it, please see <a href="/ecosystem/policy/consider/bureau-integrations.html">Bureau Integrations</a>.</p>
-							<p>Solartis's ISO integration follows best practices. You can clone an ISO product, along with rates, form logic and templates, and statistical codes. If you make changes, and ISO updates their product, you can keep your product up to date automatically. If there are conflicts, of course you resolve them manually. You can even clone sub-products off of your cloned ISO products, and changes will flow through from the main product to the sub-products.</p>
-							<p>Interestingly, Solartis's ISO integration actually predates today's ERC 2.0 system—ISO's product that powers most other vendors' integrations. This allows Solartis to offer extra features like multi-state rating, in case you're considering writing ISO-based policies that span multiple states.</p>
-							<h4 id="available-iso-erc-product-lines">Available ISO ERC Product Lines</h4>
-							<ul>
-								<li>Business Owners</li>
-								<li>General Liability</li>
-								<li>Commercial Umbrella</li>
-								<li>Commercial Auto (CA)</li>
-								<li>Commercial Auto–Owners &amp; Contractors Protective (<a rel="external" href="https://www.irmi.com/term/insurance-definitions/owners-and-contractors-protective-liability-coverage">OCP</a>) (AU)</li>
-								<li>Commercial Package Policy</li>
-								<li>Commercial Property</li>
-							</ul>
-							<h4 id="on-the-roadmap">On the Roadmap</h4>
-							<ul>
-								<li>Crime</li>
-								<li>Commercial Inland Marine</li>
-								<li>Non-Filed Inland Marine</li>
-								<li>Workers' Compensation</li>
-								<li>Cyber</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="back-office-support">Back-Office Support</h3>
-							<p>Apart from their policy software, Solartis also offers an army of trained insurance professionals as back-office support. For example, you may need help with a single underwriting workflow. Even if you're not using Solartis—or any modern policy software, in case you're just using email and spreadsheets—Solartis can outsource this work for you.</p>
-							<p>This is quite a powerful offering in connection with their policy software platform. If you're just getting on your feet for an initial launch, Solartis can provide a low-tech back-office solution while you get up to speed with a high-tech one. And this option is available whether you select Solartis as your provider or not!</p>
-						</section>
-						<hr>
-						<section id="how-to-work-with-them">
-							<h2>How to Work With Them</h2>
-							<p>There are a number of ways to get started with Solartis, depending on your needs and where you are today.</p>
-							<ul>
-								<li>If you have developers on hand and time to build, you can dive in with their platform-as-a-service option and develop your front ends on top of it.</li>
-								<li>If you need to get started more quickly, you can use their back office to support in the meantime, and/or start with the full software-as-a-service offering while you build.</li>
-								<li>If you want a more managed solution, you can start with the full software-as-a-service option, and just stick with it!</li>
-								<li>Finally, if you're currently on another system of record, you can use Solartis's function-as-a-service option selectively. This may be the first step in a fuller Solartis implementation or a longer-term architectural choice, making use of their product management toolkit and ISO integration to consolidate product logic.</li>
-							</ul>
-							<p>Solartis recommends allowing them to configure the system the first time through, and using their product management toolkit to clone, configure and create new products afterward. As with any system, it's much easier to modify an existing setup than to start completely from scratch.</p>
-							<p>Finsure recently brought a client to consider Solartis. Solartis was able to confidently offer a 3-month timeline to get the client’s program into UAT. This was a complex, high-touch, non-admitted package product in multiple states. The timeline included rate, quote, bind and issuance, policy lifecycle, forms and document generation, billing and invoicing, reporting, and claims integration. This was for Solartis’s full “software as a solution” offering (see above). If you’re looking for their PaaS or FaaS solutions, reach out!</p>
-							<p>Solartis’s pricing model includes 3 components:</p>
-							<ul>
-								<li>An annual license fee based on the number of lines of business on the Solartis platform</li>
-								<li>An annual usage fee based on the annual DWP processed through the Solartis platform</li>
-								<li>A one-time professional services fee for the initial configuration of your insurance products on the Solartis platform</li>
-							</ul>
-							<p>Solartis releases upgrades to components of their platform on a quarterly to semi-annual basis. Upgrades are voluntary—you can refuse or delay them if you like—and they're componentized: You can accept one upgrade without taking another. You may sometimes prefer to receive updates on your own schedule. If you do, Solartis will work with you to develop a testing plan, and they will share their own test bank.</p>
-						</section>
-						<hr>
-						<section id="products">
-							<h2>Products</h2>
-							<p>We asked Solartis what products their customers are <em>currently actively selling or placing</em>. If you don't see your product on the list, we always recommend reaching out! This is not meant to be an exhaustive list of what Solartis supports.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>Accident &amp; Health</li>
-								<li>BOP</li>
-								<li>Commercial Auto</li>
-								<li>Commercial Property</li>
-								<li>Cyber</li>
-								<li>Embedded Insurance</li>
-								<li>General Liability</li>
-								<li>Inland Marine</li>
-								<li>Management Liability</li>
-								<li>Personal Auto</li>
-								<li>Personal Home</li>
-								<li>Pet</li>
-								<li>Professional Liability</li>
-								<li>Rental Property Owners</li>
-								<li>Renters</li>
-								<li>Travel Insurance</li>
-								<li>Umbrella</li>
-								<li>Usage-Based Insurance</li>
-								<li>Workers' Compensation</li>								
-							</ul>
-							<hr class="compact">
-							<h3 id="write-ins">Write-Ins</h3>
-							<ul>
-								<li>Package Policies</li>
-								<li>Program Business</li>
-								<li>Commercial Trucking</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers">No Current Customers</h3>
-							<ul>
-								<li>Life</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="locations">
-							<h2>Locations</h2>
-							<p>We asked Solartis where their customers are <em>currently actively selling or placing insurance</em>. If you don't see your region on the list, we recommend reaching out to ask! This is not meant to be an exhaustive list of where Solartis will do business.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance_1">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>United States</li>
-								<li>United Kingdom</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers_1">No Current Customers</h3>
-							<ul>
-								<li>Canada</li>
-								<li>Latin America</li>
-								<li>Continental Europe</li>
-								<li>Australia/Asia/Pacific</li>
-								<li>Africa</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="featured-customers">
-							<h2>Featured Customers</h2>
-							<p>According to their website<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, Solartis customers include the following:</p>
-							<ul>
-								<li><a rel="external" href="https://www.aon.com/">AON</a></li>
-								<li><a rel="external" href="https://www.bostoncatholic.org/">Archdiocese of Boston</a></li>
-								<li><a rel="external" href="https://www.assurant.com/">Assurant</a></li>
-								<li><a rel="external" href="https://www.berkley.com/">Berkley Insurance</a></li>
-								<li><a rel="external" href="https://brite.co/">BriteCo</a></li>
-								<li><a rel="external" href="https://chicinsurance.com/">Commercial Hirecar Insurance Company (Chic)</a></li>
-								<li><a rel="external" href="https://www.coverwallet.com/">CoverWallet</a></li>
-								<li><a rel="external" href="https://www.embroker.com/">Embroker</a></li>
-								<li><a rel="external" href="https://fidesinsurance.com/">Fides Insurance Group</a></li>
-								<li><a rel="external" href="https://www.generali.com/">Generali Group</a></li>
-								<li><a rel="external" href="https://www.joyninsurance.com/">Joyn Insurance</a></li>
-								<li><a rel="external" href="https://www.libertymutual.com/">Liberty Mutual</a></li>
-								<li><a rel="external" href="https://www.mcsig.com/">Municipalities, Colleges, Schools Insurance Group (MCSIG)</a></li>
-								<li><a rel="external" href="https://n2g.com/">N2G</a></li>
-								<li><a rel="external" href="https://www.truckinsurancenitic.com/">National Independent Truckers Insurance Company (NITIC)</a></li>
-								<li><a rel="external" href="https://www.nationwide.com/">Nationwide Insurance</a></li>
-								<li><a rel="external" href="https://ratiorisk.com/about-us/">Ratio Risk</a></li>
-								<li><a rel="external" href="https://ryanspecialty.com/">Ryan Specialty Group</a></li>
-								<li><a rel="external" href="https://www.senecainsurance.com/">Seneca Insurance Company</a></li>
-								<li><a rel="external" href="https://www.siriuspt.com/">SiriusPoint</a></li>
-								<li><a rel="external" href="https://site.siuins.com/">Southern Insurance Underwriters (SIU)</a></li>
-								<li><a rel="external" href="https://starrcompanies.com/">Starr Insurance Companies</a></li>
-								<li><a rel="external" href="http://www.wbpiprogram.com/">Western Bowling Proprietors Insurance (WBPI)</a></li>								
-							</ul>
-						</section>
-						<hr>
-						<!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
-						<section id="footnotes">
-							<h2>Footnotes</h2>
-							<!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
-							<!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
-							<ol>
-								<li id="fn:1">
-									<!-- notice we add the explicit link so it can open in a new tab -->
-									<p><a rel="external" href="https://www.solartis.com">https://www.solartis.com</a> captured <a rel="external" href="https://web.archive.org/web/20220919210725/https://www.solartis.com/">2022-09-19</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-								</li>
-							</ol>
-						</section>
-					</article>
-				</div>
-			</main>
-			<footer id="footer">
-				<div>
-					<p><i aria-hidden="true" class="icon-logo"></i> Copyright <span class="date">2023</span> Finsure - All rights reserved</p>
-					<nav>
-						<h3>Info</h3>
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/about-us.html">About us</a></li>
-							<li><a href="/events.html">Events</a></li>
-							<li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
-						</ul>
-					</nav>
-					<div>
-						<h3>Follow us</h3>
-						<ul class="list-social">
-							<li><a rel="external" href="https://www.linkedin.com/company/finsureconsulting/"><i aria-hidden="true" class="icon-linkedin"></i> <span class="hidden">LinkedIn</span></a></li>
-							<li><a rel="external" href="https://savvycal.com/Michelle-Bothe/22eb851d"><i aria-hidden="true" class="icon-calendar"></i> <span class="hidden">Calendar</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
-		<script>window.jQuery || document.write('<script src="/javascript/jquery.js"><\/script>');</script>
-		<script defer src="/javascript/scripts.js"></script>
-		<script defer src="/javascript/custom.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Solartis</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#7551c3" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <meta name="author" content="https://psdhtml.me" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="preload" as="style" href="/styles/screen.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="/styles/fonts/icomoon.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="/styles/screen.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="//ajax.googleapis.com" />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta property="og:title" content="Solartis" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Finsure" />
+    <meta property="og:url" content="https://finsure.us/" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="Solartis" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="Finsure" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:image" content="" />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org/",
+          "@type": "Organization",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "legalName": "Finsure",
+          "description": "",
+          "logo": "",
+          "image": "",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer service",
+            "telephone": ""
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": ""
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "description": "",
+          "author": {
+            "@type": "Organization",
+            "url": "https://psdhtml.me",
+            "name": "psdHTML.me",
+            "description": "Figma to responsive HTML coding"
+          }
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <header id="top">
+        <p id="logo"><a href="/" accesskey="h">Finsure</a></p>
+        <nav id="skip">
+          <ul>
+            <li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
+            <li><a href="#content" accesskey="c">Skip to content (c)</a></li>
+            <li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
+          </ul>
+        </nav>
+        <nav id="nav" aria-label="Navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+              <a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em>
+            </li>
+            <li>
+              <a accesskey="2" href="/events.html">Events</a> <em>(2)</em>
+            </li>
+            <li class="sub">
+              <a accesskey="3">Insurtech ecosystem</a> <em>(3)</em>
+              <ul>
+                <li>
+                  <a href="/ecosystem/insurtech-guide-to.html"
+                    >Insurtech guide to ...</a
+                  >
+                </li>
+                <li><a href="/ecosystem/policy/research.html">Research</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="content" class="width-1350">
+        <header class="header-wide">
+          <h1 class="size-55 margin-10">Solartis</h1>
+        </header>
+        <div class="cols-a">
+          <header>
+            <nav class="nav-aside">
+              <ul>
+                <!-- add section headers here -->
+                <!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
+                <!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
+                <!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
+                <li class="active">
+                  <a href="#who-they-serve">Who They Serve</a>
+                </li>
+                <li><a href="#what-they-do">What They Do</a></li>
+                <li>
+                  <a href="#how-to-work-with-them">How to Work With Them</a>
+                </li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#featured-customers">Featured Customers</a></li>
+              </ul>
+            </nav>
+          </header>
+          <article>
+            <!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
+            <section id="who-they-serve">
+              <h2>Who They Serve</h2>
+              <p>
+                Solartis appeals to a few distinct personas. All are broadly
+                within the world of US and UK P&amp;C insurance.
+              </p>
+              <ul>
+                <li>
+                  You're an MGA or carrier with developers on hand. You're
+                  looking for a
+                  <a href="/ecosystem/policy/consider/system-of-record.html"
+                    >system of record</a
+                  >
+                  and
+                  <a
+                    href="/ecosystem/policy/consider/workflow-orchestration.html"
+                    >workflow orchestration layer</a
+                  >
+                  that you can configure and build on. You're ready to code your
+                  own
+                  <a href="/ecosystem/policy/consider/front-end.html"
+                    >front end(s)</a
+                  >
+                  and prefer a back end with well documented JSON/REST APIs and
+                  a microservices architecture. You might also value insurance
+                  industry longevity from a platform partner.
+                </li>
+                <li>
+                  You're looking for a more managed policy admin system
+                  implementation: back end, front end, the whole kit and
+                  caboodle. You might like the ability to build your own front
+                  end down the line, and add your own integrations. For now, you
+                  have one or more business analysts to help with ongoing
+                  insurance product management.
+                </li>
+                <li>
+                  You're looking to just split out certain functions—like
+                  rating, automatic underwriting, and forms logic and
+                  templates—into a separate, readily configurable system. See
+                  <a href="/ecosystem/policy/consider/modularity.html"
+                    >modularity</a
+                  >
+                  for some reasons why you might try this.
+                </li>
+              </ul>
+            </section>
+            <!-- notice the horizonal rule (hr) added after each section -->
+            <hr />
+            <section id="what-they-do">
+              <h2>What They Do</h2>
+              <p>
+                Solartis Insure is a full-service policy administration system,
+                or PAS. It’s built top-to-bottom on a microservices
+                architecture. It’s fully integrated with ISO electronic rating
+                content. Unique in the market, Solartis also offers back-office
+                support to get your systems running while you build your
+                integration. In fact this back-office support (called Solartis
+                Administer) is available whether you use Solartis Insure or not
+                at all.
+              </p>
+              <p>See below for the full details.</p>
+              <!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
+              <hr class="compact" />
+              <!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
+              <h3 id="industry-experience-modern-tech">
+                Industry Experience, Modern Tech
+              </h3>
+              <p>
+                Solartis looks and feels like a large, established policy
+                administration system vendor: They consider themselves a policy
+                administration system, they've been around since 2004, and they
+                have 500 to 1,000 employees worldwide. (For more on the employee
+                count, though, see below!) It's true that you can usually count
+                on a company with that kind of sustained focus on policy
+                administration to be able to handle a lot of the nuances and
+                edge cases you may run into as you build your business. Here, in
+                a good way, Solartis fits the stereotype of a large policy admin
+                system.
+              </p>
+              <p>
+                But given their age and size, you might also expect them to be
+                slow, inflexible, and monolithic—and in this case you’d be
+                wrong! We all know insurance in particular can be a slow
+                industry to adopt recent trends. So coming into our research,
+                Finsure didn't expect a modern microservices approach here. And
+                yet Solartis has the word “microservices” all over their
+                website. What's a team to make of it?
+              </p>
+              <p>
+                In our experience—from demos, docs, and correspondence—<strong
+                  >their microservices marketing is not hype</strong
+                >. Solartis has undergone a full-on,
+                <a
+                  rel="external"
+                  href="https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/"
+                  >Amazon-style</a
+                >, top-down rearchitecting. The platform is built on JSON/REST
+                APIs, not SOAP/XML, and it's “microservices all the way down.”
+              </p>
+              <p>
+                This combination of industry longevity and microservices
+                architecture likely positions Solartis as a contender for many
+                teams.
+              </p>
+              <hr class="compact" />
+              <h3 id="three-layers-three-options">
+                Three Layers, Three Options
+              </h3>
+              <p>
+                It's common to structure your core tech stack in three layers:
+              </p>
+              <ul>
+                <li>Transaction-level microservices</li>
+                <li>
+                  <a
+                    href="/ecosystem/policy/consider/workflow-orchestration.html"
+                    >Workflow orchestration and integration layer</a
+                  >
+                </li>
+                <li>
+                  <a href="/ecosystem/policy/consider/front-end.html"
+                    >Front end(s)</a
+                  >
+                </li>
+              </ul>
+              <p>
+                See our write-up on
+                <a href="/ecosystem/policy/consider/workflow-orchestration.html"
+                  >workflow orchestration</a
+                >
+                for a deeper dive on this pattern.
+              </p>
+              <p>
+                You can use Solartis for one, two, or all three of these layers.
+              </p>
+              <ol>
+                <li>
+                  <strong>Function-as-a-service</strong>: Solartis provides some
+                  or all of your transaction-level microservices. You might use
+                  Solaris just for rating, for example, or for forms and
+                  document generation. In this way you can use Solartis
+                  alongside an existing
+                  <a href="/ecosystem/policy/consider/system-of-record.html"
+                    >system of record</a
+                  >. There are a number of use cases for this pattern; see
+                  <a href="/ecosystem/policy/consider/modularity.html"
+                    >modularity</a
+                  >
+                  to learn why and how it works.
+                </li>
+                <li>
+                  <strong>Platform-as-a-Service</strong>: Solartis provides
+                  transaction-level microservices plus a configurable
+                  <a
+                    href="/ecosystem/policy/consider/workflow-orchestration.html"
+                    >workflow orchestration layer</a
+                  >: a full policy administration solution, minus the
+                  <a href="/ecosystem/policy/consider/front-end.html"
+                    >front ends</a
+                  >
+                  (sometimes referred to as
+                  <a
+                    rel="external"
+                    href="https://en.wikipedia.org/wiki/Headless_software"
+                    >headless software</a
+                  >). You then develop your own front ends on top of Solartis
+                  APIs. For your own custom workflow orchestration and
+                  integrations, you can either build them within Solartis or
+                  code your own.
+                </li>
+                <li>
+                  <strong>Software-as-a-Service</strong>: Solartis also provides
+                  a full front end, including user experiences for agents,
+                  brokers, customer service reps, and underwriters. As you would
+                  expect of a modern architecture, Solartis's front ends are
+                  built on the same microservice APIs that you get with the
+                  headless solution above.
+                </li>
+              </ol>
+              <hr class="compact" />
+              <h3 id="product-management-toolkit">
+                Product Management Toolkit
+              </h3>
+              <p>
+                To configure your product, Solartis provides a product
+                management toolkit. (You may see it abbreviated PMT in their
+                materials.) You use the toolkit to configure everything from
+                your product data model to rates, forms, rules, and custom
+                workflows. Most of the PMT is designed to be used by a business
+                analyst. It has development, testing, and production areas; if a
+                change you're making doesn't require changes to the rest of your
+                ecosystem, you can test and release it all from within the
+                toolkit.
+              </p>
+              <p>
+                While most of the toolkit is designed for a business analyst,
+                power users can take advantage of more technical features as
+                well:
+              </p>
+              <ul>
+                <li>
+                  <strong>Python scripts</strong>. These are optional, but they
+                  offer flexibility and power for a growing segment of
+                  code-savvy actuaries and insurance product owners.
+                </li>
+                <li>
+                  <strong>Drools rules</strong>. Despite the whimsical name,
+                  this well established, open-source rules engine framework is
+                  actually quite powerful.
+                  <a rel="external" href="https://en.wikipedia.org/wiki/Drools"
+                    >Drools</a
+                  >
+                  is a highly scalable domain-specific language for expressing
+                  business rules—similar to if-then statements (and similarly
+                  straightforward) but more expressive. We've seen Drools used
+                  to negotiate intricate coverage rules in complex D2C quote
+                  environments.
+                </li>
+                <li>
+                  <strong>Business Process Modeling Notation (BPMN)</strong>.
+                  Solartis uses BPMN to express step by step workflows. If you
+                  haven't used
+                  <a
+                    rel="external"
+                    href="https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation"
+                    >BPMN</a
+                  >, it looks much like a flow chart, with more structured
+                  conventions.
+                </li>
+              </ul>
+              <p>
+                Anything you configure in the toolkit is carried out throughout
+                the Solartis system: transaction-level microservices, workflow
+                orchestration layer, and front ends. As you should expect, if
+                you add or edit a question in your product definition, the
+                Solartis front end will reflect that change. Or if you're using
+                Solartis as a headless solution (option 2 above), you can code
+                your front end to do the same.
+              </p>
+              <hr class="compact" />
+              <h3 id="bureau-integrations">Bureau Integrations</h3>
+              <p>
+                Several policy software vendors offer out-of-the-box
+                integrations with rating bureaus, most commonly ISO. If this
+                feature interests you, or if you want to learn more about it,
+                please see
+                <a href="/ecosystem/policy/consider/bureau-integrations.html"
+                  >Bureau Integrations</a
+                >.
+              </p>
+              <p>
+                Solartis's ISO integration follows best practices. You can clone
+                an ISO product, along with rates, form logic and templates, and
+                statistical codes. If you make changes, and ISO updates their
+                product, you can keep your product up to date automatically. If
+                there are conflicts, of course you resolve them manually. You
+                can even clone sub-products off of your cloned ISO products, and
+                changes will flow through from the main product to the
+                sub-products.
+              </p>
+              <p>
+                Interestingly, Solartis's ISO integration actually predates
+                today's ERC 2.0 system—ISO's product that powers most other
+                vendors' integrations. This allows Solartis to offer extra
+                features like multi-state rating, in case you're considering
+                writing ISO-based policies that span multiple states.
+              </p>
+              <h4 id="available-iso-erc-product-lines">
+                Available ISO ERC Product Lines
+              </h4>
+              <ul>
+                <li>Business Owners</li>
+                <li>General Liability</li>
+                <li>Commercial Umbrella</li>
+                <li>Commercial Auto (CA)</li>
+                <li>
+                  Commercial Auto–Owners &amp; Contractors Protective (<a
+                    rel="external"
+                    href="https://www.irmi.com/term/insurance-definitions/owners-and-contractors-protective-liability-coverage"
+                    >OCP</a
+                  >) (AU)
+                </li>
+                <li>Commercial Package Policy</li>
+                <li>Commercial Property</li>
+              </ul>
+              <h4 id="on-the-roadmap">On the Roadmap</h4>
+              <ul>
+                <li>Crime</li>
+                <li>Commercial Inland Marine</li>
+                <li>Non-Filed Inland Marine</li>
+                <li>Workers' Compensation</li>
+                <li>Cyber</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="back-office-support">Back-Office Support</h3>
+              <p>
+                Apart from their policy software, Solartis also offers an army
+                of trained insurance professionals as back-office support. For
+                example, you may need help with a single underwriting workflow.
+                Even if you're not using Solartis—or any modern policy software,
+                in case you're just using email and spreadsheets—Solartis can
+                outsource this work for you.
+              </p>
+              <p>
+                This is quite a powerful offering in connection with their
+                policy software platform. If you're just getting on your feet
+                for an initial launch, Solartis can provide a low-tech
+                back-office solution while you get up to speed with a high-tech
+                one. And this option is available whether you select Solartis as
+                your provider or not!
+              </p>
+            </section>
+            <hr />
+            <section id="how-to-work-with-them">
+              <h2>How to Work With Them</h2>
+              <p>
+                There are a number of ways to get started with Solartis,
+                depending on your needs and where you are today.
+              </p>
+              <ul>
+                <li>
+                  If you have developers on hand and time to build, you can dive
+                  in with their platform-as-a-service option and develop your
+                  front ends on top of it.
+                </li>
+                <li>
+                  If you need to get started more quickly, you can use their
+                  back office to support in the meantime, and/or start with the
+                  full software-as-a-service offering while you build.
+                </li>
+                <li>
+                  If you want a more managed solution, you can start with the
+                  full software-as-a-service option, and just stick with it!
+                </li>
+                <li>
+                  Finally, if you're currently on another system of record, you
+                  can use Solartis's function-as-a-service option selectively.
+                  This may be the first step in a fuller Solartis implementation
+                  or a longer-term architectural choice, making use of their
+                  product management toolkit and ISO integration to consolidate
+                  product logic.
+                </li>
+              </ul>
+              <p>
+                Solartis recommends allowing them to configure the system the
+                first time through, and using their product management toolkit
+                to clone, configure and create new products afterward. As with
+                any system, it's much easier to modify an existing setup than to
+                start completely from scratch.
+              </p>
+              <p>
+                Finsure recently brought a client to consider Solartis. Solartis
+                was able to confidently offer a 3-month timeline to get the
+                client’s program into UAT. This was a complex, high-touch,
+                non-admitted package product in multiple states. The timeline
+                included rate, quote, bind and issuance, policy lifecycle, forms
+                and document generation, billing and invoicing, reporting, and
+                claims integration. This was for Solartis’s full “software as a
+                solution” offering (see above). If you’re looking for their PaaS
+                or FaaS solutions, reach out!
+              </p>
+              <p>Solartis’s pricing model includes 3 components:</p>
+              <ul>
+                <li>
+                  An annual license fee based on the number of lines of business
+                  on the Solartis platform
+                </li>
+                <li>
+                  An annual usage fee based on the annual DWP processed through
+                  the Solartis platform
+                </li>
+                <li>
+                  A one-time professional services fee for the initial
+                  configuration of your insurance products on the Solartis
+                  platform
+                </li>
+              </ul>
+              <p>
+                Solartis releases upgrades to components of their platform on a
+                quarterly to semi-annual basis. Upgrades are voluntary—you can
+                refuse or delay them if you like—and they're componentized: You
+                can accept one upgrade without taking another. You may sometimes
+                prefer to receive updates on your own schedule. If you do,
+                Solartis will work with you to develop a testing plan, and they
+                will share their own test bank.
+              </p>
+            </section>
+            <hr />
+            <section id="products">
+              <h2>Products</h2>
+              <p>
+                We asked Solartis what products their customers are
+                <em>currently actively selling or placing</em>. If you don't see
+                your product on the list, we always recommend reaching out! This
+                is not meant to be an exhaustive list of what Solartis supports.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>Accident &amp; Health</li>
+                <li>BOP</li>
+                <li>Commercial Auto</li>
+                <li>Commercial Property</li>
+                <li>Cyber</li>
+                <li>Embedded Insurance</li>
+                <li>General Liability</li>
+                <li>Inland Marine</li>
+                <li>Management Liability</li>
+                <li>Personal Auto</li>
+                <li>Personal Home</li>
+                <li>Pet</li>
+                <li>Professional Liability</li>
+                <li>Rental Property Owners</li>
+                <li>Renters</li>
+                <li>Travel Insurance</li>
+                <li>Umbrella</li>
+                <li>Usage-Based Insurance</li>
+                <li>Workers' Compensation</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="write-ins">Write-Ins</h3>
+              <ul>
+                <li>Package Policies</li>
+                <li>Program Business</li>
+                <li>Commercial Trucking</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers">No Current Customers</h3>
+              <ul>
+                <li>Life</li>
+              </ul>
+            </section>
+            <hr />
+            <section id="locations">
+              <h2>Locations</h2>
+              <p>
+                We asked Solartis where their customers are
+                <em>currently actively selling or placing insurance</em>. If you
+                don't see your region on the list, we recommend reaching out to
+                ask! This is not meant to be an exhaustive list of where
+                Solartis will do business.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance_1">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>United States</li>
+                <li>United Kingdom</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers_1">No Current Customers</h3>
+              <ul>
+                <li>Canada</li>
+                <li>Latin America</li>
+                <li>Continental Europe</li>
+                <li>Australia/Asia/Pacific</li>
+                <li>Africa</li>
+              </ul>
+            </section>
+            <hr />
+            <section id="featured-customers">
+              <h2>Featured Customers</h2>
+              <p>
+                According to their website<sup id="fnref:1"
+                  ><a class="footnote-ref" href="#fn:1">1</a></sup
+                >, Solartis customers include the following:
+              </p>
+              <ul>
+                <li><a rel="external" href="https://www.aon.com/">AON</a></li>
+                <li>
+                  <a rel="external" href="https://www.bostoncatholic.org/"
+                    >Archdiocese of Boston</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.assurant.com/"
+                    >Assurant</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.berkley.com/"
+                    >Berkley Insurance</a
+                  >
+                </li>
+                <li><a rel="external" href="https://brite.co/">BriteCo</a></li>
+                <li>
+                  <a rel="external" href="https://chicinsurance.com/"
+                    >Commercial Hirecar Insurance Company (Chic)</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.coverwallet.com/"
+                    >CoverWallet</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.embroker.com/"
+                    >Embroker</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://fidesinsurance.com/"
+                    >Fides Insurance Group</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.generali.com/"
+                    >Generali Group</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.joyninsurance.com/"
+                    >Joyn Insurance</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.libertymutual.com/"
+                    >Liberty Mutual</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.mcsig.com/"
+                    >Municipalities, Colleges, Schools Insurance Group
+                    (MCSIG)</a
+                  >
+                </li>
+                <li><a rel="external" href="https://n2g.com/">N2G</a></li>
+                <li>
+                  <a rel="external" href="https://www.truckinsurancenitic.com/"
+                    >National Independent Truckers Insurance Company (NITIC)</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.nationwide.com/"
+                    >Nationwide Insurance</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://ratiorisk.com/about-us/"
+                    >Ratio Risk</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://ryanspecialty.com/"
+                    >Ryan Specialty Group</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.senecainsurance.com/"
+                    >Seneca Insurance Company</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.siriuspt.com/"
+                    >SiriusPoint</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://site.siuins.com/"
+                    >Southern Insurance Underwriters (SIU)</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://starrcompanies.com/"
+                    >Starr Insurance Companies</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="http://www.wbpiprogram.com/"
+                    >Western Bowling Proprietors Insurance (WBPI)</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
+            <section id="footnotes">
+              <h2>Footnotes</h2>
+              <!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
+              <!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
+              <ol>
+                <li id="fn:1">
+                  <!-- notice we add the explicit link so it can open in a new tab -->
+                  <p>
+                    <a rel="external" href="https://www.solartis.com"
+                      >https://www.solartis.com</a
+                    >
+                    captured
+                    <a
+                      rel="external"
+                      href="https://web.archive.org/web/20220919210725/https://www.solartis.com/"
+                      >2022-09-19</a
+                    >&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:1"
+                      title="Jump back to footnote 1 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div>
+          <p>
+            <i aria-hidden="true" class="icon-logo"></i> Copyright
+            <span class="date">2023</span> Finsure - All rights reserved
+          </p>
+          <nav>
+            <h3>Info</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us.html">About us</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3>Follow us</h3>
+            <ul class="list-social">
+              <li>
+                <a
+                  rel="external"
+                  href="https://www.linkedin.com/company/finsureconsulting/"
+                  ><i aria-hidden="true" class="icon-linkedin"></i>
+                  <span class="hidden">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  rel="external"
+                  href="https://savvycal.com/Michelle-Bothe/22eb851d"
+                  ><i aria-hidden="true" class="icon-calendar"></i>
+                  <span class="hidden">Calendar</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="/javascript/jquery.js"><\/script>');
+    </script>
+    <script defer src="/javascript/scripts.js"></script>
+    <script defer src="/javascript/custom.js"></script>
+  </body>
 </html>

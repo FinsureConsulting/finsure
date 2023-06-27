@@ -1,240 +1,472 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Boost</title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="theme-color" content="#7551c3">
-		<meta name="MobileOptimized" content="320">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no">
-		<meta name="author" content="https://psdhtml.me">
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="preload" as="style" href="/styles/screen.css">
-		<link rel="preload" as="font" href="/styles/fonts/icomoon.woff2" crossOrigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="stylesheet" href="/styles/screen.css">
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e">	
-		<link rel="manifest" href="/manifest.json">		
-		<link rel="preconnect" href="//ajax.googleapis.com">
-		<link rel="preconnect" href="//fonts.googleapis.com">
-		<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-		<meta name="msapplication-config" content="browserconfig.xml">
-		<meta property="og:title" content="Boost">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="">
-		<meta property="og:site_name" content="Finsure">
-		<meta property="og:url" content="https://finsure.us/">
-		<meta property="og:image" content="">		
-		<meta name="twitter:title" content="Boost">
-		<meta name="twitter:description" content="">
-		<meta name="twitter:site" content="Finsure">
-		<meta name="twitter:card" content="">
-		<meta name="twitter:image" content="">
-		<script type="application/ld+json">
-			[
-				{
-					"@context": "http://schema.org/",
-					"@type": "Organization",
-					"url": "https://finsure.us/",
-					"name": "Finsure",
-					"legalName": "Finsure",
-					"description": "",
-					"logo": "",
-					"image": "",
-					"contactPoint": {
-						"@type": "ContactPoint",
-						"contactType": "Customer service",
-						"telephone": ""
-					},
-					"address": {
-						"@type": "PostalAddress",
-						"streetAddress": "",
-						"addressLocality": "",
-						"addressRegion": "",
-						"postalCode": "",
-						"addressCountry": ""
-					}
-				},
-				{ 
-					"@context": "http://schema.org", 
-					"@type": "WebSite", 
-					"url": "https://finsure.us/", 
-					"name": "Finsure",
-					"description": "",
-					"author": {
-						"@type": "Organization",
-						"url": "https://psdhtml.me",
-						"name": "psdHTML.me",
-						"description": "Figma to responsive HTML coding"
-					}
-				}
-			]
-		</script>
-	</head>
-	<body>
-		<div id="root">
-			<header id="top">
-				<p id="logo"><a href="/" accesskey="h">Finsure</a></p>
-				<nav id="skip">
-					<ul>
-						<li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
-						<li><a href="#content" accesskey="c">Skip to content (c)</a></li>
-						<li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
-					</ul>
-				</nav>
-				<nav id="nav" aria-label="Navigation">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em></li>
-						<li><a accesskey="2" href="/events.html">Events</a> <em>(2)</em></li>
-						<li class="sub"><a accesskey="3" href="/coming-soon.html">Insurtech ecosystem</a> <em>(3)</em>
-							<ul>
-								<li><a href="/ecosystem/insurtech-guide-to.html">Insurtech guide to ...</a></li>
-								<li><a href="/ecosystem/policy/research.html">Research</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</header>             
-			<main id="content" class="width-1350">
-				<header class="header-wide">
-					<h1 class="size-55 margin-10">Boost</h1>
-				</header>
-				<div class="cols-a">
-					<header>
-						<nav class="nav-aside">
-							<ul>
-								<!-- add section headers here -->
-								<!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
-								<!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
-								<!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
-								<li class="active"><a href="#who-they-serve">Who They Serve</a></li>
-								<li><a href="#what-they-do">What They Do</a></li>
-								<li><a href="#how-to-work-with-them">How to Work With Them</a></li>
-								<li><a href="#products">Products</a></li>
-								<li><a href="#locations">Locations</a></li>
-								<li><a href="#featured-customers">Featured Customers</a></li>
-							</ul>
-						</nav>
-					</header>
-					<article>
-						<!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
-						<section id="who-they-serve">
-							<h2>Who They Serve</h2>
-							<p>Boost takes a 3-prong approach to helping you launch your first or next insurance product as an insurtech MGA. The 3 prongs are a package deal, so if you don't need all 3 Boost's not for you. If you <em>do</em> need all 3, getting them from the same place has significant advantages, and Boost's white-glove treatment will help you get on your feet quickly. The 3 prongs are:</p>
-							<ul>
-								<li><strong>Tech</strong>. Boost offers a full array of JSON/REST APIs and webhooks for all standard insurance functions, from starting an application to selling a policy to cancellations, renewals, and endorsements.</li>
-								<li><strong>Product</strong>. To help streamline the process of getting you to market, Boost owns the insurance product. This is not a good fit for insurtechs whose core differentiator is insurance product innovation. But if what you bring to the table is UX, data enrichment, distribution, partnerships, marketing—any of the other myriad ways tech can enhance insurance—this strategy can be just right. Boost will help you design and get approval for the product. Or for a particularly fast and smooth launch, you can even use a product Boost has available off the shelf.</li>
-								<li><strong>Capacity</strong>. Once the insurance product's been designed and approved, Boost has a pool of fronting carriers and reinsurers standing at the ready to back it.</li>
-							</ul>
-							<p>Boost will also fit you best if most of your business will be straight-through processing, with no manual underwriting required. Boost <em>does</em> offer a webhook flow for manual underwriting of special cases: say, $5M limits when the default is $1M. But they provide the underwriters—as it's their insurance product. And the product is designed such that most volume goes through without need for an underwriting referral.</p>							
-						</section>
-						<!-- notice the horizonal rule (hr) added after each section -->
-						<hr>
-						<section id="what-they-do">
-							<h2>What They Do</h2>
-							<p>Boost addresses three problem domains at once: tech, insurance product, and capacity. This is not just a convenience for you, Boost's customer. It also streamlines relations with your capacity providers, and it enables a kind of white-glove treatment that's not possible otherwise.</p>
-							<!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
-							<hr class="compact">
-							<!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
-							<h3 id="tech">Tech</h3>
-							<p>Like most of their policy software peers, Boost is built on a solid microservices architecture. Each service has a familiar <a href="/ecosystem/policy/consider/APIs.html#jsonrest">JSON/REST</a> API endpoint, and all of that functionality is documented thoroughly in both plain English and code, with working examples and flowcharts, in their <a rel="external" href="https://boostplatform.io/boost_api_docs.html">public online documentation</a>. For the plain English and flowcharts, see their <a rel="external" href="https://launchpad.boostplatform.io/knowledge-center">knowledge base</a>.</p>
-							<p>By offering back-end APIs for insurance functions, Boost frees you up to spend your resources on a snappy user experience, integrations, distribution partnerships, and everything else. Of course you can also work with a provider like <a rel="external" href="https://www.unqork.com/">Unqork</a> or <a rel="external" href="https://www.mendix.com/">Mendix</a> for your front end. Or in some cases Boost can even provide a customizable, white-labeled front end to get you started.</p>
-							<hr class="compact">
-							<h3 id="streamlining-capacity">Streamlining Capacity</h3>
-							<p>Combining tech, product, and capacity in this way helps capacity providers as much as it helps MGAs. Providing capacity is fraught with risks:</p>
-							<ul>
-								<li>How do capacity providers know you're implementing the insurance product as agreed, and as filed with the Departments of Insurance?</li>
-								<li>How do they know you're staying within their risk appetite?</li>
-								<li>How do they know you'll be able to institute binding restrictions quickly and accurately?</li>
-								<li>How can they be sure you're handling any number of regulatory issues well, like sanctions checks or cancellation moratoriums?</li>
-							</ul>
-							<p>If your capacity provider integrates with your policy software provider, they just <em>know</em> these answers. And that easy trust means it's easier for you to get the capacity you need.</p>
-							<hr class="compact">
-							<h3 id="white-glove-treatment">White-Glove Treatment</h3>
-							<p>Because they own the product, Boost will handle all Department of Insurance filings. This shouldn't be underestimated; it can be a real hassle. You usually have to have an insurance product manager working with your fronting carrier to get these pushed through individually for each product in each state.</p>
-							<p>But there are other advantages to Boost's set-up. Boost handles all carrier reporting and bordereaux for you. They can do this because they own the product and work with fronters and reinsurers on your behalf. They also handle common regulatory compliance scenarios like sanctions checks, cancellation moratoriums, and taxes and fees. All of this is in the best interest of both the MGA and the capacity provider—so why not have Boost handle it for both of you? Boost's particular 3-prong arrangement is what makes this curated experience possible, and the curated experience in turn benefits the arrangement. It's a win-win.</p>
-						</section>
-						<hr>
-						<section id="how-to-work-with-them">
-							<h2>How to Work With Them</h2>
-							<p>Launching a brand new product with Boost can take 9 to 12 months. But remember, that timespan includes designing the product, securing capacity, and getting DOI approval. The process can be much faster than that, especially if you work with a Boost product that's ready out of the box. One customer who already had their front end built—so it was just plug and play—and used a pre-existing Boost product reports being able to set everything up in two weeks.</p>
-							<p>You will want enough developer resources to build one or more front ends, any data enrichment and integrations, and any external APIs (for distribution channels)—basically anything beyond the underlying microservices. Much like <a href="/vendors/policy-software/socotra.md">Socotra</a>, Boost focuses on publicly documented, JSON/REST APIs for core functionality, and gets out of the way to let you do the rest.</p>
-							<p>Also worth a call-out is how Boost handles <a href="/ecosystem/policy/consider/data-access.html">data access</a>. Unlike some vendors, Boost doesn't provide a data warehousing or datamart solution. Since every transaction is handled via an API call, they expect you simply to keep a record of the calls you've made. We recommend you work with a data team or consultant (like Finsure) to set up your own data lake and analytics.</p>							
-						</section>
-						<hr>
-						<section id="products">
-							<h2>Products</h2>
-							<p>(No data. To learn what products Boost has experience with, we encourage you to ask!)</p>
-						</section>
-						<hr>
-						<section id="locations">
-							<h2>Locations</h2>
-							<p>(No data. To learn what world regions Boost has experience with, we encourage you to ask!)</p>
-						</section>
-						<hr>
-						<section id="featured-customers">
-							<h2>Featured Customers</h2>
-							<p>According to their website<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, Boost customers include the following:</p>
-							<ul>
-								<li><a rel="external" href="https://cowbell.insure/">Cowbell Cyber</a></li>
-								<li><a rel="external" href="https://www.waffleinsurance.com/">Waffle</a></li>
-								<li><a rel="external" href="https://wagmo.io/">Wagmo</a></li>
-								<li><a rel="external" href="https://getkoffie.com/">Koffie</a></li>
-								<li><a rel="external" href="https://www.hippo.com/">Hippo</a></li>
-								<li><a rel="external" href="https://www.latch.com/">Latch</a></li>
-								<li><a rel="external" href="https://fuzzy.com/">Fuzzy</a></li>
-								<li><a rel="external" href="https://www.coverwallet.com/">CoverWallet</a></li>
-								<li><a rel="external" href="https://www.fireblocks.com/">Fireblocks</a></li>
-								<li><a rel="external" href="https://animalia.pet/">Animalia</a></li>								
-							</ul>
-						</section>
-						<hr>
-						<!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
-						<section id="footnotes">
-							<h2>Footnotes</h2>
-							<!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
-							<!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
-							<ol>
-								<li id="fn:1">
-									<!-- notice we add the explicit link so it can open in a new tab -->
-									<p><a rel="external" href="https://boostplatform.io/">https://boostplatform.io/</a> captured <a rel="external" href="https://web.archive.org/web/20221014212647/https://boostplatform.io/">2022-10-14</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-								</li>
-							</ol>
-						</section>
-					</article>
-				</div>
-			</main>
-			<footer id="footer">
-				<div>
-					<p><i aria-hidden="true" class="icon-logo"></i> Copyright <span class="date">2023</span> Finsure - All rights reserved</p>
-					<nav>
-						<h3>Info</h3>
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/about-us.html">About us</a></li>
-							<li><a href="/events.html">Events</a></li>
-							<li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
-						</ul>
-					</nav>
-					<div>
-						<h3>Follow us</h3>
-						<ul class="list-social">
-							<li><a rel="external" href="https://www.linkedin.com/company/finsureconsulting/"><i aria-hidden="true" class="icon-linkedin"></i> <span class="hidden">LinkedIn</span></a></li>
-							<li><a rel="external" href="https://savvycal.com/Michelle-Bothe/22eb851d"><i aria-hidden="true" class="icon-calendar"></i> <span class="hidden">Calendar</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
-		<script>window.jQuery || document.write('<script src="/javascript/jquery.js"><\/script>');</script>
-		<script defer src="/javascript/scripts.js"></script>
-		<script defer src="/javascript/custom.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Boost</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#7551c3" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <meta name="author" content="https://psdhtml.me" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="preload" as="style" href="/styles/screen.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="/styles/fonts/icomoon.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="/styles/screen.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="//ajax.googleapis.com" />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta property="og:title" content="Boost" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Finsure" />
+    <meta property="og:url" content="https://finsure.us/" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="Boost" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="Finsure" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:image" content="" />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org/",
+          "@type": "Organization",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "legalName": "Finsure",
+          "description": "",
+          "logo": "",
+          "image": "",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer service",
+            "telephone": ""
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": ""
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "description": "",
+          "author": {
+            "@type": "Organization",
+            "url": "https://psdhtml.me",
+            "name": "psdHTML.me",
+            "description": "Figma to responsive HTML coding"
+          }
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <header id="top">
+        <p id="logo"><a href="/" accesskey="h">Finsure</a></p>
+        <nav id="skip">
+          <ul>
+            <li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
+            <li><a href="#content" accesskey="c">Skip to content (c)</a></li>
+            <li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
+          </ul>
+        </nav>
+        <nav id="nav" aria-label="Navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+              <a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em>
+            </li>
+            <li>
+              <a accesskey="2" href="/events.html">Events</a> <em>(2)</em>
+            </li>
+            <li class="sub">
+              <a accesskey="3">Insurtech ecosystem</a> <em>(3)</em>
+              <ul>
+                <li>
+                  <a href="/ecosystem/insurtech-guide-to.html"
+                    >Insurtech guide to ...</a
+                  >
+                </li>
+                <li><a href="/ecosystem/policy/research.html">Research</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="content" class="width-1350">
+        <header class="header-wide">
+          <h1 class="size-55 margin-10">Boost</h1>
+        </header>
+        <div class="cols-a">
+          <header>
+            <nav class="nav-aside">
+              <ul>
+                <!-- add section headers here -->
+                <!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
+                <!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
+                <!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
+                <li class="active">
+                  <a href="#who-they-serve">Who They Serve</a>
+                </li>
+                <li><a href="#what-they-do">What They Do</a></li>
+                <li>
+                  <a href="#how-to-work-with-them">How to Work With Them</a>
+                </li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#featured-customers">Featured Customers</a></li>
+              </ul>
+            </nav>
+          </header>
+          <article>
+            <!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
+            <section id="who-they-serve">
+              <h2>Who They Serve</h2>
+              <p>
+                Boost takes a 3-prong approach to helping you launch your first
+                or next insurance product as an insurtech MGA. The 3 prongs are
+                a package deal, so if you don't need all 3 Boost's not for you.
+                If you <em>do</em> need all 3, getting them from the same place
+                has significant advantages, and Boost's white-glove treatment
+                will help you get on your feet quickly. The 3 prongs are:
+              </p>
+              <ul>
+                <li>
+                  <strong>Tech</strong>. Boost offers a full array of JSON/REST
+                  APIs and webhooks for all standard insurance functions, from
+                  starting an application to selling a policy to cancellations,
+                  renewals, and endorsements.
+                </li>
+                <li>
+                  <strong>Product</strong>. To help streamline the process of
+                  getting you to market, Boost owns the insurance product. This
+                  is not a good fit for insurtechs whose core differentiator is
+                  insurance product innovation. But if what you bring to the
+                  table is UX, data enrichment, distribution, partnerships,
+                  marketing—any of the other myriad ways tech can enhance
+                  insurance—this strategy can be just right. Boost will help you
+                  design and get approval for the product. Or for a particularly
+                  fast and smooth launch, you can even use a product Boost has
+                  available off the shelf.
+                </li>
+                <li>
+                  <strong>Capacity</strong>. Once the insurance product's been
+                  designed and approved, Boost has a pool of fronting carriers
+                  and reinsurers standing at the ready to back it.
+                </li>
+              </ul>
+              <p>
+                Boost will also fit you best if most of your business will be
+                straight-through processing, with no manual underwriting
+                required. Boost <em>does</em> offer a webhook flow for manual
+                underwriting of special cases: say, $5M limits when the default
+                is $1M. But they provide the underwriters—as it's their
+                insurance product. And the product is designed such that most
+                volume goes through without need for an underwriting referral.
+              </p>
+            </section>
+            <!-- notice the horizonal rule (hr) added after each section -->
+            <hr />
+            <section id="what-they-do">
+              <h2>What They Do</h2>
+              <p>
+                Boost addresses three problem domains at once: tech, insurance
+                product, and capacity. This is not just a convenience for you,
+                Boost's customer. It also streamlines relations with your
+                capacity providers, and it enables a kind of white-glove
+                treatment that's not possible otherwise.
+              </p>
+              <!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
+              <hr class="compact" />
+              <!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
+              <h3 id="tech">Tech</h3>
+              <p>
+                Like most of their policy software peers, Boost is built on a
+                solid microservices architecture. Each service has a familiar
+                <a href="/ecosystem/policy/consider/APIs.html#jsonrest"
+                  >JSON/REST</a
+                >
+                API endpoint, and all of that functionality is documented
+                thoroughly in both plain English and code, with working examples
+                and flowcharts, in their
+                <a
+                  rel="external"
+                  href="https://boostplatform.io/boost_api_docs.html"
+                  >public online documentation</a
+                >. For the plain English and flowcharts, see their
+                <a
+                  rel="external"
+                  href="https://launchpad.boostplatform.io/knowledge-center"
+                  >knowledge base</a
+                >.
+              </p>
+              <p>
+                By offering back-end APIs for insurance functions, Boost frees
+                you up to spend your resources on a snappy user experience,
+                integrations, distribution partnerships, and everything else. Of
+                course you can also work with a provider like
+                <a rel="external" href="https://www.unqork.com/">Unqork</a> or
+                <a rel="external" href="https://www.mendix.com/">Mendix</a> for
+                your front end. Or in some cases Boost can even provide a
+                customizable, white-labeled front end to get you started.
+              </p>
+              <hr class="compact" />
+              <h3 id="streamlining-capacity">Streamlining Capacity</h3>
+              <p>
+                Combining tech, product, and capacity in this way helps capacity
+                providers as much as it helps MGAs. Providing capacity is
+                fraught with risks:
+              </p>
+              <ul>
+                <li>
+                  How do capacity providers know you're implementing the
+                  insurance product as agreed, and as filed with the Departments
+                  of Insurance?
+                </li>
+                <li>
+                  How do they know you're staying within their risk appetite?
+                </li>
+                <li>
+                  How do they know you'll be able to institute binding
+                  restrictions quickly and accurately?
+                </li>
+                <li>
+                  How can they be sure you're handling any number of regulatory
+                  issues well, like sanctions checks or cancellation
+                  moratoriums?
+                </li>
+              </ul>
+              <p>
+                If your capacity provider integrates with your policy software
+                provider, they just <em>know</em> these answers. And that easy
+                trust means it's easier for you to get the capacity you need.
+              </p>
+              <hr class="compact" />
+              <h3 id="white-glove-treatment">White-Glove Treatment</h3>
+              <p>
+                Because they own the product, Boost will handle all Department
+                of Insurance filings. This shouldn't be underestimated; it can
+                be a real hassle. You usually have to have an insurance product
+                manager working with your fronting carrier to get these pushed
+                through individually for each product in each state.
+              </p>
+              <p>
+                But there are other advantages to Boost's set-up. Boost handles
+                all carrier reporting and bordereaux for you. They can do this
+                because they own the product and work with fronters and
+                reinsurers on your behalf. They also handle common regulatory
+                compliance scenarios like sanctions checks, cancellation
+                moratoriums, and taxes and fees. All of this is in the best
+                interest of both the MGA and the capacity provider—so why not
+                have Boost handle it for both of you? Boost's particular 3-prong
+                arrangement is what makes this curated experience possible, and
+                the curated experience in turn benefits the arrangement. It's a
+                win-win.
+              </p>
+            </section>
+            <hr />
+            <section id="how-to-work-with-them">
+              <h2>How to Work With Them</h2>
+              <p>
+                Launching a brand new product with Boost can take 9 to 12
+                months. But remember, that timespan includes designing the
+                product, securing capacity, and getting DOI approval. The
+                process can be much faster than that, especially if you work
+                with a Boost product that's ready out of the box. One customer
+                who already had their front end built—so it was just plug and
+                play—and used a pre-existing Boost product reports being able to
+                set everything up in two weeks.
+              </p>
+              <p>
+                You will want enough developer resources to build one or more
+                front ends, any data enrichment and integrations, and any
+                external APIs (for distribution channels)—basically anything
+                beyond the underlying microservices. Much like
+                <a href="/vendors/policy-software/socotra.md">Socotra</a>, Boost
+                focuses on publicly documented, JSON/REST APIs for core
+                functionality, and gets out of the way to let you do the rest.
+              </p>
+              <p>
+                Also worth a call-out is how Boost handles
+                <a href="/ecosystem/policy/consider/data-access.html"
+                  >data access</a
+                >. Unlike some vendors, Boost doesn't provide a data warehousing
+                or datamart solution. Since every transaction is handled via an
+                API call, they expect you simply to keep a record of the calls
+                you've made. We recommend you work with a data team or
+                consultant (like Finsure) to set up your own data lake and
+                analytics.
+              </p>
+            </section>
+            <hr />
+            <section id="products">
+              <h2>Products</h2>
+              <p>
+                (No data. To learn what products Boost has experience with, we
+                encourage you to ask!)
+              </p>
+            </section>
+            <hr />
+            <section id="locations">
+              <h2>Locations</h2>
+              <p>
+                (No data. To learn what world regions Boost has experience with,
+                we encourage you to ask!)
+              </p>
+            </section>
+            <hr />
+            <section id="featured-customers">
+              <h2>Featured Customers</h2>
+              <p>
+                According to their website<sup id="fnref:1"
+                  ><a class="footnote-ref" href="#fn:1">1</a></sup
+                >, Boost customers include the following:
+              </p>
+              <ul>
+                <li>
+                  <a rel="external" href="https://cowbell.insure/"
+                    >Cowbell Cyber</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.waffleinsurance.com/"
+                    >Waffle</a
+                  >
+                </li>
+                <li><a rel="external" href="https://wagmo.io/">Wagmo</a></li>
+                <li>
+                  <a rel="external" href="https://getkoffie.com/">Koffie</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.hippo.com/">Hippo</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.latch.com/">Latch</a>
+                </li>
+                <li><a rel="external" href="https://fuzzy.com/">Fuzzy</a></li>
+                <li>
+                  <a rel="external" href="https://www.coverwallet.com/"
+                    >CoverWallet</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.fireblocks.com/"
+                    >Fireblocks</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://animalia.pet/">Animalia</a>
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
+            <section id="footnotes">
+              <h2>Footnotes</h2>
+              <!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
+              <!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
+              <ol>
+                <li id="fn:1">
+                  <!-- notice we add the explicit link so it can open in a new tab -->
+                  <p>
+                    <a rel="external" href="https://boostplatform.io/"
+                      >https://boostplatform.io/</a
+                    >
+                    captured
+                    <a
+                      rel="external"
+                      href="https://web.archive.org/web/20221014212647/https://boostplatform.io/"
+                      >2022-10-14</a
+                    >&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:1"
+                      title="Jump back to footnote 1 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div>
+          <p>
+            <i aria-hidden="true" class="icon-logo"></i> Copyright
+            <span class="date">2023</span> Finsure - All rights reserved
+          </p>
+          <nav>
+            <h3>Info</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us.html">About us</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3>Follow us</h3>
+            <ul class="list-social">
+              <li>
+                <a
+                  rel="external"
+                  href="https://www.linkedin.com/company/finsureconsulting/"
+                  ><i aria-hidden="true" class="icon-linkedin"></i>
+                  <span class="hidden">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  rel="external"
+                  href="https://savvycal.com/Michelle-Bothe/22eb851d"
+                  ><i aria-hidden="true" class="icon-calendar"></i>
+                  <span class="hidden">Calendar</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="/javascript/jquery.js"><\/script>');
+    </script>
+    <script defer src="/javascript/scripts.js"></script>
+    <script defer src="/javascript/custom.js"></script>
+  </body>
 </html>

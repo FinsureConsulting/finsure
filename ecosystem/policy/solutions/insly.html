@@ -1,343 +1,700 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Insly</title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="theme-color" content="#7551c3">
-		<meta name="MobileOptimized" content="320">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no">
-		<meta name="author" content="https://psdhtml.me">
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="preload" as="style" href="/styles/screen.css">
-		<link rel="preload" as="font" href="/styles/fonts/icomoon.woff2" crossOrigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="stylesheet" href="/styles/screen.css">
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e">	
-		<link rel="manifest" href="/manifest.json">		
-		<link rel="preconnect" href="//ajax.googleapis.com">
-		<link rel="preconnect" href="//fonts.googleapis.com">
-		<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-		<meta name="msapplication-config" content="browserconfig.xml">
-		<meta property="og:title" content="Insly">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="">
-		<meta property="og:site_name" content="Finsure">
-		<meta property="og:url" content="https://finsure.us/">
-		<meta property="og:image" content="">		
-		<meta name="twitter:title" content="Insly">
-		<meta name="twitter:description" content="">
-		<meta name="twitter:site" content="Finsure">
-		<meta name="twitter:card" content="">
-		<meta name="twitter:image" content="">
-		<script type="application/ld+json">
-			[
-				{
-					"@context": "http://schema.org/",
-					"@type": "Organization",
-					"url": "https://finsure.us/",
-					"name": "Finsure",
-					"legalName": "Finsure",
-					"description": "",
-					"logo": "",
-					"image": "",
-					"contactPoint": {
-						"@type": "ContactPoint",
-						"contactType": "Customer service",
-						"telephone": ""
-					},
-					"address": {
-						"@type": "PostalAddress",
-						"streetAddress": "",
-						"addressLocality": "",
-						"addressRegion": "",
-						"postalCode": "",
-						"addressCountry": ""
-					}
-				},
-				{ 
-					"@context": "http://schema.org", 
-					"@type": "WebSite", 
-					"url": "https://finsure.us/", 
-					"name": "Finsure",
-					"description": "",
-					"author": {
-						"@type": "Organization",
-						"url": "https://psdhtml.me",
-						"name": "psdHTML.me",
-						"description": "Figma to responsive HTML coding"
-					}
-				}
-			]
-		</script>
-	</head>
-	<body>
-		<div id="root">
-			<header id="top">
-				<p id="logo"><a href="/" accesskey="h">Finsure</a></p>
-				<nav id="skip">
-					<ul>
-						<li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
-						<li><a href="#content" accesskey="c">Skip to content (c)</a></li>
-						<li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
-					</ul>
-				</nav>
-				<nav id="nav" aria-label="Navigation">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em></li>
-						<li><a accesskey="2" href="/events.html">Events</a> <em>(2)</em></li>
-						<li class="sub"><a accesskey="3" href="/coming-soon.html">Insurtech ecosystem</a> <em>(3)</em>
-							<ul>
-								<li><a href="/ecosystem/insurtech-guide-to.html">Insurtech guide to ...</a></li>
-								<li><a href="/ecosystem/policy/research.html">Research</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</header>             
-			<main id="content" class="width-1350">
-				<header class="header-wide">
-					<h1 class="size-55 margin-10">Insly</h1>
-				</header>
-				<div class="cols-a">
-					<header>
-						<nav class="nav-aside">
-							<ul>
-								<!-- add section headers here -->
-								<!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
-								<!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
-								<!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
-								<li class="active"><a href="#who-they-serve">Who They Serve</a></li>
-								<li><a href="#what-they-do">What They Do</a></li>
-								<li><a href="#how-to-work-with-them">How to Work With Them</a></li>
-								<li><a href="#user-experience-details">User Experience Details</a></li>
-								<li><a href="#products">Products</a></li>
-								<li><a href="#locations">Locations</a></li>
-								<li><a href="#featured-customers">Featured Customers</a></li>
-							</ul>
-						</nav>
-					</header>
-					<article>
-						<!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
-						<section id="who-they-serve">
-							<h2>Who They Serve</h2>
-							<ul>
-								<li>Insly serves MGAs and small- to mid-size carriers. If you're purely a distributor, Insly is overkill for you and not the right fit.</li>
-								<li>If you have underwriters and sell through distributors (brokers, agents, wholesalers, etc.), you'll find UIs and features designed with you in mind.</li>
-								<li>If you are D2C or embedded, or if you want to integrate with a distributor that has their own front end, Insly offers JSON/REST APIs for all their functionality. Like most of their peers they follow a microservices architecture.</li>
-								<li>They're not well set up for life insurance.</li>
-							</ul>
-						</section>
-						<!-- notice the horizonal rule (hr) added after each section -->
-						<hr>
-						<section id="what-they-do">
-							<h2>What They Do</h2>
-							<p>Insly covers a broad range of policy software needs:</p>
-							<ul>
-								<li>Broker portal</li>
-								<li>Rating</li>
-								<li>Underwriting and issuance</li>
-								<li>Policy lifecycle</li>
-								<li>Forms and documents</li>
-								<li>Product design</li>
-								<li>Data warehousing</li>
-								<li>Billing (both direct and agency) and premium accounting</li>
-								<li>Claims</li>
-							</ul>
-							<p>Claims is the most recent of those modules, just added this year. In fact they've offered a demo of the module, but we haven't gotten to it yet!</p>
-							<!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
-							<hr class="compact">
-							<!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
-							<h3 id="low-codeno-code-product-builder-suite">Low-Code/No-Code Product Builder Suite</h3>
-							<p>Insly's product builder suite allows you to design and test your product from end to end. We describe this more in depth below. As an executive summary, it includes:</p>
-							<ul>
-								<li>a schema builder for the overall definition of the product</li>
-								<li>JSON configuration files, with a graphical UI option</li>
-								<li>rating editable via Excel</li>
-								<li>both automated and manual underwriting</li>
-								<li>an automated testing module for your rating engine</li>
-								<li>document templating in Word</li>
-								<li>a way to configure calls to third-party data enrichment sources</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="broker-and-underwriting-flows">Broker and Underwriting Flows</h3>
-							<p>Insly comes out of the box with customizable broker screens and underwriting flows. This business model is where Insly started—MGAs with manual underwriting, who distribute through brokers—so you can expect them to have thought through the requirements.</p>
-							<p>On the <strong>broker</strong> side, everything you set up in the product builder flows through automatically in the application UX: pages, questions, data pre-fill, dynamic display logic, inline validation, and the like. Colors, images, icons, and logos are all customizable, and white-labeling comes standard.</p>
-							<p>The <strong>underwriting workbench</strong> includes everything we could think to ask for:</p>
-							<ul>
-								<li>Routing to multiple underwriting queues</li>
-								<li>Prioritizing submissions within a queue</li>
-								<li>Underwriters assigning a submission to themselves so others aren't working it</li>
-								<li>Empowering underwriters with 3rd-party data</li>
-								<li>Messaging between agents/brokers and underwriters</li>
-								<li>Adding, requesting, and/or uploading documentation</li>
-								<li>Approving and declining submissions</li>
-								<li>Applying rating modifiers</li>
-								<li>Maintaining an underwriting file</li>
-							</ul>
-							<p>Underwriting and issuance <strong>workflows</strong> are customizable as well.</p>
-							<p>And you can <strong>allow underwriters to edit</strong> the rate and premium values in a quote, as happens more often in non-admitted business. If you use that feature, you can set up controls around it, allowing changes to certain fields, within given ranges, for specific teams.</p>
-							<p>All of this comes with a <strong>highly flexible permissions framework</strong>.</p>
-							<ul>
-								<li>You can implement Insly with multiple brokerages or distribution partners, and multiple underwriting units. Each can have permissions only on certain products and see only those products. And each can have their own unique set of roles.</li>
-								<li>Permissions can be assigned based on a user's unit, based on their roles, or just to the user themselves, and they can be as fine-grained as an individual field.</li>
-								<li>You can administer all of this yourself for your distribution partners, or you can allow them to manage their own users and passwords and who gets what role.</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="json-apis">JSON APIs</h3>
-							<p>Everything you can do in an Insly UI is available as a JSON/REST API. They don't offer a D2C or embedded front end, but you can build your own, and many clients do. If you work with brokers, your product's rating engine is available as a standalone service which you can expose to partners.</p>
-							<hr class="compact">
-							<h3 id="billing-premium-accounting-and-data-warehousing">Billing, Premium Accounting, and Data Warehousing</h3>
-							<p>Insly handles <strong>both direct billing and agency billing</strong>. Within that they support common variations like installments and pay as you go. They handle payments by integrating with third-party payments processors. <a rel="external" href="https://stripe.com/">Stripe</a> is common, for example.</p>
-							<p>Insly offers a <strong>full double-ledger accounting module</strong> for premiums. That is to say, they don't handle the rest of your office in-flow and out-flow like operations or venture capital. They will integrate with your existing federal ledger for that, though.</p>
-							<p>Beyond accounting, Insly will build a <strong>data warehouse</strong> to spec, with all the data needed to do statistical reporting, reproduce automated rating and underwriting decisions, and analyze your conversion funnel. Bordereaux and other common reports can be downloaded as is or tailored to your needs.</p>
-							<p>We haven't yet done a technical deep dive on their data warehousing capabilities. But we understand this has been a draw for some Insly clients, and it might be for you as well. We do know that Insly captures limits, premiums, etc. on a per policy, per product, per risk level, which any actuary or insurance data professional will tell you comes in very handy. As with all data work, we recommend you bring your own data team—or borrow us as your eyes and ears—to evaluate.</p>
-						</section>
-						<hr>
-						<section id="how-to-work-with-them">
-							<h2>How to Work With Them</h2>
-							<p>Insly will begin by sitting with you to understand your business. They can offer advice on product design if you're moving from manual processes to digital. Then they'll design, plan, scope, and build a full implementation, along with an initial bank of tests and any integrations. And they'll train you to use the platform going forward. This approach is much easier and faster than if you were to learn the platform and start from scratch—though that is an option as well.</p>
-							<p>Insly offers their modules a la carte. This way if you carve out, say, BI reports or claims, and use someone else for those functions, you're not paying twice. Their base package includes product design, underwriting, and distribution including all rates and forms, plus broker experience and premium accounting. What constitutes add-ons to the base package are BI reports, data warehouse services, and claims.</p>
-							<p>Insly's APIs adapt to your insurance product configuration, but the process is not completely automated. There is some API upkeep involved on Insly's side. Accordingly, they charge a monthly maintenance fee if you rely on their APIs. </p>
-							<p>Onboarding time with Insly depends on the complexity of your project. A simple monoline MGA setup might take 4–6 weeks. A multiline, multi-channel might take 3–4 months. If you're a full-stack insurer with complex integrations and an existing system of record to hook into, it might take 6 months or more.</p>
-							<p>(Like many policy software vendors, Insly regularly has a backlog of new customers as well. We always encourage you to ask the vendor if timelines are tight. In Insly's case the wait is usually no more than 4–6 weeks. At time of writing in early November 2022, builds for new customers can start in January 2023.)</p>
-							<p>At any size, working with Insly does not require a development team—unless of course you're building your own front end atop Insly APIs. Even then, you can always contract with a provider like <a rel="external" href="https://www.unqork.com/">Unqork</a> or <a rel="external" href="https://www.mendix.com/">Mendix</a> to develop a UX.</p>
-							<p>You <em>will</em> want to bring knowledge of your compliance requirements to the table, since Insly works internationally and may not be familiar with the nuances of your regulatory environment. And of course bring the folks on your team who know your product and business well, so Insly can translate that knowledge into software.</p>
-							<p>Interestingly, Insly didn't start off as a no-code platform at all. They started by addressing clients' needs, from highly detailed airplane insurance to double-ledger premium accounting. Later they found no-code to be the most powerful, flexible way to solve those needs, so they refactored their entire system accordingly. We still hear this consultative, detail-oriented approach come through in the way Insly talks about client engagements.</p>
-						</section>
-						<hr>
-						<section id="product-builder">
-							<h2>Product Builder</h2>
-							<p>Since their no-code product builder is one part of why you'd choose Insly, we'll outline it in more depth here, drawing from what we've seen in demos.</p>
-							<p>Insly's <strong>product schema builder</strong> lets you configure the bones of your product. What are you insuring? What are the fields? How will you ask about those fields (open text, drop-down, numerical range, etc.), and in what order? Which ones are required?</p>
-							<p>All of this is configured primarily in text, as <strong>JSON</strong>. While JSON is more technical than a pure graphical UI, it leaves a plain-text, centralized record of what's been changed from one version to the next, all of which can be reviewed in a standard version-control tool like <em>git</em>. Insly <em>also offers a UI</em> to configure many common elements of your product.</p>
-							<p>You'll configure your <strong>rating</strong> with a no-code interface as well. Insly rating formulas should be intuitive to anyone familiar with Excel. In fact you can <em>use Excel to configure your rater</em>—downloading the current rater, making tweaks, and uploading the revised version for Insly to implement.</p>
-							<p>You can automate some or all of your <strong>underwriting</strong> within the rating engine—approving or declining based on rules—and of course you can refer cases to an underwriter. Referrals can be generic (to “an underwriter”), or you can refer them to specific teams or individuals. The underwriter will be notified by email or within the underwriting workbench itself, depending on their notification settings.</p>
-							<p>There's a <strong>testing</strong> module for the rating engine. You can collect a bank of test cases and run them automatically to ensure your rating and automated underwriting always work as expected as you iterate.</p>
-							<p><strong>Forms and documents</strong> use <em>Microsoft Word for templating</em>, and can output to either Word or PDF. You can also build <em>outgoing email templates</em> that integrate with Microsoft Outlook.</p>
-							<p>You then <strong>connect it all</strong> by telling the schema builder how to integrate with these other elements, along with anything external to Insly. Will this product use the Insly rater? Or do you want to use your own? Which documents should be generated when? What if any third-party data enrichment API calls should be made, and how should that data be used?</p>
-							<p>When you work with Insly, as described above, <strong>they will handle the initial configuration</strong> of the platform. You don't need to learn the ins and outs of the system just to get your feet on the ground. Rather, the product builder is intended to enable you to move quickly once you've launched.</p>
-						</section>
-						<hr>
-						<section id="products">
-							<h2>Products</h2>
-							<p>We asked Insly what products their customers are <em>currently actively selling or placing</em>. If you don't see your product on the list, we always recommend reaching out! This is not meant to be an exhaustive list of what Insly supports.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>Accident &amp; Health</li>
-								<li>Commercial Auto</li>
-								<li>Commercial Property</li>
-								<li>Cyber</li>
-								<li>Embedded Insurance</li>
-								<li>General Liability</li>
-								<li>Inland Marine</li>
-								<li>Management Liability</li>
-								<li>Parametric Insurance</li>
-								<li>Personal Home</li>
-								<li>Pet</li>
-								<li>Professional Liability</li>
-								<li>Rental Property Owners</li>
-								<li>Renters</li>
-								<li>Travel Insurance</li>
-								<li>Umbrella</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="write-ins">Write-Ins</h3>
-							<p>They're product agnostic. Anything non-life goes!</p>
-							<hr class="compact">
-							<h3 id="no-current-customers">No Current Customers</h3>
-							<ul>
-								<li>BOP</li>
-								<li>Life</li>
-								<li>Personal Auto</li>
-								<li>Usage-Based Insurance</li>
-								<li>Workers Comp</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="locations">
-							<h2>Locations</h2>
-							<p>We asked Insly where their customers are <em>currently actively selling or placing insurance</em>. If you don't see your region on the list, we recommend reaching out to ask! This is not meant to be an exhaustive list of where Insly will do business.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance_1">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>United States</li>
-								<li>Canada</li>
-								<li>UK &amp; Europe</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers_1">No Current Customers</h3>
-							<ul>
-								<li>Latin America</li>
-								<li>Australia/Asia/Pacific</li>
-								<li>Africa</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="featured-customers">
-							<h2>Featured Customers</h2>
-							<p>According to their website<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, Insly customers include the following:</p>
-							<ul>
-								<li><a rel="external" href="https://www.chesspecialrisk.ca/">CHES Special Risk</a></li>
-								<li><a rel="external" href="https://www.mgaencompass.com/">MGA Encompass</a></li>
-								<li><a rel="external" href="https://www.shoreuw.com/">Shore Underwriting</a></li>
-								<li><a rel="external" href="https://www.renovationunderwriting.com/">Renovation Underwriting</a></li>
-								<li><a rel="external" href="https://www.firstinsurance.global/">First Insurance Baltics</a></li>
-								<li><a rel="external" href="https://www.lenders.lt/">Lenders</a></li>
-								<li><a rel="external" href="https://oneclickcover.com/">OneClickCover</a></li>
-								<li><a rel="external" href="https://insly.com/en/2018/11/05/customer-success-story-warranty-insurance-have-launched-an-innovative-b2c-insurance-product-for-a-leading-electronics-retailers-dealers-and-manufactures-based-on-an-insly-solution/">Warranty Insurance</a></li>
-								<li><a rel="external" href="https://hicactus.com/">Cactus</a></li>
-								<li><a rel="external" href="https://www.ptarmiganunderwriting.com/">Ptarmigan Underwriting Agency</a></li>
-							</ul>
-						</section>
-						<hr>
-						<!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
-						<section id="footnotes">
-							<h2>Footnotes</h2>
-							<!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
-							<!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
-							<ol>
-								<li id="fn:1">
-									<!-- notice we add the explicit link so it can open in a new tab -->
-									<p><a rel="external" href="https://insly.com/en/case-studies/">https://insly.com/en/case-studies/</a> captured <a rel="external" href="https://web.archive.org/web/20221014205720/https://insly.com/en/case-studies/">2022-10-14</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-								</li>
-							</ol>
-						</section>
-					</article>
-				</div>
-			</main>
-			<footer id="footer">
-				<div>
-					<p><i aria-hidden="true" class="icon-logo"></i> Copyright <span class="date">2023</span> Finsure - All rights reserved</p>
-					<nav>
-						<h3>Info</h3>
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/about-us.html">About us</a></li>
-							<li><a href="/events.html">Events</a></li>
-							<li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
-						</ul>
-					</nav>
-					<div>
-						<h3>Follow us</h3>
-						<ul class="list-social">
-							<li><a rel="external" href="https://www.linkedin.com/company/finsureconsulting/"><i aria-hidden="true" class="icon-linkedin"></i> <span class="hidden">LinkedIn</span></a></li>
-							<li><a rel="external" href="https://savvycal.com/Michelle-Bothe/22eb851d"><i aria-hidden="true" class="icon-calendar"></i> <span class="hidden">Calendar</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
-		<script>window.jQuery || document.write('<script src="/javascript/jquery.js"><\/script>');</script>
-		<script defer src="/javascript/scripts.js"></script>
-		<script defer src="/javascript/custom.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Insly</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#7551c3" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <meta name="author" content="https://psdhtml.me" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="preload" as="style" href="/styles/screen.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="/styles/fonts/icomoon.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="/styles/screen.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="//ajax.googleapis.com" />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta property="og:title" content="Insly" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Finsure" />
+    <meta property="og:url" content="https://finsure.us/" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="Insly" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="Finsure" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:image" content="" />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org/",
+          "@type": "Organization",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "legalName": "Finsure",
+          "description": "",
+          "logo": "",
+          "image": "",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer service",
+            "telephone": ""
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": ""
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "description": "",
+          "author": {
+            "@type": "Organization",
+            "url": "https://psdhtml.me",
+            "name": "psdHTML.me",
+            "description": "Figma to responsive HTML coding"
+          }
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <header id="top">
+        <p id="logo"><a href="/" accesskey="h">Finsure</a></p>
+        <nav id="skip">
+          <ul>
+            <li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
+            <li><a href="#content" accesskey="c">Skip to content (c)</a></li>
+            <li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
+          </ul>
+        </nav>
+        <nav id="nav" aria-label="Navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+              <a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em>
+            </li>
+            <li>
+              <a accesskey="2" href="/events.html">Events</a> <em>(2)</em>
+            </li>
+            <li class="sub">
+              <a accesskey="3">Insurtech ecosystem</a> <em>(3)</em>
+              <ul>
+                <li>
+                  <a href="/ecosystem/insurtech-guide-to.html"
+                    >Insurtech guide to ...</a
+                  >
+                </li>
+                <li><a href="/ecosystem/policy/research.html">Research</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="content" class="width-1350">
+        <header class="header-wide">
+          <h1 class="size-55 margin-10">Insly</h1>
+        </header>
+        <div class="cols-a">
+          <header>
+            <nav class="nav-aside">
+              <ul>
+                <!-- add section headers here -->
+                <!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
+                <!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
+                <!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
+                <li class="active">
+                  <a href="#who-they-serve">Who They Serve</a>
+                </li>
+                <li><a href="#what-they-do">What They Do</a></li>
+                <li>
+                  <a href="#how-to-work-with-them">How to Work With Them</a>
+                </li>
+                <li>
+                  <a href="#user-experience-details">User Experience Details</a>
+                </li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#featured-customers">Featured Customers</a></li>
+              </ul>
+            </nav>
+          </header>
+          <article>
+            <!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
+            <section id="who-they-serve">
+              <h2>Who They Serve</h2>
+              <ul>
+                <li>
+                  Insly serves MGAs and small- to mid-size carriers. If you're
+                  purely a distributor, Insly is overkill for you and not the
+                  right fit.
+                </li>
+                <li>
+                  If you have underwriters and sell through distributors
+                  (brokers, agents, wholesalers, etc.), you'll find UIs and
+                  features designed with you in mind.
+                </li>
+                <li>
+                  If you are D2C or embedded, or if you want to integrate with a
+                  distributor that has their own front end, Insly offers
+                  JSON/REST APIs for all their functionality. Like most of their
+                  peers they follow a microservices architecture.
+                </li>
+                <li>They're not well set up for life insurance.</li>
+              </ul>
+            </section>
+            <!-- notice the horizonal rule (hr) added after each section -->
+            <hr />
+            <section id="what-they-do">
+              <h2>What They Do</h2>
+              <p>Insly covers a broad range of policy software needs:</p>
+              <ul>
+                <li>Broker portal</li>
+                <li>Rating</li>
+                <li>Underwriting and issuance</li>
+                <li>Policy lifecycle</li>
+                <li>Forms and documents</li>
+                <li>Product design</li>
+                <li>Data warehousing</li>
+                <li>Billing (both direct and agency) and premium accounting</li>
+                <li>Claims</li>
+              </ul>
+              <p>
+                Claims is the most recent of those modules, just added this
+                year. In fact they've offered a demo of the module, but we
+                haven't gotten to it yet!
+              </p>
+              <!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
+              <hr class="compact" />
+              <!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
+              <h3 id="low-codeno-code-product-builder-suite">
+                Low-Code/No-Code Product Builder Suite
+              </h3>
+              <p>
+                Insly's product builder suite allows you to design and test your
+                product from end to end. We describe this more in depth below.
+                As an executive summary, it includes:
+              </p>
+              <ul>
+                <li>
+                  a schema builder for the overall definition of the product
+                </li>
+                <li>JSON configuration files, with a graphical UI option</li>
+                <li>rating editable via Excel</li>
+                <li>both automated and manual underwriting</li>
+                <li>an automated testing module for your rating engine</li>
+                <li>document templating in Word</li>
+                <li>
+                  a way to configure calls to third-party data enrichment
+                  sources
+                </li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="broker-and-underwriting-flows">
+                Broker and Underwriting Flows
+              </h3>
+              <p>
+                Insly comes out of the box with customizable broker screens and
+                underwriting flows. This business model is where Insly
+                started—MGAs with manual underwriting, who distribute through
+                brokers—so you can expect them to have thought through the
+                requirements.
+              </p>
+              <p>
+                On the <strong>broker</strong> side, everything you set up in
+                the product builder flows through automatically in the
+                application UX: pages, questions, data pre-fill, dynamic display
+                logic, inline validation, and the like. Colors, images, icons,
+                and logos are all customizable, and white-labeling comes
+                standard.
+              </p>
+              <p>
+                The <strong>underwriting workbench</strong> includes everything
+                we could think to ask for:
+              </p>
+              <ul>
+                <li>Routing to multiple underwriting queues</li>
+                <li>Prioritizing submissions within a queue</li>
+                <li>
+                  Underwriters assigning a submission to themselves so others
+                  aren't working it
+                </li>
+                <li>Empowering underwriters with 3rd-party data</li>
+                <li>Messaging between agents/brokers and underwriters</li>
+                <li>Adding, requesting, and/or uploading documentation</li>
+                <li>Approving and declining submissions</li>
+                <li>Applying rating modifiers</li>
+                <li>Maintaining an underwriting file</li>
+              </ul>
+              <p>
+                Underwriting and issuance <strong>workflows</strong> are
+                customizable as well.
+              </p>
+              <p>
+                And you can <strong>allow underwriters to edit</strong> the rate
+                and premium values in a quote, as happens more often in
+                non-admitted business. If you use that feature, you can set up
+                controls around it, allowing changes to certain fields, within
+                given ranges, for specific teams.
+              </p>
+              <p>
+                All of this comes with a
+                <strong>highly flexible permissions framework</strong>.
+              </p>
+              <ul>
+                <li>
+                  You can implement Insly with multiple brokerages or
+                  distribution partners, and multiple underwriting units. Each
+                  can have permissions only on certain products and see only
+                  those products. And each can have their own unique set of
+                  roles.
+                </li>
+                <li>
+                  Permissions can be assigned based on a user's unit, based on
+                  their roles, or just to the user themselves, and they can be
+                  as fine-grained as an individual field.
+                </li>
+                <li>
+                  You can administer all of this yourself for your distribution
+                  partners, or you can allow them to manage their own users and
+                  passwords and who gets what role.
+                </li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="json-apis">JSON APIs</h3>
+              <p>
+                Everything you can do in an Insly UI is available as a JSON/REST
+                API. They don't offer a D2C or embedded front end, but you can
+                build your own, and many clients do. If you work with brokers,
+                your product's rating engine is available as a standalone
+                service which you can expose to partners.
+              </p>
+              <hr class="compact" />
+              <h3 id="billing-premium-accounting-and-data-warehousing">
+                Billing, Premium Accounting, and Data Warehousing
+              </h3>
+              <p>
+                Insly handles
+                <strong>both direct billing and agency billing</strong>. Within
+                that they support common variations like installments and pay as
+                you go. They handle payments by integrating with third-party
+                payments processors.
+                <a rel="external" href="https://stripe.com/">Stripe</a> is
+                common, for example.
+              </p>
+              <p>
+                Insly offers a
+                <strong>full double-ledger accounting module</strong> for
+                premiums. That is to say, they don't handle the rest of your
+                office in-flow and out-flow like operations or venture capital.
+                They will integrate with your existing federal ledger for that,
+                though.
+              </p>
+              <p>
+                Beyond accounting, Insly will build a
+                <strong>data warehouse</strong> to spec, with all the data
+                needed to do statistical reporting, reproduce automated rating
+                and underwriting decisions, and analyze your conversion funnel.
+                Bordereaux and other common reports can be downloaded as is or
+                tailored to your needs.
+              </p>
+              <p>
+                We haven't yet done a technical deep dive on their data
+                warehousing capabilities. But we understand this has been a draw
+                for some Insly clients, and it might be for you as well. We do
+                know that Insly captures limits, premiums, etc. on a per policy,
+                per product, per risk level, which any actuary or insurance data
+                professional will tell you comes in very handy. As with all data
+                work, we recommend you bring your own data team—or borrow us as
+                your eyes and ears—to evaluate.
+              </p>
+            </section>
+            <hr />
+            <section id="how-to-work-with-them">
+              <h2>How to Work With Them</h2>
+              <p>
+                Insly will begin by sitting with you to understand your
+                business. They can offer advice on product design if you're
+                moving from manual processes to digital. Then they'll design,
+                plan, scope, and build a full implementation, along with an
+                initial bank of tests and any integrations. And they'll train
+                you to use the platform going forward. This approach is much
+                easier and faster than if you were to learn the platform and
+                start from scratch—though that is an option as well.
+              </p>
+              <p>
+                Insly offers their modules a la carte. This way if you carve
+                out, say, BI reports or claims, and use someone else for those
+                functions, you're not paying twice. Their base package includes
+                product design, underwriting, and distribution including all
+                rates and forms, plus broker experience and premium accounting.
+                What constitutes add-ons to the base package are BI reports,
+                data warehouse services, and claims.
+              </p>
+              <p>
+                Insly's APIs adapt to your insurance product configuration, but
+                the process is not completely automated. There is some API
+                upkeep involved on Insly's side. Accordingly, they charge a
+                monthly maintenance fee if you rely on their APIs.
+              </p>
+              <p>
+                Onboarding time with Insly depends on the complexity of your
+                project. A simple monoline MGA setup might take 4–6 weeks. A
+                multiline, multi-channel might take 3–4 months. If you're a
+                full-stack insurer with complex integrations and an existing
+                system of record to hook into, it might take 6 months or more.
+              </p>
+              <p>
+                (Like many policy software vendors, Insly regularly has a
+                backlog of new customers as well. We always encourage you to ask
+                the vendor if timelines are tight. In Insly's case the wait is
+                usually no more than 4–6 weeks. At time of writing in early
+                November 2022, builds for new customers can start in January
+                2023.)
+              </p>
+              <p>
+                At any size, working with Insly does not require a development
+                team—unless of course you're building your own front end atop
+                Insly APIs. Even then, you can always contract with a provider
+                like
+                <a rel="external" href="https://www.unqork.com/">Unqork</a> or
+                <a rel="external" href="https://www.mendix.com/">Mendix</a> to
+                develop a UX.
+              </p>
+              <p>
+                You <em>will</em> want to bring knowledge of your compliance
+                requirements to the table, since Insly works internationally and
+                may not be familiar with the nuances of your regulatory
+                environment. And of course bring the folks on your team who know
+                your product and business well, so Insly can translate that
+                knowledge into software.
+              </p>
+              <p>
+                Interestingly, Insly didn't start off as a no-code platform at
+                all. They started by addressing clients' needs, from highly
+                detailed airplane insurance to double-ledger premium accounting.
+                Later they found no-code to be the most powerful, flexible way
+                to solve those needs, so they refactored their entire system
+                accordingly. We still hear this consultative, detail-oriented
+                approach come through in the way Insly talks about client
+                engagements.
+              </p>
+            </section>
+            <hr />
+            <section id="product-builder">
+              <h2>Product Builder</h2>
+              <p>
+                Since their no-code product builder is one part of why you'd
+                choose Insly, we'll outline it in more depth here, drawing from
+                what we've seen in demos.
+              </p>
+              <p>
+                Insly's <strong>product schema builder</strong> lets you
+                configure the bones of your product. What are you insuring? What
+                are the fields? How will you ask about those fields (open text,
+                drop-down, numerical range, etc.), and in what order? Which ones
+                are required?
+              </p>
+              <p>
+                All of this is configured primarily in text, as
+                <strong>JSON</strong>. While JSON is more technical than a pure
+                graphical UI, it leaves a plain-text, centralized record of
+                what's been changed from one version to the next, all of which
+                can be reviewed in a standard version-control tool like
+                <em>git</em>. Insly <em>also offers a UI</em> to configure many
+                common elements of your product.
+              </p>
+              <p>
+                You'll configure your <strong>rating</strong> with a no-code
+                interface as well. Insly rating formulas should be intuitive to
+                anyone familiar with Excel. In fact you can
+                <em>use Excel to configure your rater</em>—downloading the
+                current rater, making tweaks, and uploading the revised version
+                for Insly to implement.
+              </p>
+              <p>
+                You can automate some or all of your
+                <strong>underwriting</strong> within the rating engine—approving
+                or declining based on rules—and of course you can refer cases to
+                an underwriter. Referrals can be generic (to “an underwriter”),
+                or you can refer them to specific teams or individuals. The
+                underwriter will be notified by email or within the underwriting
+                workbench itself, depending on their notification settings.
+              </p>
+              <p>
+                There's a <strong>testing</strong> module for the rating engine.
+                You can collect a bank of test cases and run them automatically
+                to ensure your rating and automated underwriting always work as
+                expected as you iterate.
+              </p>
+              <p>
+                <strong>Forms and documents</strong> use
+                <em>Microsoft Word for templating</em>, and can output to either
+                Word or PDF. You can also build
+                <em>outgoing email templates</em> that integrate with Microsoft
+                Outlook.
+              </p>
+              <p>
+                You then <strong>connect it all</strong> by telling the schema
+                builder how to integrate with these other elements, along with
+                anything external to Insly. Will this product use the Insly
+                rater? Or do you want to use your own? Which documents should be
+                generated when? What if any third-party data enrichment API
+                calls should be made, and how should that data be used?
+              </p>
+              <p>
+                When you work with Insly, as described above,
+                <strong>they will handle the initial configuration</strong> of
+                the platform. You don't need to learn the ins and outs of the
+                system just to get your feet on the ground. Rather, the product
+                builder is intended to enable you to move quickly once you've
+                launched.
+              </p>
+            </section>
+            <hr />
+            <section id="products">
+              <h2>Products</h2>
+              <p>
+                We asked Insly what products their customers are
+                <em>currently actively selling or placing</em>. If you don't see
+                your product on the list, we always recommend reaching out! This
+                is not meant to be an exhaustive list of what Insly supports.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>Accident &amp; Health</li>
+                <li>Commercial Auto</li>
+                <li>Commercial Property</li>
+                <li>Cyber</li>
+                <li>Embedded Insurance</li>
+                <li>General Liability</li>
+                <li>Inland Marine</li>
+                <li>Management Liability</li>
+                <li>Parametric Insurance</li>
+                <li>Personal Home</li>
+                <li>Pet</li>
+                <li>Professional Liability</li>
+                <li>Rental Property Owners</li>
+                <li>Renters</li>
+                <li>Travel Insurance</li>
+                <li>Umbrella</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="write-ins">Write-Ins</h3>
+              <p>They're product agnostic. Anything non-life goes!</p>
+              <hr class="compact" />
+              <h3 id="no-current-customers">No Current Customers</h3>
+              <ul>
+                <li>BOP</li>
+                <li>Life</li>
+                <li>Personal Auto</li>
+                <li>Usage-Based Insurance</li>
+                <li>Workers Comp</li>
+              </ul>
+            </section>
+            <hr />
+            <section id="locations">
+              <h2>Locations</h2>
+              <p>
+                We asked Insly where their customers are
+                <em>currently actively selling or placing insurance</em>. If you
+                don't see your region on the list, we recommend reaching out to
+                ask! This is not meant to be an exhaustive list of where Insly
+                will do business.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance_1">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>United States</li>
+                <li>Canada</li>
+                <li>UK &amp; Europe</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers_1">No Current Customers</h3>
+              <ul>
+                <li>Latin America</li>
+                <li>Australia/Asia/Pacific</li>
+                <li>Africa</li>
+              </ul>
+            </section>
+            <hr />
+            <section id="featured-customers">
+              <h2>Featured Customers</h2>
+              <p>
+                According to their website<sup id="fnref:1"
+                  ><a class="footnote-ref" href="#fn:1">1</a></sup
+                >, Insly customers include the following:
+              </p>
+              <ul>
+                <li>
+                  <a rel="external" href="https://www.chesspecialrisk.ca/"
+                    >CHES Special Risk</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.mgaencompass.com/"
+                    >MGA Encompass</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.shoreuw.com/"
+                    >Shore Underwriting</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="external"
+                    href="https://www.renovationunderwriting.com/"
+                    >Renovation Underwriting</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.firstinsurance.global/"
+                    >First Insurance Baltics</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.lenders.lt/">Lenders</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://oneclickcover.com/"
+                    >OneClickCover</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="external"
+                    href="https://insly.com/en/2018/11/05/customer-success-story-warranty-insurance-have-launched-an-innovative-b2c-insurance-product-for-a-leading-electronics-retailers-dealers-and-manufactures-based-on-an-insly-solution/"
+                    >Warranty Insurance</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://hicactus.com/">Cactus</a>
+                </li>
+                <li>
+                  <a
+                    rel="external"
+                    href="https://www.ptarmiganunderwriting.com/"
+                    >Ptarmigan Underwriting Agency</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
+            <section id="footnotes">
+              <h2>Footnotes</h2>
+              <!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
+              <!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
+              <ol>
+                <li id="fn:1">
+                  <!-- notice we add the explicit link so it can open in a new tab -->
+                  <p>
+                    <a rel="external" href="https://insly.com/en/case-studies/"
+                      >https://insly.com/en/case-studies/</a
+                    >
+                    captured
+                    <a
+                      rel="external"
+                      href="https://web.archive.org/web/20221014205720/https://insly.com/en/case-studies/"
+                      >2022-10-14</a
+                    >&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:1"
+                      title="Jump back to footnote 1 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div>
+          <p>
+            <i aria-hidden="true" class="icon-logo"></i> Copyright
+            <span class="date">2023</span> Finsure - All rights reserved
+          </p>
+          <nav>
+            <h3>Info</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us.html">About us</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3>Follow us</h3>
+            <ul class="list-social">
+              <li>
+                <a
+                  rel="external"
+                  href="https://www.linkedin.com/company/finsureconsulting/"
+                  ><i aria-hidden="true" class="icon-linkedin"></i>
+                  <span class="hidden">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  rel="external"
+                  href="https://savvycal.com/Michelle-Bothe/22eb851d"
+                  ><i aria-hidden="true" class="icon-calendar"></i>
+                  <span class="hidden">Calendar</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="/javascript/jquery.js"><\/script>');
+    </script>
+    <script defer src="/javascript/scripts.js"></script>
+    <script defer src="/javascript/custom.js"></script>
+  </body>
 </html>

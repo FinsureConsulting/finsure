@@ -1,347 +1,874 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Instanda</title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="theme-color" content="#7551c3">
-		<meta name="MobileOptimized" content="320">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no">
-		<meta name="author" content="https://psdhtml.me">
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="preload" as="style" href="/styles/screen.css">
-		<link rel="preload" as="font" href="/styles/fonts/icomoon.woff2" crossOrigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="stylesheet" href="/styles/screen.css">
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e">	
-		<link rel="manifest" href="/manifest.json">		
-		<link rel="preconnect" href="//ajax.googleapis.com">
-		<link rel="preconnect" href="//fonts.googleapis.com">
-		<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-		<meta name="msapplication-config" content="browserconfig.xml">
-		<meta property="og:title" content="Instanda">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="">
-		<meta property="og:site_name" content="Finsure">
-		<meta property="og:url" content="https://finsure.us/">
-		<meta property="og:image" content="">		
-		<meta name="twitter:title" content="Instanda">
-		<meta name="twitter:description" content="">
-		<meta name="twitter:site" content="Finsure">
-		<meta name="twitter:card" content="">
-		<meta name="twitter:image" content="">
-		<script type="application/ld+json">
-			[
-				{
-					"@context": "http://schema.org/",
-					"@type": "Organization",
-					"url": "https://finsure.us/",
-					"name": "Finsure",
-					"legalName": "Finsure",
-					"description": "",
-					"logo": "",
-					"image": "",
-					"contactPoint": {
-						"@type": "ContactPoint",
-						"contactType": "Customer service",
-						"telephone": ""
-					},
-					"address": {
-						"@type": "PostalAddress",
-						"streetAddress": "",
-						"addressLocality": "",
-						"addressRegion": "",
-						"postalCode": "",
-						"addressCountry": ""
-					}
-				},
-				{ 
-					"@context": "http://schema.org", 
-					"@type": "WebSite", 
-					"url": "https://finsure.us/", 
-					"name": "Finsure",
-					"description": "",
-					"author": {
-						"@type": "Organization",
-						"url": "https://psdhtml.me",
-						"name": "psdHTML.me",
-						"description": "Figma to responsive HTML coding"
-					}
-				}
-			]
-		</script>
-	</head>
-	<body>
-		<div id="root">
-			<header id="top">
-				<p id="logo"><a href="/" accesskey="h">Finsure</a></p>
-				<nav id="skip">
-					<ul>
-						<li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
-						<li><a href="#content" accesskey="c">Skip to content (c)</a></li>
-						<li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
-					</ul>
-				</nav>
-				<nav id="nav" aria-label="Navigation">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em></li>
-						<li><a accesskey="2" href="/events.html">Events</a> <em>(2)</em></li>
-						<li class="sub"><a accesskey="3" href="/coming-soon.html">Insurtech ecosystem</a> <em>(3)</em>
-							<ul>
-								<li><a href="/ecosystem/insurtech-guide-to.html">Insurtech guide to ...</a></li>
-								<li><a href="/ecosystem/policy/research.html">Research</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</header>             
-			<main id="content" class="width-1350">
-				<header class="header-wide">
-					<h1 class="size-55 margin-10">Instanda</h1>
-				</header>
-				<div class="cols-a">
-					<header>
-						<nav class="nav-aside">
-							<ul>
-								<!-- add section headers here -->
-								<!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
-								<!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
-								<!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
-								<li class="active"><a href="#who-they-serve">Who They Serve</a></li>
-								<li><a href="#what-they-do">What They Do</a></li>
-								<li><a href="#how-to-work-with-them">How to Work With Them</a></li>
-								<li><a href="#products">Products</a></li>
-								<li><a href="#locations">Locations</a></li>
-								<li><a href="#featured-customers">Featured Customers</a></li>
-							</ul>
-						</nav>
-					</header>
-					<article>
-						<!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
-						<section id="who-they-serve">
-							<h2>Who They Serve</h2>
-							<p>As a no-code solution built exclusively for insurance, INSTANDA appeals to small insurtech carriers and MGAs (or small teams within larger insurers) who value self-reliance, flexibility, and speed to market. They may be launching a startup or a new insurance program or product line. INSTANDA customers innovate their own insurance products, rates, rules, forms, policy lifecycles, and UX screens without waiting for external partners or IT resources to configure, test, and deploy them.</p>
-							<p>INSTANDA also appeals to teams working to update their UX without adding developer overhead. You may be moving away from paper applications and want to deliver a modern online application flow quickly and easily. INSTANDA can offer you a configurable front end and connect to your existing system of record post-bind.</p>
-							<p>You don't need developers to work with INSTANDA—though you can choose to bring your own for certain work; see <a href="#how-to-work-with-them">How to Work With Them</a> below. You <em>do</em> want to know what you want (or have someone who can help you with that). You'll want an insurance product owner or SME. You'll want someone to act as a project manager. And you'll want at least one team member with the technical moxy of a business analyst. But that describes most insurance teams.</p>
-							<!-- modify internal links (filepath and extension as needed) -->
-							<p>You can use INSTANDA as your system of record, or you can use them alongside one or more existing systems of record, for reasons we've traced out in our write-up on <a href="/ecosystem/policy/consider/modularity.html">modularity</a>. You can use their white-labeled, configurable front ends, and you can build your own solutions—like external APIs for channel partners, or embedded product offerings, with their JSON/REST APIs.</p>
-						</section>
-						<!-- notice the horizonal rule (hr) added after each section -->
-						<hr>
-						<section id="what-they-do">
-							<h2>What They Do</h2>
-							<!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
-							<h3 id="no-code-for-insurance">No-Code for Insurance</h3>
-							<p>INSTANDA is a no-code, configurable tool to build, distribute, and service insurance products. You can use it on its own as your <a href="/ecosystem/policy/consider/system-of-record.html">system of record</a>. Or you can use it alongside one or more existing systems of record, for all the reasons we discuss in our write-up on <a href="/ecosystem/policy/consider/modularity.html">modularity</a>. To say that it's a no-code tool for insurance doesn't fully capture the spirit of the tool the way a demo might, so let's unpack what that looks like and how it's different from other tools.</p>
-							<h4 id="basic-insurance-product-and-data-model">Basic Insurance Product and Data Model</h4>
-							<p>You build your insurance product within INSTANDA, from the ground up. If INSTANDA were just no-code—and not no-code <em>for insurance</em>—that might be a daunting proposition. You'd have to teach it the concept of a policy, a term, a coverage, a limit, a premium, and so on—and the work would likely cancel out whatever benefit you got from using a no-code solution! This might be daunting, but INSTANDA is no-code <em>for insurance</em>, and it comes with all of that preloaded. So “from the ground up” here just means telling it the coverage options, the limits, the questions you need to ask in an application, and so on.</p>
-							<p>INSTANDA comes with the building blocks of insurance preloaded, but it tries not to make <em>assumptions</em>. So you can easily define products with policy terms of less than 6 months, for example. Or you can define new lines of business entirely.</p>
-							<h4 id="rates-rules-and-forms">Rates, Rules, and Forms</h4>
-							<p>You build your product's rates, rules, and forms in INSTANDA using their no-code configuration tool. Rating look-ups are Excel-based, and formulas should be intuitive to anyone who's used Excel. Underwriting allows for approvals, declines, or referral to underwriters with different levels of authority. Rule expressions are simple and clear. There's a no-code editor for dynamic form templates—and in a nice touch, you can also have a designer touch up the resulting HTML and CSS.</p>
-							<h4 id="policy-lifecycle-awareness">Policy Lifecycle Awareness</h4>
-							<p>For every part of your data model, every rule and form and rating calculation, you also specify <em>when it applies</em>. This is a natural part of insurance, but you may not expect it to be built into a no-code solution, and certainly not in such a thoroughgoing way. INSTANDA guides you through deciding that this question for example, comes into play only after an indicative quote, that question comes in after the bindable quote (it doesn't affect the price but is needed for bind), some rules only apply during a midterm adjustment, and certain forms are only sent at renewal. All these policy lifecycle moments are essentially triggers, or events, and you tag your rules and fields to tell them which events they apply to.</p>
-							<h4 id="producer-facing-and-d2c-front-ends">Producer-Facing and D2C Front Ends</h4>
-							<p>INSTANDA then guides you through building branded, white-labeled front ends, both D2C and agent- and broker- facing, for both new business and policy servicing.</p>
-							<p>In front ends, configurable can mean different things to different vendors; some only have a UI for setting colors, logos, and fonts, and if you need something more customized you just need to build it yourself. INSTANDA has that, but also offers full configurability: Anything you can do with HTML, CSS, and JavaScript is fair game. And of course whatever you do to polish the look and feel of your UX, the “bones” of the UI will respond dynamically to your product logic: the questions, question types, validation logic, conditional display logic, order, groupings, screens, and so on.</p>
-							<h4 id="attention-to-detail">Attention to Detail</h4>
-							<p>There are a host of other little things INSTANDA gets right. We'd like to highlight a sample of them, even though they're hard to categorize per se:</p>
-							<ul>
-							<li>You can enact <strong>binding restrictions</strong> on very short notice (less than a day), down to zip-code level, without touching your core rater or underwriting rules.</li>
-							<li><strong>Appetite logic</strong> can be made dynamic, relative to the rest of your book of business in real time. INSTANDA has customers who do this today.</li>
-							<li>OFAC <strong>sanctions checks</strong>, required in the US, are included automatically at no extra charge. They can also be overridden, since sometimes automated checks get it wrong.</li>
-							</ul>
-							<p>This list doesn't mean INSTANDA's thought of <em>everything you need</em>, of course. We always encourage you to think through your needs and sit down with the vendor. But we hope these examples help you develop an initial sense of the maturity of the platform as a no-code solution for insurance.</p>
-							<!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
-							<hr class="compact">
-							<h3 id="json-webhooks-and-apis">JSON Webhooks and APIs</h3>
-							<p>Events and UX flows in INSTANDA have both APIs and webhooks associated with them:</p>
-							<ul>
-							<li>APIs in case you'd like to develop your own front end or build an integration with a distribution partner</li>
-							<li>Webhooks to integrate with downstream systems, alerting them of events like purchases or changes to existing policies</li>
-							</ul>
-							<p>Both INSTANDA's APIs and webhooks respond dynamically to the product model you specify: if you add annual revenue as a required question, for example, it becomes a mandatory field in the API and automatically flows through to your webhooks.</p>
-							<p>You can also configure third-party API calls out from INSTANDA. For example, if you choose to buy or build your own rating service, you can configure INSTANDA to call it for pricing.</p>
-							<p>If you make extensive use of INSTANDA's APIs and webhooks, you may choose to build a translation layer. A translation layer might listen for INSTANDA's cancellation webhook, for example, and hammer it into a format your system of record will understand—if you use INSTANDA alongside an existing system of record.</p>
-							<p>If this kind of translation or integration layer is part of your implementation needs, INSTANDA will also be happy to help you put it together. See <a href="#how-to-work-with-them">How to Work With Them</a> below.</p>
-							<hr class="compact">
-							<h3 id="integrations">Integrations</h3>
-							<p>There are also many integrations you don't need to build anything for. INSTANDA has a battery of integrations ready to go for several common critical insurtech needs. As of writing (December 2022) that list includes more than 200 options. To share a sample:</p>
-							<ul>
-								<li><a rel="external" href="https://www.data-8.co.uk/">Data8</a> for address validation</li>
-								<li><a rel="external" href="https://what3words.com/">what3words</a> for precise locations</li>
-								<li><a rel="external" href="https://sanctionssearch.ofac.treas.gov/">Sanction Search</a> for OFAC</li>
-								<li><a rel="external" href="https://www.northdoor.co.uk/">Northdoor</a> (data consultancy)</li>
-								<li>Integration marketplaces like <a rel="external" href="https://cyclr.com/connectors/">Cyclr</a>, <a rel="external" href="https://www.intellagents.com/">Intellagents</a>, and <a rel="external" href="https://www.appmarket.insurancegig.com/">InsuranceGig</a></li>
-								<li><a rel="external" href="https://www.verisk.com/insurance/products/erc/">ISO ERC Rating</a> 2.0</li>
-								<li><a rel="external" href="https://www.inscipher.com/">InsCipher</a> for surplus lines taxes</li>
-								<li><a rel="external" href="https://www.verisk.com">Verisk</a>, <a rel="external" href="https://hazardhub.com/">HazardHub</a>, <a rel="external" href="https://transunion.com/">TransUnion</a>, <a rel="external" href="https://corelogic.com/">CoreLogic</a>, <a rel="external" href="https://coherent.com/">Coherent</a>, <a rel="external" href="https://www.confianzaus.com/">Confianza</a>, and <a rel="external" href="https://experian.com/">Experian</a> for data enrichment</li>
-								<li><a rel="external" href="https://www.stripe.com/">Stripe</a>, <a rel="external" href="https://www.authorize.net/">Authorize.net</a>, <a rel="external" href="https://www.paypal.com/">Paypal</a>, <a rel="external" href="https://www.apple.com/apple-pay/">Apple Pay</a>, <a rel="external" href="https://pay.google.com/">Google Pay</a>, <a rel="external" href="https://www.billitnow.com/">BillItNow</a>, and <a rel="external" href="https://www.chargebee.com">Chargebee</a> for payment processing and billing</li>
-								<li><a rel="external" href="https://www.salesforce.com/">Salesforce</a>, <a rel="external" href="https://www.hubspot.com/">HubSpot</a>, and <a rel="external" href="https://www.marketo.com/">Marketo</a> for CRM</li>
-								<li><a rel="external" href="https://docusign.com/">DocuSign</a> and <a rel="external" href="https://hellosign.com/">HelloSign</a> for e-signature</li>
-								<li><a rel="external" href="https://floatbot.ai/">Floatbot.ai</a> for Chatbot</li>
-								<li><a rel="external" href="https://omnius.com/">Omni:us</a> and <a rel="external" href="https://hyperscience.com/">Hyperscience</a> for document-processing AI</li>
-								<li><a rel="external" href="https://powerbi.com/">PowerBI</a>, <a rel="external" href="https://percipience.com/">Percipience</a>, <a rel="external" href="https://tableau.com/">Tableau</a>, and <a rel="external" href="https://www.qlik.com/us/products/qlik-sense/">Qlik Sense</a> for data and analytics</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="billing">Billing</h3>
-							<p>INSTANDA follows these same design principles—no-code, insurance-savvy, and integration-ready—with their billing solutions. For billing with INSTANDA's policy software platform, INSTANDA billing, or their ready integration with <a rel="external" href="https://www.billitnow.com/Static/Default.aspx">BillItNow</a>, or you can roll your own.</p>
-							<hr class="compact">
-							<h3 id="operational-data-store">Operational Data Store</h3>
-							<p>For data, INSTANDA offers a near real-time (NRT) operational data store (ODS).</p>
-							<ul>
-								<li>An <strong>operational data store</strong> is simply a clone of your production data. This ensures that if Data Engineer Daphne runs a resource intensive query against the data, it doesn't slow down Broker Bob's work. Bob is working off production data, and Daphne's using the data store.</li>
-								<li>In data work, <strong>near real time</strong> just means delayed by a few seconds. That's to distinguish it from legacy data stores that clone on a nightly (or less frequent) basis.</li>
-							</ul>
-							<p>INSTANDA customers have access to standard views of the contents of their data stores. The views are not to keep you from the raw data, but to clarify it. If you need to develop a more involved data pipeline, the INSTANDA team will work with you to get you what you need. Or you could create your own data lake and funnel INSTANDA's webhooks into it.</p>
-						</section>
-						<hr>
-						<section id="how-to-work-with-them">
-							<h2>How to Work With Them</h2>
-							<p>You can get started with INSTANDA with a full build, a co-build, or a self built initial implementation.</p>
-							<p><strong>Full build</strong>: INSTANDA begins with a discovery and design phase with your team to understand where you are, what you need, and how to get there. Then they build a proof of value for you, a full initial implementation you can hit the ground running with. There are checkpoints along the way to establish progress. Then they hand over the product and train your team. Whatever work is not done by INSTANDA themselves is handled by partners coupled tightly with them.</p>
-							<p><strong>Co-build</strong>: INSTANDA works with you to develop a custom plan to divide and conquer. What is your scope, and what is theirs? Implementation pricing reflects the division of work.</p>
-							<p><strong>Self-build</strong>: INSTANDA trains your team from the beginning and you build it yourself. Like most vendors, INSTANDA prefers to assist with the initial implementation to ensure you're getting the most out of the platform from the get-go.</p>
-							<p>Initial implementations generally take one to four months, depending on complexity. Recent new customers, for example, have stood up a marine product in 30 days and a commercial auto product in 6 weeks, including telematics. Your implementation might be more complex if it includes several lines of business, several widely differing states, or intricate integrations. Later implementations are faster, as is generally the case with policy software platforms. One ambitious customer of INSTANDA’s built 38 products in a year.</p>
-							<p>You'll want to bring an insurance product expert to the table, as well as ideas of what you want your various flows to look like. If you'd like a partner to think through those questions—for INSTANDA or any other vendor—Finsure would be glad to help.</p>
-							<p>Developers with INSTANDA are optional: As we've discussed, INSTANDA has a solid configurable front end, and if you use them alongside an existing system of record they can help you build the back-end integrations. But if you want to handle any of that yourself you can bring your own dev team.</p>
-							<p>You will want one or more business analysts with some technical aptitude. And if you want to do a lot with INSTANDA, it's helpful if those business analysts are <em>dedicated resources</em>. If you need help justifying the expense, think of all the developer salaries you're saving!</p>
-							<p>As with many policy software platforms, INSTANDA pricing is generally a mix of initial implementation costs, a monthly recurring fee, and a percentage of GWP. The platform is usually one total cost, not broken down into modules. APIs and webhooks do not cost extra. At time of writing (December 2022), their operational data store is a separate cost you can skip, but we don't recommend going cheap on data.</p>
-						</section>
-						<hr>
-						<section id="products">
-							<h2>Products</h2>
-							<p>We asked INSTANDA what products their customers are <em>currently actively selling or placing</em>. If you don't see your product on the list, we always recommend reaching out! This is not meant to be an exhaustive list of what INSTANDA supports.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>Accident &amp; Health</li>
-								<li>BOP</li>
-								<li>Commercial Auto</li>
-								<li>Commercial Property</li>
-								<li>Cyber</li>
-								<li>Embedded Insurance</li>
-								<li>General Liability</li>
-								<li>Inland Marine</li>
-								<li>Life</li>
-								<li>Management Liability</li>
-								<li>Personal Auto</li>
-								<li>Personal Home</li>
-								<li>Pet</li>
-								<li>Professional Liability</li>
-								<li>Rental Property Owners</li>
-								<li>Renters</li>
-								<li>Umbrella</li>
-								<li>Workers Comp</li>								
-							</ul>
-							<hr class="compact">
-							<h3 id="write-ins">Write-Ins</h3>
-							<ul>
-								<li>Farm</li>
-								<li>Flood</li>
-								<li>Medical Malpractice</li>
-								<li>Wildfire</li>
-								<li>Yacht/Boatowners</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers">No Current Customers</h3>
-							<ul>
-								<li>Parametric Insurance<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
-								<li>Travel Insurance<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
-								<li>Usage-Based Insurance<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>								
-							</ul>
-						</section>
-						<hr>
-						<section id="locations">
-							<h2>Locations</h2>
-							<p>We asked INSTANDA where their customers are <em>currently actively selling or placing insurance</em>. If you don't see your region on the list, we recommend reaching out to ask! This is not meant to be an exhaustive list of where INSTANDA will do business.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance_1">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>United States</li>
-								<li>Canada</li>
-								<li>Latin America</li>
-								<li>Europe &amp; UK</li>
-								<li>Australia/Asia/Pacific</li>
-								<li>Africa</li>								
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers_1">No Current Customers</h3>
-							<ul>
-								<li>Mexico<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></li>
-							</ul>
-						</section>
-						<hr>
-						<section id="featured-customers">
-							<h2>Featured Customers</h2>
-							<p>According to their website<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>, INSTANDA customers include the following:</p>
-							<ul>
-								<li><a rel="external" href="https://www.axa.com/">AXA</a></li>
-								<li><a rel="external" href="https://newempireis.com/">New Empire Group</a></li>
-								<li><a rel="external" href="https://covenantunderwriters.com/">Covenant Underwriters</a></li>
-								<li><a rel="external" href="https://www.markel.com/">Markel</a></li>
-								<li><a rel="external" href="https://www.hiscox.com/">Hiscox</a></li>
-								<li><a rel="external" href="https://insure.standardbank.co.za/">Standard Bank</a></li>
-								<li><a rel="external" href="https://imperiuminsurance.co.uk/">Imperium</a></li>
-								<li><a rel="external" href="https://www.aviva.com/">Aviva</a></li>
-								<li><a rel="external" href="https://www.bunch-insurance.com/">Bunch</a></li>
-							</ul>
-						</section>
-						<hr>
-						<!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
-						<section id="footnotes">
-							<h2>Footnotes</h2>
-							<!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
-							<!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
-							<ol>
-								<li id="fn:1">
-									<p>Clients can also build travel insurance; INSTANDA just doesn’t have any clients actively selling it as of yet.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-								</li>
-								<li id="fn:2">
-									<p>Usage-based and parametric are possible as well, but INSTANDA has not had a client build this out yet.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-								</li>
-								<li id="fn:3">
-									<p>Mexico is called out because we ask about it specifically.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-								</li>
-								<li id="fn:4">
-									<!-- notice we add the explicit link so it can open in a new tab -->
-									<p><a rel="external" href="https://instanda.com/">https://instanda.com/</a>, <a rel="external" href="https://instanda.com/us/">https://instanda.com/us/</a>, and <a rel="external" href="https://instanda.com/us/insights/case-studies/">https://instanda.com/us/insights/case-studies/</a> captured <a rel="external" href="https://web.archive.org/web/20221021180813/https://instanda.com/">2022-10-21</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
-								</li>
-							</ol>
-						</section>
-					</article>
-				</div>
-			</main>
-			<footer id="footer">
-				<div>
-					<p><i aria-hidden="true" class="icon-logo"></i> Copyright <span class="date">2023</span> Finsure - All rights reserved</p>
-					<nav>
-						<h3>Info</h3>
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/about-us.html">About us</a></li>
-							<li><a href="/events.html">Events</a></li>
-							<li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
-						</ul>
-					</nav>
-					<div>
-						<h3>Follow us</h3>
-						<ul class="list-social">
-							<li><a rel="external" href="https://www.linkedin.com/company/finsureconsulting/"><i aria-hidden="true" class="icon-linkedin"></i> <span class="hidden">LinkedIn</span></a></li>
-							<li><a rel="external" href="https://savvycal.com/Michelle-Bothe/22eb851d"><i aria-hidden="true" class="icon-calendar"></i> <span class="hidden">Calendar</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
-		<script>window.jQuery || document.write('<script src="/javascript/jquery.js"><\/script>');</script>
-		<script defer src="/javascript/scripts.js"></script>
-		<script defer src="/javascript/custom.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Instanda</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#7551c3" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <meta name="author" content="https://psdhtml.me" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="preload" as="style" href="/styles/screen.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="/styles/fonts/icomoon.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="/styles/screen.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="//ajax.googleapis.com" />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta property="og:title" content="Instanda" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Finsure" />
+    <meta property="og:url" content="https://finsure.us/" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="Instanda" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="Finsure" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:image" content="" />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org/",
+          "@type": "Organization",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "legalName": "Finsure",
+          "description": "",
+          "logo": "",
+          "image": "",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer service",
+            "telephone": ""
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": ""
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "description": "",
+          "author": {
+            "@type": "Organization",
+            "url": "https://psdhtml.me",
+            "name": "psdHTML.me",
+            "description": "Figma to responsive HTML coding"
+          }
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <header id="top">
+        <p id="logo"><a href="/" accesskey="h">Finsure</a></p>
+        <nav id="skip">
+          <ul>
+            <li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
+            <li><a href="#content" accesskey="c">Skip to content (c)</a></li>
+            <li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
+          </ul>
+        </nav>
+        <nav id="nav" aria-label="Navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+              <a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em>
+            </li>
+            <li>
+              <a accesskey="2" href="/events.html">Events</a> <em>(2)</em>
+            </li>
+            <li class="sub">
+              <a accesskey="3">Insurtech ecosystem</a> <em>(3)</em>
+              <ul>
+                <li>
+                  <a href="/ecosystem/insurtech-guide-to.html"
+                    >Insurtech guide to ...</a
+                  >
+                </li>
+                <li><a href="/ecosystem/policy/research.html">Research</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="content" class="width-1350">
+        <header class="header-wide">
+          <h1 class="size-55 margin-10">Instanda</h1>
+        </header>
+        <div class="cols-a">
+          <header>
+            <nav class="nav-aside">
+              <ul>
+                <!-- add section headers here -->
+                <!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
+                <!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
+                <!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
+                <li class="active">
+                  <a href="#who-they-serve">Who They Serve</a>
+                </li>
+                <li><a href="#what-they-do">What They Do</a></li>
+                <li>
+                  <a href="#how-to-work-with-them">How to Work With Them</a>
+                </li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#featured-customers">Featured Customers</a></li>
+              </ul>
+            </nav>
+          </header>
+          <article>
+            <!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
+            <section id="who-they-serve">
+              <h2>Who They Serve</h2>
+              <p>
+                As a no-code solution built exclusively for insurance, INSTANDA
+                appeals to small insurtech carriers and MGAs (or small teams
+                within larger insurers) who value self-reliance, flexibility,
+                and speed to market. They may be launching a startup or a new
+                insurance program or product line. INSTANDA customers innovate
+                their own insurance products, rates, rules, forms, policy
+                lifecycles, and UX screens without waiting for external partners
+                or IT resources to configure, test, and deploy them.
+              </p>
+              <p>
+                INSTANDA also appeals to teams working to update their UX
+                without adding developer overhead. You may be moving away from
+                paper applications and want to deliver a modern online
+                application flow quickly and easily. INSTANDA can offer you a
+                configurable front end and connect to your existing system of
+                record post-bind.
+              </p>
+              <p>
+                You don't need developers to work with INSTANDA—though you can
+                choose to bring your own for certain work; see
+                <a href="#how-to-work-with-them">How to Work With Them</a>
+                below. You <em>do</em> want to know what you want (or have
+                someone who can help you with that). You'll want an insurance
+                product owner or SME. You'll want someone to act as a project
+                manager. And you'll want at least one team member with the
+                technical moxy of a business analyst. But that describes most
+                insurance teams.
+              </p>
+              <!-- modify internal links (filepath and extension as needed) -->
+              <p>
+                You can use INSTANDA as your system of record, or you can use
+                them alongside one or more existing systems of record, for
+                reasons we've traced out in our write-up on
+                <a href="/ecosystem/policy/consider/modularity.html"
+                  >modularity</a
+                >. You can use their white-labeled, configurable front ends, and
+                you can build your own solutions—like external APIs for channel
+                partners, or embedded product offerings, with their JSON/REST
+                APIs.
+              </p>
+            </section>
+            <!-- notice the horizonal rule (hr) added after each section -->
+            <hr />
+            <section id="what-they-do">
+              <h2>What They Do</h2>
+              <!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
+              <h3 id="no-code-for-insurance">No-Code for Insurance</h3>
+              <p>
+                INSTANDA is a no-code, configurable tool to build, distribute,
+                and service insurance products. You can use it on its own as
+                your
+                <a href="/ecosystem/policy/consider/system-of-record.html"
+                  >system of record</a
+                >. Or you can use it alongside one or more existing systems of
+                record, for all the reasons we discuss in our write-up on
+                <a href="/ecosystem/policy/consider/modularity.html"
+                  >modularity</a
+                >. To say that it's a no-code tool for insurance doesn't fully
+                capture the spirit of the tool the way a demo might, so let's
+                unpack what that looks like and how it's different from other
+                tools.
+              </p>
+              <h4 id="basic-insurance-product-and-data-model">
+                Basic Insurance Product and Data Model
+              </h4>
+              <p>
+                You build your insurance product within INSTANDA, from the
+                ground up. If INSTANDA were just no-code—and not no-code
+                <em>for insurance</em>—that might be a daunting proposition.
+                You'd have to teach it the concept of a policy, a term, a
+                coverage, a limit, a premium, and so on—and the work would
+                likely cancel out whatever benefit you got from using a no-code
+                solution! This might be daunting, but INSTANDA is no-code
+                <em>for insurance</em>, and it comes with all of that preloaded.
+                So “from the ground up” here just means telling it the coverage
+                options, the limits, the questions you need to ask in an
+                application, and so on.
+              </p>
+              <p>
+                INSTANDA comes with the building blocks of insurance preloaded,
+                but it tries not to make <em>assumptions</em>. So you can easily
+                define products with policy terms of less than 6 months, for
+                example. Or you can define new lines of business entirely.
+              </p>
+              <h4 id="rates-rules-and-forms">Rates, Rules, and Forms</h4>
+              <p>
+                You build your product's rates, rules, and forms in INSTANDA
+                using their no-code configuration tool. Rating look-ups are
+                Excel-based, and formulas should be intuitive to anyone who's
+                used Excel. Underwriting allows for approvals, declines, or
+                referral to underwriters with different levels of authority.
+                Rule expressions are simple and clear. There's a no-code editor
+                for dynamic form templates—and in a nice touch, you can also
+                have a designer touch up the resulting HTML and CSS.
+              </p>
+              <h4 id="policy-lifecycle-awareness">
+                Policy Lifecycle Awareness
+              </h4>
+              <p>
+                For every part of your data model, every rule and form and
+                rating calculation, you also specify <em>when it applies</em>.
+                This is a natural part of insurance, but you may not expect it
+                to be built into a no-code solution, and certainly not in such a
+                thoroughgoing way. INSTANDA guides you through deciding that
+                this question for example, comes into play only after an
+                indicative quote, that question comes in after the bindable
+                quote (it doesn't affect the price but is needed for bind), some
+                rules only apply during a midterm adjustment, and certain forms
+                are only sent at renewal. All these policy lifecycle moments are
+                essentially triggers, or events, and you tag your rules and
+                fields to tell them which events they apply to.
+              </p>
+              <h4 id="producer-facing-and-d2c-front-ends">
+                Producer-Facing and D2C Front Ends
+              </h4>
+              <p>
+                INSTANDA then guides you through building branded, white-labeled
+                front ends, both D2C and agent- and broker- facing, for both new
+                business and policy servicing.
+              </p>
+              <p>
+                In front ends, configurable can mean different things to
+                different vendors; some only have a UI for setting colors,
+                logos, and fonts, and if you need something more customized you
+                just need to build it yourself. INSTANDA has that, but also
+                offers full configurability: Anything you can do with HTML, CSS,
+                and JavaScript is fair game. And of course whatever you do to
+                polish the look and feel of your UX, the “bones” of the UI will
+                respond dynamically to your product logic: the questions,
+                question types, validation logic, conditional display logic,
+                order, groupings, screens, and so on.
+              </p>
+              <h4 id="attention-to-detail">Attention to Detail</h4>
+              <p>
+                There are a host of other little things INSTANDA gets right.
+                We'd like to highlight a sample of them, even though they're
+                hard to categorize per se:
+              </p>
+              <ul>
+                <li>
+                  You can enact <strong>binding restrictions</strong> on very
+                  short notice (less than a day), down to zip-code level,
+                  without touching your core rater or underwriting rules.
+                </li>
+                <li>
+                  <strong>Appetite logic</strong> can be made dynamic, relative
+                  to the rest of your book of business in real time. INSTANDA
+                  has customers who do this today.
+                </li>
+                <li>
+                  OFAC <strong>sanctions checks</strong>, required in the US,
+                  are included automatically at no extra charge. They can also
+                  be overridden, since sometimes automated checks get it wrong.
+                </li>
+              </ul>
+              <p>
+                This list doesn't mean INSTANDA's thought of
+                <em>everything you need</em>, of course. We always encourage you
+                to think through your needs and sit down with the vendor. But we
+                hope these examples help you develop an initial sense of the
+                maturity of the platform as a no-code solution for insurance.
+              </p>
+              <!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
+              <hr class="compact" />
+              <h3 id="json-webhooks-and-apis">JSON Webhooks and APIs</h3>
+              <p>
+                Events and UX flows in INSTANDA have both APIs and webhooks
+                associated with them:
+              </p>
+              <ul>
+                <li>
+                  APIs in case you'd like to develop your own front end or build
+                  an integration with a distribution partner
+                </li>
+                <li>
+                  Webhooks to integrate with downstream systems, alerting them
+                  of events like purchases or changes to existing policies
+                </li>
+              </ul>
+              <p>
+                Both INSTANDA's APIs and webhooks respond dynamically to the
+                product model you specify: if you add annual revenue as a
+                required question, for example, it becomes a mandatory field in
+                the API and automatically flows through to your webhooks.
+              </p>
+              <p>
+                You can also configure third-party API calls out from INSTANDA.
+                For example, if you choose to buy or build your own rating
+                service, you can configure INSTANDA to call it for pricing.
+              </p>
+              <p>
+                If you make extensive use of INSTANDA's APIs and webhooks, you
+                may choose to build a translation layer. A translation layer
+                might listen for INSTANDA's cancellation webhook, for example,
+                and hammer it into a format your system of record will
+                understand—if you use INSTANDA alongside an existing system of
+                record.
+              </p>
+              <p>
+                If this kind of translation or integration layer is part of your
+                implementation needs, INSTANDA will also be happy to help you
+                put it together. See
+                <a href="#how-to-work-with-them">How to Work With Them</a>
+                below.
+              </p>
+              <hr class="compact" />
+              <h3 id="integrations">Integrations</h3>
+              <p>
+                There are also many integrations you don't need to build
+                anything for. INSTANDA has a battery of integrations ready to go
+                for several common critical insurtech needs. As of writing
+                (December 2022) that list includes more than 200 options. To
+                share a sample:
+              </p>
+              <ul>
+                <li>
+                  <a rel="external" href="https://www.data-8.co.uk/">Data8</a>
+                  for address validation
+                </li>
+                <li>
+                  <a rel="external" href="https://what3words.com/"
+                    >what3words</a
+                  >
+                  for precise locations
+                </li>
+                <li>
+                  <a
+                    rel="external"
+                    href="https://sanctionssearch.ofac.treas.gov/"
+                    >Sanction Search</a
+                  >
+                  for OFAC
+                </li>
+                <li>
+                  <a rel="external" href="https://www.northdoor.co.uk/"
+                    >Northdoor</a
+                  >
+                  (data consultancy)
+                </li>
+                <li>
+                  Integration marketplaces like
+                  <a rel="external" href="https://cyclr.com/connectors/"
+                    >Cyclr</a
+                  >,
+                  <a rel="external" href="https://www.intellagents.com/"
+                    >Intellagents</a
+                  >, and
+                  <a
+                    rel="external"
+                    href="https://www.appmarket.insurancegig.com/"
+                    >InsuranceGig</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="external"
+                    href="https://www.verisk.com/insurance/products/erc/"
+                    >ISO ERC Rating</a
+                  >
+                  2.0
+                </li>
+                <li>
+                  <a rel="external" href="https://www.inscipher.com/"
+                    >InsCipher</a
+                  >
+                  for surplus lines taxes
+                </li>
+                <li>
+                  <a rel="external" href="https://www.verisk.com">Verisk</a>,
+                  <a rel="external" href="https://hazardhub.com/">HazardHub</a>,
+                  <a rel="external" href="https://transunion.com/">TransUnion</a
+                  >,
+                  <a rel="external" href="https://corelogic.com/">CoreLogic</a>,
+                  <a rel="external" href="https://coherent.com/">Coherent</a>,
+                  <a rel="external" href="https://www.confianzaus.com/"
+                    >Confianza</a
+                  >, and
+                  <a rel="external" href="https://experian.com/">Experian</a>
+                  for data enrichment
+                </li>
+                <li>
+                  <a rel="external" href="https://www.stripe.com/">Stripe</a>,
+                  <a rel="external" href="https://www.authorize.net/"
+                    >Authorize.net</a
+                  >,
+                  <a rel="external" href="https://www.paypal.com/">Paypal</a>,
+                  <a rel="external" href="https://www.apple.com/apple-pay/"
+                    >Apple Pay</a
+                  >,
+                  <a rel="external" href="https://pay.google.com/">Google Pay</a
+                  >,
+                  <a rel="external" href="https://www.billitnow.com/"
+                    >BillItNow</a
+                  >, and
+                  <a rel="external" href="https://www.chargebee.com"
+                    >Chargebee</a
+                  >
+                  for payment processing and billing
+                </li>
+                <li>
+                  <a rel="external" href="https://www.salesforce.com/"
+                    >Salesforce</a
+                  >,
+                  <a rel="external" href="https://www.hubspot.com/">HubSpot</a>,
+                  and
+                  <a rel="external" href="https://www.marketo.com/">Marketo</a>
+                  for CRM
+                </li>
+                <li>
+                  <a rel="external" href="https://docusign.com/">DocuSign</a>
+                  and
+                  <a rel="external" href="https://hellosign.com/">HelloSign</a>
+                  for e-signature
+                </li>
+                <li>
+                  <a rel="external" href="https://floatbot.ai/">Floatbot.ai</a>
+                  for Chatbot
+                </li>
+                <li>
+                  <a rel="external" href="https://omnius.com/">Omni:us</a> and
+                  <a rel="external" href="https://hyperscience.com/"
+                    >Hyperscience</a
+                  >
+                  for document-processing AI
+                </li>
+                <li>
+                  <a rel="external" href="https://powerbi.com/">PowerBI</a>,
+                  <a rel="external" href="https://percipience.com/"
+                    >Percipience</a
+                  >, <a rel="external" href="https://tableau.com/">Tableau</a>,
+                  and
+                  <a
+                    rel="external"
+                    href="https://www.qlik.com/us/products/qlik-sense/"
+                    >Qlik Sense</a
+                  >
+                  for data and analytics
+                </li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="billing">Billing</h3>
+              <p>
+                INSTANDA follows these same design principles—no-code,
+                insurance-savvy, and integration-ready—with their billing
+                solutions. For billing with INSTANDA's policy software platform,
+                INSTANDA billing, or their ready integration with
+                <a
+                  rel="external"
+                  href="https://www.billitnow.com/Static/Default.aspx"
+                  >BillItNow</a
+                >, or you can roll your own.
+              </p>
+              <hr class="compact" />
+              <h3 id="operational-data-store">Operational Data Store</h3>
+              <p>
+                For data, INSTANDA offers a near real-time (NRT) operational
+                data store (ODS).
+              </p>
+              <ul>
+                <li>
+                  An <strong>operational data store</strong> is simply a clone
+                  of your production data. This ensures that if Data Engineer
+                  Daphne runs a resource intensive query against the data, it
+                  doesn't slow down Broker Bob's work. Bob is working off
+                  production data, and Daphne's using the data store.
+                </li>
+                <li>
+                  In data work, <strong>near real time</strong> just means
+                  delayed by a few seconds. That's to distinguish it from legacy
+                  data stores that clone on a nightly (or less frequent) basis.
+                </li>
+              </ul>
+              <p>
+                INSTANDA customers have access to standard views of the contents
+                of their data stores. The views are not to keep you from the raw
+                data, but to clarify it. If you need to develop a more involved
+                data pipeline, the INSTANDA team will work with you to get you
+                what you need. Or you could create your own data lake and funnel
+                INSTANDA's webhooks into it.
+              </p>
+            </section>
+            <hr />
+            <section id="how-to-work-with-them">
+              <h2>How to Work With Them</h2>
+              <p>
+                You can get started with INSTANDA with a full build, a co-build,
+                or a self built initial implementation.
+              </p>
+              <p>
+                <strong>Full build</strong>: INSTANDA begins with a discovery
+                and design phase with your team to understand where you are,
+                what you need, and how to get there. Then they build a proof of
+                value for you, a full initial implementation you can hit the
+                ground running with. There are checkpoints along the way to
+                establish progress. Then they hand over the product and train
+                your team. Whatever work is not done by INSTANDA themselves is
+                handled by partners coupled tightly with them.
+              </p>
+              <p>
+                <strong>Co-build</strong>: INSTANDA works with you to develop a
+                custom plan to divide and conquer. What is your scope, and what
+                is theirs? Implementation pricing reflects the division of work.
+              </p>
+              <p>
+                <strong>Self-build</strong>: INSTANDA trains your team from the
+                beginning and you build it yourself. Like most vendors, INSTANDA
+                prefers to assist with the initial implementation to ensure
+                you're getting the most out of the platform from the get-go.
+              </p>
+              <p>
+                Initial implementations generally take one to four months,
+                depending on complexity. Recent new customers, for example, have
+                stood up a marine product in 30 days and a commercial auto
+                product in 6 weeks, including telematics. Your implementation
+                might be more complex if it includes several lines of business,
+                several widely differing states, or intricate integrations.
+                Later implementations are faster, as is generally the case with
+                policy software platforms. One ambitious customer of INSTANDA’s
+                built 38 products in a year.
+              </p>
+              <p>
+                You'll want to bring an insurance product expert to the table,
+                as well as ideas of what you want your various flows to look
+                like. If you'd like a partner to think through those
+                questions—for INSTANDA or any other vendor—Finsure would be glad
+                to help.
+              </p>
+              <p>
+                Developers with INSTANDA are optional: As we've discussed,
+                INSTANDA has a solid configurable front end, and if you use them
+                alongside an existing system of record they can help you build
+                the back-end integrations. But if you want to handle any of that
+                yourself you can bring your own dev team.
+              </p>
+              <p>
+                You will want one or more business analysts with some technical
+                aptitude. And if you want to do a lot with INSTANDA, it's
+                helpful if those business analysts are
+                <em>dedicated resources</em>. If you need help justifying the
+                expense, think of all the developer salaries you're saving!
+              </p>
+              <p>
+                As with many policy software platforms, INSTANDA pricing is
+                generally a mix of initial implementation costs, a monthly
+                recurring fee, and a percentage of GWP. The platform is usually
+                one total cost, not broken down into modules. APIs and webhooks
+                do not cost extra. At time of writing (December 2022), their
+                operational data store is a separate cost you can skip, but we
+                don't recommend going cheap on data.
+              </p>
+            </section>
+            <hr />
+            <section id="products">
+              <h2>Products</h2>
+              <p>
+                We asked INSTANDA what products their customers are
+                <em>currently actively selling or placing</em>. If you don't see
+                your product on the list, we always recommend reaching out! This
+                is not meant to be an exhaustive list of what INSTANDA supports.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>Accident &amp; Health</li>
+                <li>BOP</li>
+                <li>Commercial Auto</li>
+                <li>Commercial Property</li>
+                <li>Cyber</li>
+                <li>Embedded Insurance</li>
+                <li>General Liability</li>
+                <li>Inland Marine</li>
+                <li>Life</li>
+                <li>Management Liability</li>
+                <li>Personal Auto</li>
+                <li>Personal Home</li>
+                <li>Pet</li>
+                <li>Professional Liability</li>
+                <li>Rental Property Owners</li>
+                <li>Renters</li>
+                <li>Umbrella</li>
+                <li>Workers Comp</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="write-ins">Write-Ins</h3>
+              <ul>
+                <li>Farm</li>
+                <li>Flood</li>
+                <li>Medical Malpractice</li>
+                <li>Wildfire</li>
+                <li>Yacht/Boatowners</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers">No Current Customers</h3>
+              <ul>
+                <li>
+                  Parametric Insurance<sup id="fnref:2"
+                    ><a class="footnote-ref" href="#fn:2">2</a></sup
+                  >
+                </li>
+                <li>
+                  Travel Insurance<sup id="fnref:1"
+                    ><a class="footnote-ref" href="#fn:1">1</a></sup
+                  >
+                </li>
+                <li>
+                  Usage-Based Insurance<sup id="fnref2:2"
+                    ><a class="footnote-ref" href="#fn:2">2</a></sup
+                  >
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <section id="locations">
+              <h2>Locations</h2>
+              <p>
+                We asked INSTANDA where their customers are
+                <em>currently actively selling or placing insurance</em>. If you
+                don't see your region on the list, we recommend reaching out to
+                ask! This is not meant to be an exhaustive list of where
+                INSTANDA will do business.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance_1">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>United States</li>
+                <li>Canada</li>
+                <li>Latin America</li>
+                <li>Europe &amp; UK</li>
+                <li>Australia/Asia/Pacific</li>
+                <li>Africa</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers_1">No Current Customers</h3>
+              <ul>
+                <li>
+                  Mexico<sup id="fnref:3"
+                    ><a class="footnote-ref" href="#fn:3">3</a></sup
+                  >
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <section id="featured-customers">
+              <h2>Featured Customers</h2>
+              <p>
+                According to their website<sup id="fnref:4"
+                  ><a class="footnote-ref" href="#fn:4">4</a></sup
+                >, INSTANDA customers include the following:
+              </p>
+              <ul>
+                <li><a rel="external" href="https://www.axa.com/">AXA</a></li>
+                <li>
+                  <a rel="external" href="https://newempireis.com/"
+                    >New Empire Group</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://covenantunderwriters.com/"
+                    >Covenant Underwriters</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.markel.com/">Markel</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.hiscox.com/">Hiscox</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://insure.standardbank.co.za/"
+                    >Standard Bank</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://imperiuminsurance.co.uk/"
+                    >Imperium</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.aviva.com/">Aviva</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.bunch-insurance.com/"
+                    >Bunch</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
+            <section id="footnotes">
+              <h2>Footnotes</h2>
+              <!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
+              <!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
+              <ol>
+                <li id="fn:1">
+                  <p>
+                    Clients can also build travel insurance; INSTANDA just
+                    doesn’t have any clients actively selling it as of
+                    yet.&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:1"
+                      title="Jump back to footnote 1 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+                <li id="fn:2">
+                  <p>
+                    Usage-based and parametric are possible as well, but
+                    INSTANDA has not had a client build this out yet.&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:2"
+                      title="Jump back to footnote 2 in the text"
+                      >&#8617;</a
+                    ><a
+                      class="footnote-backref"
+                      href="#fnref2:2"
+                      title="Jump back to footnote 2 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+                <li id="fn:3">
+                  <p>
+                    Mexico is called out because we ask about it
+                    specifically.&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:3"
+                      title="Jump back to footnote 3 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+                <li id="fn:4">
+                  <!-- notice we add the explicit link so it can open in a new tab -->
+                  <p>
+                    <a rel="external" href="https://instanda.com/"
+                      >https://instanda.com/</a
+                    >,
+                    <a rel="external" href="https://instanda.com/us/"
+                      >https://instanda.com/us/</a
+                    >, and
+                    <a
+                      rel="external"
+                      href="https://instanda.com/us/insights/case-studies/"
+                      >https://instanda.com/us/insights/case-studies/</a
+                    >
+                    captured
+                    <a
+                      rel="external"
+                      href="https://web.archive.org/web/20221021180813/https://instanda.com/"
+                      >2022-10-21</a
+                    >&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:4"
+                      title="Jump back to footnote 4 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div>
+          <p>
+            <i aria-hidden="true" class="icon-logo"></i> Copyright
+            <span class="date">2023</span> Finsure - All rights reserved
+          </p>
+          <nav>
+            <h3>Info</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us.html">About us</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3>Follow us</h3>
+            <ul class="list-social">
+              <li>
+                <a
+                  rel="external"
+                  href="https://www.linkedin.com/company/finsureconsulting/"
+                  ><i aria-hidden="true" class="icon-linkedin"></i>
+                  <span class="hidden">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  rel="external"
+                  href="https://savvycal.com/Michelle-Bothe/22eb851d"
+                  ><i aria-hidden="true" class="icon-calendar"></i>
+                  <span class="hidden">Calendar</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="/javascript/jquery.js"><\/script>');
+    </script>
+    <script defer src="/javascript/scripts.js"></script>
+    <script defer src="/javascript/custom.js"></script>
+  </body>
 </html>

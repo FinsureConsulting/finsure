@@ -1,337 +1,930 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Socotra</title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="theme-color" content="#7551c3">
-		<meta name="MobileOptimized" content="320">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no">
-		<meta name="author" content="https://psdhtml.me">
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="preload" as="style" href="/styles/screen.css">
-		<link rel="preload" as="font" href="/styles/fonts/icomoon.woff2" crossOrigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="stylesheet" href="/styles/screen.css">
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e">	
-		<link rel="manifest" href="/manifest.json">		
-		<link rel="preconnect" href="//ajax.googleapis.com">
-		<link rel="preconnect" href="//fonts.googleapis.com">
-		<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-		<meta name="msapplication-config" content="browserconfig.xml">
-		<meta property="og:title" content="Socotra">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="">
-		<meta property="og:site_name" content="Finsure">
-		<meta property="og:url" content="https://finsure.us/">
-		<meta property="og:image" content="">		
-		<meta name="twitter:title" content="Socotra">
-		<meta name="twitter:description" content="">
-		<meta name="twitter:site" content="Finsure">
-		<meta name="twitter:card" content="">
-		<meta name="twitter:image" content="">
-		<script type="application/ld+json">
-			[
-				{
-					"@context": "http://schema.org/",
-					"@type": "Organization",
-					"url": "https://finsure.us/",
-					"name": "Finsure",
-					"legalName": "Finsure",
-					"description": "",
-					"logo": "",
-					"image": "",
-					"contactPoint": {
-						"@type": "ContactPoint",
-						"contactType": "Customer service",
-						"telephone": ""
-					},
-					"address": {
-						"@type": "PostalAddress",
-						"streetAddress": "",
-						"addressLocality": "",
-						"addressRegion": "",
-						"postalCode": "",
-						"addressCountry": ""
-					}
-				},
-				{ 
-					"@context": "http://schema.org", 
-					"@type": "WebSite", 
-					"url": "https://finsure.us/", 
-					"name": "Finsure",
-					"description": "",
-					"author": {
-						"@type": "Organization",
-						"url": "https://psdhtml.me",
-						"name": "psdHTML.me",
-						"description": "Figma to responsive HTML coding"
-					}
-				}
-			]
-		</script>
-	</head>
-	<body>
-		<div id="root">
-			<header id="top">
-				<p id="logo"><a href="/" accesskey="h">Finsure</a></p>
-				<nav id="skip">
-					<ul>
-						<li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
-						<li><a href="#content" accesskey="c">Skip to content (c)</a></li>
-						<li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
-					</ul>
-				</nav>
-				<nav id="nav" aria-label="Navigation">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em></li>
-						<li><a accesskey="2" href="/events.html">Events</a> <em>(2)</em></li>
-						<li class="sub"><a accesskey="3" href="/coming-soon.html">Insurtech ecosystem</a> <em>(3)</em>
-							<ul>
-								<li><a href="/ecosystem/insurtech-guide-to.html">Insurtech guide to ...</a></li>
-								<li><a href="/ecosystem/policy/research.html">Research</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</header>             
-			<main id="content" class="width-1350">
-				<header class="header-wide">
-					<h1 class="size-55 margin-10">Socotra</h1>
-				</header>
-				<div class="cols-a">
-					<header>
-						<nav class="nav-aside">
-							<ul>
-								<!-- add section headers here -->
-								<!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
-								<!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
-								<!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
-								<li class="active"><a href="#who-they-serve">Who They Serve</a></li>
-								<li><a href="#what-they-do">What They Do</a></li>
-								<li><a href="#how-to-work-with-them">How to Work With Them</a></li>
-								<li><a href="#configuring-socotra">Configuring Socotra</a></li>
-								<li><a href="#products">Products</a></li>
-								<li><a href="#locations">Locations</a></li>
-								<li><a href="#featured-customers">Featured Customers</a></li>
-							</ul>
-						</nav>
-					</header>
-					<article>
-						<!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
-						<section id="who-they-serve">
-							<h2>Who They Serve</h2>
-							<p>Socotra serves as a system of record for MGAs and carriers across multiple (P&amp;C and Life) lines of business. It’s best for teams who’ve raised enough funding to support Socotra’s unit economics, and have a small development team or are comfortable getting assistance from an SI firm on the implementation. Their vision is to be the first truly modern core policy administration system for insurtech MGAs and carriers of any size: cloud-native, API-based, true SaaS, and ready to go off the shelf.</p>
-							<p>Secondarily, maybe you are an agency, but you might like to own your own product in the future. In the near term you need a configurable, white-labeled quote flow and light CRM solution. For this Socotra offers the <a href="#socotra-unified-portal">Socotra Unified Portal</a> as a standalone product. Then when it comes time to build your own product, you won't need to tear out any of your front end; you just plug Socotra's core policy software platform into the back of it.</p>
-						</section>
-						<!-- notice the horizonal rule (hr) added after each section -->
-						<hr>
-						<section id="what-they-do">
-							<h2>What They Do</h2>
-							<!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
-							<h3 id="apis-and-webhooks">APIs and Webhooks</h3>
-							<p>Socotra's JSON/REST <strong><a href="/ecosystem/policy/consider/apis.html">APIs</a></strong> handle the policy lifecycle from quote and purchase through endorsement, cancellation, reinstatement, and renewal. APIs include functionality like rating &amp; underwriting, document generation, creating invoices and marking them as paid, and basic claims and FNOL. You'll want to build your own workflow orchestration layer on top of these APIs. From there you can create front ends for consumers or brokers, or provision your own external APIs for distribution partners.</p>
-							<p>Socotra also offers <strong><a href="/ecosystem/policy/consider/webhooks.html">webhooks</a></strong> to integrate with downstream processes—like printing an invoice when it's generated, enabling automated renewal processes, or sending data changes to an external DB. Webhooks and APIs are <a rel="external" href="https://docs.socotra.com/">publicly and freely documented</a> online.</p>
-							<hr class="compact">
-							<h3 id="app-marketplace">App Marketplace</h3>
-							<p>The core policy administration needs addressed by Socotra APIs and webhooks are only part of an insurer's tech stack. To give you a head start on the rest, Socotra offers an app marketplace.</p>
-							<p>The marketplace has 30 partners at time of writing (November 2022):</p>
-							<ul>
-								<li>front-end providers (<a rel="external" href="https://www.mendix.com/">Mendix</a>, <a rel="external" href="https://www.unqork.com/">Unqork</a>)</li>
-								<li>rating and price optimization (<a rel="external" href="https://earnix.com/insurance-solutions/">Earnix</a> Enterprise Ratine Engine, <a rel="external" href="https://nuon.ai/">Nuon</a> Price Adjustment Platform, and <a rel="external" href="https://coherent.global/">Coherent</a> Spark)</li>
-								<li>payment processing (<a rel="external" href="https://stripe.com/">Stripe</a>, <a rel="external" href="https://www.tranzpay.io/">Tranzpay</a>'s <a rel="external" href="https://www.tranzpay.io/disbursecloud/">DisburseCloud</a>, and <a rel="external" href="https://www.oneinc.com/">One Inc</a> Digitial Payments Platform)</li>
-								<li>e-signature (<a rel="external" href="https://www.onespan.com/">OneSpan</a>)</li>
-								<li>document management and processing (<a rel="external" href="https://www.sortspoke.com/">SortSpoke</a>)</li>
-								<li>data enrichment (<a rel="external" href="https://www.gradientai.com/">Gradient AI</a>, <a rel="external" href="https://www.geosite.io/insurance">Geosite</a>, <a rel="external" href="https://www.relativity6.com/">Relativity6</a>, <a rel="external" href="https://www.experian.com/">Experian</a>, <a rel="external" href="https://fenrisd.com/">Fenris</a> Auto Insurance Prefill API, <a rel="external" href="https://capeanalytics.com/">CAPE Analytics</a> Home Insurance Property Intelligence, <a rel="external" href="https://www.betterview.com/">Betterview</a> Property Intelligence and Risk Management, <a rel="external" href="https://www.friss.com/">FRISS</a> Risk Assessment for underwriting, <a rel="external" href="https://www.getfize.com/">Fize</a> Infrastructure Connect, and <a rel="external" href="https://www.verisk.com/">Verisk</a> 360Value via <a rel="external" href="https://aggne.com/">Aggne</a>)</li>
-								<li>customer communications and services (<a rel="external" href="https://www.glia.com/">Glia</a> Digital Customer Service, <a rel="external" href="https://floatbot.ai/">FloatBot</a> Conversational AI, <a rel="external" href="https://www.ghostdraft.com/">GhostDraft</a> 360 for forms and documents, and <a rel="external" href="https://www.obinc.com/">OBRIEN Insurance Solutions</a> to print and mail them)</li>
-								<li>claims (<a rel="external" href="https://www.fivesigmalabs.com/">5Sigma</a> and <a rel="external" href="https://www.snapsheetclaims.com/">Snapsheet</a>)</li>
-								<li>3rd-party app providers (<a rel="external" href="https://www.dataart.com/industries/financial-software/insurance">Data Art</a>, <a rel="external" href="https://fulcrumdigital.com/industries/insurance-services/">Fulcrum Digital</a>'s Data Extraction Service, <a rel="external" href="https://aggne.com/">Aggne</a>'s Verisk 360Value app, and the <a rel="external" href="https://radity.com/en/">Radity</a> Stripe App)</li>
-							</ul>
-							<p>We expect this list to expand in 2023 and beyond, so consider checking their site for updates.</p>
-							<hr class="compact">
-							<h3 id="agent-and-policyholder-ux">Agent and Policyholder UX</h3>
-							<h4 id="socotra-unified-portal">Socotra Unified Portal</h4>
-							<p>If you have a team of developers ready to develop your customized stack, Socotra's back end and growing app marketplace may be just what the doctor ordered. Your team can build a workflow orchestration and integration layer on their openly documented, modern back-end JSON/REST APIs, and then develop the front end(s) you need on top of it.</p>
-							<p>But if you're pressed for time or development resources, or your short-term front-end needs are not complex, consider also springing for their configurable agent and policyholder front end, the Socotra Unified Portal. The portal is a separate offering from the APIs and app marketplace, collectively called Socotra Core. Socotra Core has its own internal facing front end as well. The SUP is newer, the product of a strategic acquisition in 2022. It has benefits over the Socotra Core front end, and we expect more as they continue to aggressively develop it.</p>
-							<p>Benefits of the portal include:</p>
-							<ul>
-								<li>New business and service flows for agents, and new business flows for consumers. Direct-to-consumer policyholder self-service endorsements will be available by the end of 2022. The portal does not currently have an underwriter workbench component; if you have intricate underwriting workflows you can build these or integrate with a commercial underwriting workbench.</li>
-								<li>A spacious, mobile-friendly design, with a uniform look and feel across agent and D2C experiences, and built-in tracking integrations like Google Analytics, Mouseflow, and the Meta (formerly Facebook) Pixel.</li>
-								<li>A lightweight configurable orchestration and integration layer.</li>
-								<li>Standard quote flow features like default coverage levels and automated quote variations. By contrast, quote variations exist in the Socotra Core UI, but they're more manual: Agents copy a quote and make changes to it. And rather than setting default coverage levels in Socotra Core, you simply have the agent set them each time.</li>
-								<li>Surprising quote flow features like <a rel="external" href="https://www.glia.com/">glia</a> chat integration for support from underwriters and CSRs (which can be set up so the chat agent can see and interact with the user session), and a button for agents to easily send partial quotes to the consumer for completion.</li>
-								<li>More native support for roles, groups, and permissions than you'll find in the Socotra Core internal UI. At time of writing, the Socotra Core UI only has read-only, claims-only, and full admin roles.</li>
-								<li>“CRM light” features to help manage customers. As a general rule, some data is best kept outside your policy software back end itself—data like notes on individual customers and communications with them. The portal provides a lightweight solution for this. You can also handle email and SMS from within the portal.</li>
-								<li>Full configurability of application flows and question logic via JSON. Note that this is a separate step from product configuration in Socotra Core for the moment.</li>
-								<li>White-labeling and fine-grained branding. If you work with multiple agencies for example, you can brand the portal differently for each. The portal supports the most common branding elements like logos, colors, and fonts. If you need to completely redesign the page, consider developing your own front end.</li>
-							</ul>
-							<h4 id="standalone-solution-for-agencies">Standalone Solution for Agencies</h4>
-							<p>The Socotra Unified Portal is also available as a standalone offering. If you're an agency and don't yet need Socotra's backend APIs, the portal offers a configurable, white-labeled quote and policy management flow which you can connect in to your partners' APIs. Later if you're considering owning your product, you can purchase Socotra Core. The portal will be ready to integrate with it.</p>
-							<p>The SUP doesn't replace all the functionality of an agency management system and full CRM. You'll still want to think about things like pipeline management and prospecting, commission management, billing and payments, and, if you're a broker, maybe tracking down policies in multiple systems. But if you're seriously considering a pivot to owning your own product, you might talk to Socotra about whether and how the unified portal makes sense for you.</p>
-							<hr class="compact">
-							<h3 id="event-streams-and-data-mart">Event Streams and Data Mart</h3>
-							<p>Socotra provides three ways to access your data.</p>
-							<ul>
-								<li>Their <a rel="external" href="https://docs.socotra.com/production/data/datamartguide.html"><strong>data mart</strong></a>, introduced in 2022, is a relational database you can access with any MySQL client. You can query the data mart as you would your own data warehouse. Or you can plug your dashboarding solution directly into it—your Tableau, Looker, or PowerBI—with a MySQL driver.</li>
-								<li>To supplement the data mart, Socotra <strong>event streams</strong> capture everything that happens in the platform in full detail. Their event streams are available on a <em>pull</em> model, where you query them as needed via <a rel="external" href="https://docs.socotra.com/production/api/event-stream.html">their event stream API</a>. Or you can use <a rel="external" href="https://docs.socotra.com/production/tooling/webhooks.html">Socotra webhooks</a> to achieve a traditional <em>push</em> model, receiving the events as they happen in real time. Either way you can then funnel some or all of this event data into a data lake.</li>
-								<li>Socotra also offers <a rel="external" href="https://docs.socotra.com/production/data/reporting.html"><strong>pre-configured reports</strong></a> for things like financial transactions, risk exposure, policies issued, commissions payable, claims (including reserves and payable), and unearned premium. These are available out of the box both via API and in their internal UI. Still, Socotra customers we've spoken with often eventually prefer to work directly with the data mart and event streams.</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="how-to-work-with-them">
-							<h2>How to Work With Them</h2>
-							<h3 id="the-socotra-approach-an-analogy">The Socotra Approach: An Analogy</h3>
-							<p>An analogy might help describe Socotra's approach to policy software, in comparison with that of other vendors. Some policy software companies are like Apple with the iPhone, focusing on UX and owning the system from end to end because that UX is part of their brand. Socotra aims to be like Android: an open system with well built core components that enables insurers to create an ecosystem.</p>
-							<p>If you like that approach, Socotra might be a good fit. You'll need developers, or Socotra Services or a solutions integrator, to get you started. If you go with an SI, Socotra can help you get connected. If you bring your own developers, you can dive in with a <a rel="external" href="https://info.socotra.com/30-day-free-trial">free 30-day trial</a>, a <a rel="external" href="https://docs.socotra.com/production/api/api-gettingstarted.html">sandbox environment</a>, and <a rel="external" href="https://docs.socotra.com/">thorough, accessible documentation</a>.</p>
-							<hr class="compact">
-							<h3 id="resources-and-time-to-implement">Resources and Time to Implement</h3>
-							<p>The number of developers you need to build an insurance program with Socotra may vary. Some teams working with Socotra on single-product launches have had just 3–5 developers. One incumbent insurer building an entire digital multiline insurance program on Socotra had dozens. But for the Socotra platform and core functionality, even that team only allocated a single agile team.</p>
-							<p>Launch times vary, anywhere from a few weeks to seven months—again depending on how much the customer is building around the platform in terms of workflow orchestration, integrations, and UI.</p>
-							<p>Should you choose to take advantage of the Socotra Unified Portal, you can either configure it from scratch yourself or enlist Socotra's help for initial set-up. Documentation for the portal is not as robust yet as what you'll find for Socotra Core, but the team is aware of that and working toward full documentation parity. In the meantime they will make sure your team is set up for success at launch and beyond.</p>
-						</section>
-						<hr>
-						<section id="configuring-socotra">
-							<h2>Configuring Socotra</h2>
-							<p><a href="/ecosystem/policy/consider/configurability.html">Configuration</a> is an important part of every policy software platform. Socotra's approach is somewhat unique and worth highlighting.</p>
-							<p>Socotra’s <a rel="external" href="https://docs.socotra.com/production/data/object-model.html">data model</a> is flexible and can handle simple and complex products, both P&amp;C and life. Product configuration uses a <strong>JSON</strong> structure for laying out the data model and data capture (see <a rel="external" href="https://docs.socotra.com/production/data/fields.html">example documentation</a>).</p>
-							<p><a rel="external" href="https://docs.socotra.com/production/financials/rating-plugin.html">Rating</a>, <a rel="external" href="https://docs.socotra.com/production/policy-management/automated-underwriting.html">underwriting rules</a>, <a rel="external" href="https://docs.socotra.com/production/financials/payment-schedule-plugin.html">payments plans</a> and a few other pieces are configured by means of <strong><a rel="external" href="https://docs.socotra.com/production/tooling/plugins.html">plug-ins</a></strong>. Plug-ins are user scripts you write in JavaScript to customize how Socotra behaves at specific moments. They can be as basic or as intricate as you need.</p>
-							<p>Their plug-in approach has the benefits of other text-based configuration styles (see our <a href="/ecosystem/policy/consider/configurability.html">configuration write-up</a>), including the ability to use <a rel="external" href="https://git-scm.com/">git</a> to track changes. But it has all the power and flexibility of a full programming language. That <em>does mean</em> you'll need someone familiar with JavaScript to write your plug-ins. But there are a <a rel="external" href="https://bootcamp.berkeley.edu/blog/most-in-demand-programming-languages/">lot of people out there familiar with JavaScript</a>, and they'll find Socotra's plugins to be well documented.</p>
-							<p><a rel="external" href="https://docs.socotra.com/production/documents/document-templates.html">Document templates in Socotra</a> are configured using an open-source language called <a rel="external" href="https://shopify.dev/api/liquid"><strong>Liquid</strong></a>, developed by eCommerce giant <a rel="external" href="https://www.shopify.com/">Shopify</a>. Liquid feels similar to other templating frameworks like <a rel="external" href="https://gohugo.io/">Hugo</a> (for the <a rel="external" href="https://go.dev/">Go</a> programming language) or <a rel="external" href="https://palletsprojects.com/p/jinja/">Jinja</a> (for <a rel="external" href="https://www.python.org/">Python</a>). You're writing HTML and CSS, as you would for a non-interactive web page. But you add dynamic content in curly braces: <code>{{ like this }}</code>. Socotra adds to Liquid some well documented <a rel="external" href="https://docs.socotra.com/production/documents/liquid-filters.html">extended features</a> of its own, for things like formatting, easy date/time calculations, and lookups.</p>
-							<p>Some policy software vendors use Microsoft Word for templating and Excel for rating, since business users often know these tools. By contrast, Liquid templates are likely not something your business analyst or insurance product owner already knows. But if you have someone willing to learn them, they offer all the flexibility and precision of HTML and CSS.</p>
-							<p>Socotra also offers a <strong>configuration studio</strong> to complement these code-based approaches. Any changes made in the configuration studio UI are reflected in the config files. Customers use the config studio to tweak and validate configuration changes and even to build entire products, depending on the complexity of the product. Or you can use it as an on-ramp to coding up more intricate projects. You'll find a walk-through in Socotra's <a rel="external" href="https://docs.socotra.com/production/getting-started/getting-started-guide.html">getting started guide</a>.</p>
-						</section>
-						<hr>
-						<section id="products">
-							<h2>Products</h2>
-							<p>We asked Socotra what products their customers are <em>currently actively selling or placing</em>. If you don't see your product on the list, we always recommend reaching out! This is not meant to be an exhaustive list of what Socotra supports.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>Accident &amp; Health</li>
-								<li>BOP</li>
-								<li>Commercial Auto</li>
-								<li>Commercial Property</li>
-								<li>Cyber</li>
-								<li>Embedded Insurance</li>
-								<li>General Liability</li>
-								<li>Inland Marine</li>
-								<li>Life</li>
-								<li>Management Liability</li>
-								<li>Parametric Insurance</li>
-								<li>Personal Auto</li>
-								<li>Personal Home</li>
-								<li>Pet</li>
-								<li>Professional Liability</li>
-								<li>Rental Property Owners</li>
-								<li>Renters</li>
-								<li>Travel Insurance</li>
-								<li>Umbrella (write-in note: both Personal &amp; Commercial)</li>
-								<li>Usage-Based Insurance</li>
-								<li>Workers Comp</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="write-ins">Write-Ins</h3>
-							<ul>
-								<li>Annuities/MYGA (Multi-Year Guaranteed Annuity)</li>
-								<li>Boat</li>
-								<li>Consultant Liability</li>
-								<li>D&amp;O</li>
-								<li>Dwelling Fire/Property</li>
-								<li>Excess Casualty &amp; Liability</li>
-								<li>Farmowners</li>
-								<li>Flood</li>
-								<li>Motorcycle, ATV/UTV, Snowmobile, Dirtbike, e-Bike</li>
-								<li>Ocean Marine/Shipping</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers">No Current Customers</h3>
-							<ul>
-								<li>(None)</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="locations">
-							<h2>Locations</h2>
-							<p>We asked Socotra where their customers are <em>currently actively selling or placing insurance</em>. If you don't see your region on the list, we recommend reaching out to ask! This is not meant to be an exhaustive list of where Socotra will do business.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance_1">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>US &amp; Canada</li>
-								<li>Latin America</li>
-								<li>UK &amp; Europe</li>
-								<li>Australia/Asia/Pacific</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers_1">No Current Customers</h3>
-							<ul>
-								<li>Africa (no current customer, one former who shut down)</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="featured-customers">
-							<h2>Featured Customers</h2>
-							<p>According to their website<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, Socotra customers include the following:</p>
-							<ul>
-								<li><a rel="external" href="https://www.axa.com/">AXA</a></li>
-								<li><a rel="external" href="https://www.hippo.com/">Hippo</a></li>
-								<li><a rel="external" href="https://www.iag.com.au/">IAG</a></li>
-								<li><a rel="external" href="https://www.msamlin.com/">MS Amlin</a></li>
-								<li><a rel="external" href="https://www.mutualofomaha.com/">Mutual of Omaha</a></li>
-								<li><a rel="external" href="https://www.symetra.com/">Symetra</a></li>
-								<li><a rel="external" href="https://www.kobainsurance.com.au/">Koba Insurance</a></li>
-								<li><a rel="external" href="https://www.covertree.com/">CoverTree</a></li>
-								<li><a rel="external" href="https://playershealth.com/">Players Health</a></li>
-								<li><a rel="external" href="https://www.ledgebrook.com/">Ledgebrook</a></li>
-								<li><a rel="external" href="https://sigoseguros.com/">Sigo</a></li>
-							</ul>
-						</section>
-						<hr>
-						<!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
-						<section id="footnotes">
-							<h2>Footnotes</h2>
-							<!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
-							<!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
-							<ol>
-								<li id="fn:1">
-									<!-- notice we add the explicit link so it can open in a new tab -->
-									<p><a rel="external" href="https://www.socotra.com">https://www.socotra.com</a> captured <a rel="external" href="https://web.archive.org/web/20220920160449/https://www.socotra.com/">2022-09-20</a>, plus notes from the vendor&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-								</li>
-							</ol>
-						</section>
-					</article>
-				</div>
-			</main>
-			<footer id="footer">
-				<div>
-					<p><i aria-hidden="true" class="icon-logo"></i> Copyright <span class="date">2023</span> Finsure - All rights reserved</p>
-					<nav>
-						<h3>Info</h3>
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/about-us.html">About us</a></li>
-							<li><a href="/events.html">Events</a></li>
-							<li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
-						</ul>
-					</nav>
-					<div>
-						<h3>Follow us</h3>
-						<ul class="list-social">
-							<li><a rel="external" href="https://www.linkedin.com/company/finsureconsulting/"><i aria-hidden="true" class="icon-linkedin"></i> <span class="hidden">LinkedIn</span></a></li>
-							<li><a rel="external" href="https://savvycal.com/Michelle-Bothe/22eb851d"><i aria-hidden="true" class="icon-calendar"></i> <span class="hidden">Calendar</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
-		<script>window.jQuery || document.write('<script src="/javascript/jquery.js"><\/script>');</script>
-		<script defer src="/javascript/scripts.js"></script>
-		<script defer src="/javascript/custom.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Socotra</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#7551c3" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <meta name="author" content="https://psdhtml.me" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="preload" as="style" href="/styles/screen.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="/styles/fonts/icomoon.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="/styles/screen.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="//ajax.googleapis.com" />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta property="og:title" content="Socotra" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Finsure" />
+    <meta property="og:url" content="https://finsure.us/" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="Socotra" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="Finsure" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:image" content="" />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org/",
+          "@type": "Organization",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "legalName": "Finsure",
+          "description": "",
+          "logo": "",
+          "image": "",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer service",
+            "telephone": ""
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": ""
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "description": "",
+          "author": {
+            "@type": "Organization",
+            "url": "https://psdhtml.me",
+            "name": "psdHTML.me",
+            "description": "Figma to responsive HTML coding"
+          }
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <header id="top">
+        <p id="logo"><a href="/" accesskey="h">Finsure</a></p>
+        <nav id="skip">
+          <ul>
+            <li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
+            <li><a href="#content" accesskey="c">Skip to content (c)</a></li>
+            <li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
+          </ul>
+        </nav>
+        <nav id="nav" aria-label="Navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+              <a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em>
+            </li>
+            <li>
+              <a accesskey="2" href="/events.html">Events</a> <em>(2)</em>
+            </li>
+            <li class="sub">
+              <a accesskey="3">Insurtech ecosystem</a> <em>(3)</em>
+              <ul>
+                <li>
+                  <a href="/ecosystem/insurtech-guide-to.html"
+                    >Insurtech guide to ...</a
+                  >
+                </li>
+                <li><a href="/ecosystem/policy/research.html">Research</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="content" class="width-1350">
+        <header class="header-wide">
+          <h1 class="size-55 margin-10">Socotra</h1>
+        </header>
+        <div class="cols-a">
+          <header>
+            <nav class="nav-aside">
+              <ul>
+                <!-- add section headers here -->
+                <!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
+                <!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
+                <!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
+                <li class="active">
+                  <a href="#who-they-serve">Who They Serve</a>
+                </li>
+                <li><a href="#what-they-do">What They Do</a></li>
+                <li>
+                  <a href="#how-to-work-with-them">How to Work With Them</a>
+                </li>
+                <li><a href="#configuring-socotra">Configuring Socotra</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#featured-customers">Featured Customers</a></li>
+              </ul>
+            </nav>
+          </header>
+          <article>
+            <!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
+            <section id="who-they-serve">
+              <h2>Who They Serve</h2>
+              <p>
+                Socotra serves as a system of record for MGAs and carriers
+                across multiple (P&amp;C and Life) lines of business. It’s best
+                for teams who’ve raised enough funding to support Socotra’s unit
+                economics, and have a small development team or are comfortable
+                getting assistance from an SI firm on the implementation. Their
+                vision is to be the first truly modern core policy
+                administration system for insurtech MGAs and carriers of any
+                size: cloud-native, API-based, true SaaS, and ready to go off
+                the shelf.
+              </p>
+              <p>
+                Secondarily, maybe you are an agency, but you might like to own
+                your own product in the future. In the near term you need a
+                configurable, white-labeled quote flow and light CRM solution.
+                For this Socotra offers the
+                <a href="#socotra-unified-portal">Socotra Unified Portal</a> as
+                a standalone product. Then when it comes time to build your own
+                product, you won't need to tear out any of your front end; you
+                just plug Socotra's core policy software platform into the back
+                of it.
+              </p>
+            </section>
+            <!-- notice the horizonal rule (hr) added after each section -->
+            <hr />
+            <section id="what-they-do">
+              <h2>What They Do</h2>
+              <!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
+              <h3 id="apis-and-webhooks">APIs and Webhooks</h3>
+              <p>
+                Socotra's JSON/REST
+                <strong
+                  ><a href="/ecosystem/policy/consider/apis.html"
+                    >APIs</a
+                  ></strong
+                >
+                handle the policy lifecycle from quote and purchase through
+                endorsement, cancellation, reinstatement, and renewal. APIs
+                include functionality like rating &amp; underwriting, document
+                generation, creating invoices and marking them as paid, and
+                basic claims and FNOL. You'll want to build your own workflow
+                orchestration layer on top of these APIs. From there you can
+                create front ends for consumers or brokers, or provision your
+                own external APIs for distribution partners.
+              </p>
+              <p>
+                Socotra also offers
+                <strong
+                  ><a href="/ecosystem/policy/consider/webhooks.html"
+                    >webhooks</a
+                  ></strong
+                >
+                to integrate with downstream processes—like printing an invoice
+                when it's generated, enabling automated renewal processes, or
+                sending data changes to an external DB. Webhooks and APIs are
+                <a rel="external" href="https://docs.socotra.com/"
+                  >publicly and freely documented</a
+                >
+                online.
+              </p>
+              <hr class="compact" />
+              <h3 id="app-marketplace">App Marketplace</h3>
+              <p>
+                The core policy administration needs addressed by Socotra APIs
+                and webhooks are only part of an insurer's tech stack. To give
+                you a head start on the rest, Socotra offers an app marketplace.
+              </p>
+              <p>
+                The marketplace has 30 partners at time of writing (November
+                2022):
+              </p>
+              <ul>
+                <li>
+                  front-end providers (<a
+                    rel="external"
+                    href="https://www.mendix.com/"
+                    >Mendix</a
+                  >,
+                  <a rel="external" href="https://www.unqork.com/">Unqork</a>)
+                </li>
+                <li>
+                  rating and price optimization (<a
+                    rel="external"
+                    href="https://earnix.com/insurance-solutions/"
+                    >Earnix</a
+                  >
+                  Enterprise Ratine Engine,
+                  <a rel="external" href="https://nuon.ai/">Nuon</a> Price
+                  Adjustment Platform, and
+                  <a rel="external" href="https://coherent.global/">Coherent</a>
+                  Spark)
+                </li>
+                <li>
+                  payment processing (<a
+                    rel="external"
+                    href="https://stripe.com/"
+                    >Stripe</a
+                  >,
+                  <a rel="external" href="https://www.tranzpay.io/">Tranzpay</a
+                  >'s
+                  <a
+                    rel="external"
+                    href="https://www.tranzpay.io/disbursecloud/"
+                    >DisburseCloud</a
+                  >, and
+                  <a rel="external" href="https://www.oneinc.com/">One Inc</a>
+                  Digitial Payments Platform)
+                </li>
+                <li>
+                  e-signature (<a rel="external" href="https://www.onespan.com/"
+                    >OneSpan</a
+                  >)
+                </li>
+                <li>
+                  document management and processing (<a
+                    rel="external"
+                    href="https://www.sortspoke.com/"
+                    >SortSpoke</a
+                  >)
+                </li>
+                <li>
+                  data enrichment (<a
+                    rel="external"
+                    href="https://www.gradientai.com/"
+                    >Gradient AI</a
+                  >,
+                  <a rel="external" href="https://www.geosite.io/insurance"
+                    >Geosite</a
+                  >,
+                  <a rel="external" href="https://www.relativity6.com/"
+                    >Relativity6</a
+                  >,
+                  <a rel="external" href="https://www.experian.com/">Experian</a
+                  >,
+                  <a rel="external" href="https://fenrisd.com/">Fenris</a> Auto
+                  Insurance Prefill API,
+                  <a rel="external" href="https://capeanalytics.com/"
+                    >CAPE Analytics</a
+                  >
+                  Home Insurance Property Intelligence,
+                  <a rel="external" href="https://www.betterview.com/"
+                    >Betterview</a
+                  >
+                  Property Intelligence and Risk Management,
+                  <a rel="external" href="https://www.friss.com/">FRISS</a> Risk
+                  Assessment for underwriting,
+                  <a rel="external" href="https://www.getfize.com/">Fize</a>
+                  Infrastructure Connect, and
+                  <a rel="external" href="https://www.verisk.com/">Verisk</a>
+                  360Value via
+                  <a rel="external" href="https://aggne.com/">Aggne</a>)
+                </li>
+                <li>
+                  customer communications and services (<a
+                    rel="external"
+                    href="https://www.glia.com/"
+                    >Glia</a
+                  >
+                  Digital Customer Service,
+                  <a rel="external" href="https://floatbot.ai/">FloatBot</a>
+                  Conversational AI,
+                  <a rel="external" href="https://www.ghostdraft.com/"
+                    >GhostDraft</a
+                  >
+                  360 for forms and documents, and
+                  <a rel="external" href="https://www.obinc.com/"
+                    >OBRIEN Insurance Solutions</a
+                  >
+                  to print and mail them)
+                </li>
+                <li>
+                  claims (<a
+                    rel="external"
+                    href="https://www.fivesigmalabs.com/"
+                    >5Sigma</a
+                  >
+                  and
+                  <a rel="external" href="https://www.snapsheetclaims.com/"
+                    >Snapsheet</a
+                  >)
+                </li>
+                <li>
+                  3rd-party app providers (<a
+                    rel="external"
+                    href="https://www.dataart.com/industries/financial-software/insurance"
+                    >Data Art</a
+                  >,
+                  <a
+                    rel="external"
+                    href="https://fulcrumdigital.com/industries/insurance-services/"
+                    >Fulcrum Digital</a
+                  >'s Data Extraction Service,
+                  <a rel="external" href="https://aggne.com/">Aggne</a>'s Verisk
+                  360Value app, and the
+                  <a rel="external" href="https://radity.com/en/">Radity</a>
+                  Stripe App)
+                </li>
+              </ul>
+              <p>
+                We expect this list to expand in 2023 and beyond, so consider
+                checking their site for updates.
+              </p>
+              <hr class="compact" />
+              <h3 id="agent-and-policyholder-ux">Agent and Policyholder UX</h3>
+              <h4 id="socotra-unified-portal">Socotra Unified Portal</h4>
+              <p>
+                If you have a team of developers ready to develop your
+                customized stack, Socotra's back end and growing app marketplace
+                may be just what the doctor ordered. Your team can build a
+                workflow orchestration and integration layer on their openly
+                documented, modern back-end JSON/REST APIs, and then develop the
+                front end(s) you need on top of it.
+              </p>
+              <p>
+                But if you're pressed for time or development resources, or your
+                short-term front-end needs are not complex, consider also
+                springing for their configurable agent and policyholder front
+                end, the Socotra Unified Portal. The portal is a separate
+                offering from the APIs and app marketplace, collectively called
+                Socotra Core. Socotra Core has its own internal facing front end
+                as well. The SUP is newer, the product of a strategic
+                acquisition in 2022. It has benefits over the Socotra Core front
+                end, and we expect more as they continue to aggressively develop
+                it.
+              </p>
+              <p>Benefits of the portal include:</p>
+              <ul>
+                <li>
+                  New business and service flows for agents, and new business
+                  flows for consumers. Direct-to-consumer policyholder
+                  self-service endorsements will be available by the end of
+                  2022. The portal does not currently have an underwriter
+                  workbench component; if you have intricate underwriting
+                  workflows you can build these or integrate with a commercial
+                  underwriting workbench.
+                </li>
+                <li>
+                  A spacious, mobile-friendly design, with a uniform look and
+                  feel across agent and D2C experiences, and built-in tracking
+                  integrations like Google Analytics, Mouseflow, and the Meta
+                  (formerly Facebook) Pixel.
+                </li>
+                <li>
+                  A lightweight configurable orchestration and integration
+                  layer.
+                </li>
+                <li>
+                  Standard quote flow features like default coverage levels and
+                  automated quote variations. By contrast, quote variations
+                  exist in the Socotra Core UI, but they're more manual: Agents
+                  copy a quote and make changes to it. And rather than setting
+                  default coverage levels in Socotra Core, you simply have the
+                  agent set them each time.
+                </li>
+                <li>
+                  Surprising quote flow features like
+                  <a rel="external" href="https://www.glia.com/">glia</a> chat
+                  integration for support from underwriters and CSRs (which can
+                  be set up so the chat agent can see and interact with the user
+                  session), and a button for agents to easily send partial
+                  quotes to the consumer for completion.
+                </li>
+                <li>
+                  More native support for roles, groups, and permissions than
+                  you'll find in the Socotra Core internal UI. At time of
+                  writing, the Socotra Core UI only has read-only, claims-only,
+                  and full admin roles.
+                </li>
+                <li>
+                  “CRM light” features to help manage customers. As a general
+                  rule, some data is best kept outside your policy software back
+                  end itself—data like notes on individual customers and
+                  communications with them. The portal provides a lightweight
+                  solution for this. You can also handle email and SMS from
+                  within the portal.
+                </li>
+                <li>
+                  Full configurability of application flows and question logic
+                  via JSON. Note that this is a separate step from product
+                  configuration in Socotra Core for the moment.
+                </li>
+                <li>
+                  White-labeling and fine-grained branding. If you work with
+                  multiple agencies for example, you can brand the portal
+                  differently for each. The portal supports the most common
+                  branding elements like logos, colors, and fonts. If you need
+                  to completely redesign the page, consider developing your own
+                  front end.
+                </li>
+              </ul>
+              <h4 id="standalone-solution-for-agencies">
+                Standalone Solution for Agencies
+              </h4>
+              <p>
+                The Socotra Unified Portal is also available as a standalone
+                offering. If you're an agency and don't yet need Socotra's
+                backend APIs, the portal offers a configurable, white-labeled
+                quote and policy management flow which you can connect in to
+                your partners' APIs. Later if you're considering owning your
+                product, you can purchase Socotra Core. The portal will be ready
+                to integrate with it.
+              </p>
+              <p>
+                The SUP doesn't replace all the functionality of an agency
+                management system and full CRM. You'll still want to think about
+                things like pipeline management and prospecting, commission
+                management, billing and payments, and, if you're a broker, maybe
+                tracking down policies in multiple systems. But if you're
+                seriously considering a pivot to owning your own product, you
+                might talk to Socotra about whether and how the unified portal
+                makes sense for you.
+              </p>
+              <hr class="compact" />
+              <h3 id="event-streams-and-data-mart">
+                Event Streams and Data Mart
+              </h3>
+              <p>Socotra provides three ways to access your data.</p>
+              <ul>
+                <li>
+                  Their
+                  <a
+                    rel="external"
+                    href="https://docs.socotra.com/production/data/datamartguide.html"
+                    ><strong>data mart</strong></a
+                  >, introduced in 2022, is a relational database you can access
+                  with any MySQL client. You can query the data mart as you
+                  would your own data warehouse. Or you can plug your
+                  dashboarding solution directly into it—your Tableau, Looker,
+                  or PowerBI—with a MySQL driver.
+                </li>
+                <li>
+                  To supplement the data mart, Socotra
+                  <strong>event streams</strong> capture everything that happens
+                  in the platform in full detail. Their event streams are
+                  available on a <em>pull</em> model, where you query them as
+                  needed via
+                  <a
+                    rel="external"
+                    href="https://docs.socotra.com/production/api/event-stream.html"
+                    >their event stream API</a
+                  >. Or you can use
+                  <a
+                    rel="external"
+                    href="https://docs.socotra.com/production/tooling/webhooks.html"
+                    >Socotra webhooks</a
+                  >
+                  to achieve a traditional <em>push</em> model, receiving the
+                  events as they happen in real time. Either way you can then
+                  funnel some or all of this event data into a data lake.
+                </li>
+                <li>
+                  Socotra also offers
+                  <a
+                    rel="external"
+                    href="https://docs.socotra.com/production/data/reporting.html"
+                    ><strong>pre-configured reports</strong></a
+                  >
+                  for things like financial transactions, risk exposure,
+                  policies issued, commissions payable, claims (including
+                  reserves and payable), and unearned premium. These are
+                  available out of the box both via API and in their internal
+                  UI. Still, Socotra customers we've spoken with often
+                  eventually prefer to work directly with the data mart and
+                  event streams.
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <section id="how-to-work-with-them">
+              <h2>How to Work With Them</h2>
+              <h3 id="the-socotra-approach-an-analogy">
+                The Socotra Approach: An Analogy
+              </h3>
+              <p>
+                An analogy might help describe Socotra's approach to policy
+                software, in comparison with that of other vendors. Some policy
+                software companies are like Apple with the iPhone, focusing on
+                UX and owning the system from end to end because that UX is part
+                of their brand. Socotra aims to be like Android: an open system
+                with well built core components that enables insurers to create
+                an ecosystem.
+              </p>
+              <p>
+                If you like that approach, Socotra might be a good fit. You'll
+                need developers, or Socotra Services or a solutions integrator,
+                to get you started. If you go with an SI, Socotra can help you
+                get connected. If you bring your own developers, you can dive in
+                with a
+                <a
+                  rel="external"
+                  href="https://info.socotra.com/30-day-free-trial"
+                  >free 30-day trial</a
+                >, a
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/api/api-gettingstarted.html"
+                  >sandbox environment</a
+                >, and
+                <a rel="external" href="https://docs.socotra.com/"
+                  >thorough, accessible documentation</a
+                >.
+              </p>
+              <hr class="compact" />
+              <h3 id="resources-and-time-to-implement">
+                Resources and Time to Implement
+              </h3>
+              <p>
+                The number of developers you need to build an insurance program
+                with Socotra may vary. Some teams working with Socotra on
+                single-product launches have had just 3–5 developers. One
+                incumbent insurer building an entire digital multiline insurance
+                program on Socotra had dozens. But for the Socotra platform and
+                core functionality, even that team only allocated a single agile
+                team.
+              </p>
+              <p>
+                Launch times vary, anywhere from a few weeks to seven
+                months—again depending on how much the customer is building
+                around the platform in terms of workflow orchestration,
+                integrations, and UI.
+              </p>
+              <p>
+                Should you choose to take advantage of the Socotra Unified
+                Portal, you can either configure it from scratch yourself or
+                enlist Socotra's help for initial set-up. Documentation for the
+                portal is not as robust yet as what you'll find for Socotra
+                Core, but the team is aware of that and working toward full
+                documentation parity. In the meantime they will make sure your
+                team is set up for success at launch and beyond.
+              </p>
+            </section>
+            <hr />
+            <section id="configuring-socotra">
+              <h2>Configuring Socotra</h2>
+              <p>
+                <a href="/ecosystem/policy/consider/configurability.html"
+                  >Configuration</a
+                >
+                is an important part of every policy software platform.
+                Socotra's approach is somewhat unique and worth highlighting.
+              </p>
+              <p>
+                Socotra’s
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/data/object-model.html"
+                  >data model</a
+                >
+                is flexible and can handle simple and complex products, both
+                P&amp;C and life. Product configuration uses a
+                <strong>JSON</strong> structure for laying out the data model
+                and data capture (see
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/data/fields.html"
+                  >example documentation</a
+                >).
+              </p>
+              <p>
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/financials/rating-plugin.html"
+                  >Rating</a
+                >,
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/policy-management/automated-underwriting.html"
+                  >underwriting rules</a
+                >,
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/financials/payment-schedule-plugin.html"
+                  >payments plans</a
+                >
+                and a few other pieces are configured by means of
+                <strong
+                  ><a
+                    rel="external"
+                    href="https://docs.socotra.com/production/tooling/plugins.html"
+                    >plug-ins</a
+                  ></strong
+                >. Plug-ins are user scripts you write in JavaScript to
+                customize how Socotra behaves at specific moments. They can be
+                as basic or as intricate as you need.
+              </p>
+              <p>
+                Their plug-in approach has the benefits of other text-based
+                configuration styles (see our
+                <a href="/ecosystem/policy/consider/configurability.html"
+                  >configuration write-up</a
+                >), including the ability to use
+                <a rel="external" href="https://git-scm.com/">git</a> to track
+                changes. But it has all the power and flexibility of a full
+                programming language. That <em>does mean</em> you'll need
+                someone familiar with JavaScript to write your plug-ins. But
+                there are a
+                <a
+                  rel="external"
+                  href="https://bootcamp.berkeley.edu/blog/most-in-demand-programming-languages/"
+                  >lot of people out there familiar with JavaScript</a
+                >, and they'll find Socotra's plugins to be well documented.
+              </p>
+              <p>
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/documents/document-templates.html"
+                  >Document templates in Socotra</a
+                >
+                are configured using an open-source language called
+                <a rel="external" href="https://shopify.dev/api/liquid"
+                  ><strong>Liquid</strong></a
+                >, developed by eCommerce giant
+                <a rel="external" href="https://www.shopify.com/">Shopify</a>.
+                Liquid feels similar to other templating frameworks like
+                <a rel="external" href="https://gohugo.io/">Hugo</a> (for the
+                <a rel="external" href="https://go.dev/">Go</a> programming
+                language) or
+                <a rel="external" href="https://palletsprojects.com/p/jinja/"
+                  >Jinja</a
+                >
+                (for
+                <a rel="external" href="https://www.python.org/">Python</a>).
+                You're writing HTML and CSS, as you would for a non-interactive
+                web page. But you add dynamic content in curly braces:
+                <code>{{ like this }}</code>. Socotra adds to Liquid some well
+                documented
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/documents/liquid-filters.html"
+                  >extended features</a
+                >
+                of its own, for things like formatting, easy date/time
+                calculations, and lookups.
+              </p>
+              <p>
+                Some policy software vendors use Microsoft Word for templating
+                and Excel for rating, since business users often know these
+                tools. By contrast, Liquid templates are likely not something
+                your business analyst or insurance product owner already knows.
+                But if you have someone willing to learn them, they offer all
+                the flexibility and precision of HTML and CSS.
+              </p>
+              <p>
+                Socotra also offers a <strong>configuration studio</strong> to
+                complement these code-based approaches. Any changes made in the
+                configuration studio UI are reflected in the config files.
+                Customers use the config studio to tweak and validate
+                configuration changes and even to build entire products,
+                depending on the complexity of the product. Or you can use it as
+                an on-ramp to coding up more intricate projects. You'll find a
+                walk-through in Socotra's
+                <a
+                  rel="external"
+                  href="https://docs.socotra.com/production/getting-started/getting-started-guide.html"
+                  >getting started guide</a
+                >.
+              </p>
+            </section>
+            <hr />
+            <section id="products">
+              <h2>Products</h2>
+              <p>
+                We asked Socotra what products their customers are
+                <em>currently actively selling or placing</em>. If you don't see
+                your product on the list, we always recommend reaching out! This
+                is not meant to be an exhaustive list of what Socotra supports.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>Accident &amp; Health</li>
+                <li>BOP</li>
+                <li>Commercial Auto</li>
+                <li>Commercial Property</li>
+                <li>Cyber</li>
+                <li>Embedded Insurance</li>
+                <li>General Liability</li>
+                <li>Inland Marine</li>
+                <li>Life</li>
+                <li>Management Liability</li>
+                <li>Parametric Insurance</li>
+                <li>Personal Auto</li>
+                <li>Personal Home</li>
+                <li>Pet</li>
+                <li>Professional Liability</li>
+                <li>Rental Property Owners</li>
+                <li>Renters</li>
+                <li>Travel Insurance</li>
+                <li>
+                  Umbrella (write-in note: both Personal &amp; Commercial)
+                </li>
+                <li>Usage-Based Insurance</li>
+                <li>Workers Comp</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="write-ins">Write-Ins</h3>
+              <ul>
+                <li>Annuities/MYGA (Multi-Year Guaranteed Annuity)</li>
+                <li>Boat</li>
+                <li>Consultant Liability</li>
+                <li>D&amp;O</li>
+                <li>Dwelling Fire/Property</li>
+                <li>Excess Casualty &amp; Liability</li>
+                <li>Farmowners</li>
+                <li>Flood</li>
+                <li>Motorcycle, ATV/UTV, Snowmobile, Dirtbike, e-Bike</li>
+                <li>Ocean Marine/Shipping</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers">No Current Customers</h3>
+              <ul>
+                <li>(None)</li>
+              </ul>
+            </section>
+            <hr />
+            <section id="locations">
+              <h2>Locations</h2>
+              <p>
+                We asked Socotra where their customers are
+                <em>currently actively selling or placing insurance</em>. If you
+                don't see your region on the list, we recommend reaching out to
+                ask! This is not meant to be an exhaustive list of where Socotra
+                will do business.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance_1">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>US &amp; Canada</li>
+                <li>Latin America</li>
+                <li>UK &amp; Europe</li>
+                <li>Australia/Asia/Pacific</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers_1">No Current Customers</h3>
+              <ul>
+                <li>Africa (no current customer, one former who shut down)</li>
+              </ul>
+            </section>
+            <hr />
+            <section id="featured-customers">
+              <h2>Featured Customers</h2>
+              <p>
+                According to their website<sup id="fnref:1"
+                  ><a class="footnote-ref" href="#fn:1">1</a></sup
+                >, Socotra customers include the following:
+              </p>
+              <ul>
+                <li><a rel="external" href="https://www.axa.com/">AXA</a></li>
+                <li>
+                  <a rel="external" href="https://www.hippo.com/">Hippo</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.iag.com.au/">IAG</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.msamlin.com/">MS Amlin</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.mutualofomaha.com/"
+                    >Mutual of Omaha</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.symetra.com/">Symetra</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.kobainsurance.com.au/"
+                    >Koba Insurance</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.covertree.com/"
+                    >CoverTree</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://playershealth.com/"
+                    >Players Health</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.ledgebrook.com/"
+                    >Ledgebrook</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://sigoseguros.com/">Sigo</a>
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
+            <section id="footnotes">
+              <h2>Footnotes</h2>
+              <!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
+              <!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
+              <ol>
+                <li id="fn:1">
+                  <!-- notice we add the explicit link so it can open in a new tab -->
+                  <p>
+                    <a rel="external" href="https://www.socotra.com"
+                      >https://www.socotra.com</a
+                    >
+                    captured
+                    <a
+                      rel="external"
+                      href="https://web.archive.org/web/20220920160449/https://www.socotra.com/"
+                      >2022-09-20</a
+                    >, plus notes from the vendor&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:1"
+                      title="Jump back to footnote 1 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div>
+          <p>
+            <i aria-hidden="true" class="icon-logo"></i> Copyright
+            <span class="date">2023</span> Finsure - All rights reserved
+          </p>
+          <nav>
+            <h3>Info</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us.html">About us</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3>Follow us</h3>
+            <ul class="list-social">
+              <li>
+                <a
+                  rel="external"
+                  href="https://www.linkedin.com/company/finsureconsulting/"
+                  ><i aria-hidden="true" class="icon-linkedin"></i>
+                  <span class="hidden">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  rel="external"
+                  href="https://savvycal.com/Michelle-Bothe/22eb851d"
+                  ><i aria-hidden="true" class="icon-calendar"></i>
+                  <span class="hidden">Calendar</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="/javascript/jquery.js"><\/script>');
+    </script>
+    <script defer src="/javascript/scripts.js"></script>
+    <script defer src="/javascript/custom.js"></script>
+  </body>
 </html>

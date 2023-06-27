@@ -1,364 +1,824 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>PolicyFly</title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="theme-color" content="#7551c3">
-		<meta name="MobileOptimized" content="320">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no">
-		<meta name="author" content="https://psdhtml.me">
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="preload" as="style" href="/styles/screen.css">
-		<link rel="preload" as="font" href="/styles/fonts/icomoon.woff2" crossOrigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
-		<link rel="stylesheet" href="/styles/screen.css">
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e">	
-		<link rel="manifest" href="/manifest.json">		
-		<link rel="preconnect" href="//ajax.googleapis.com">
-		<link rel="preconnect" href="//fonts.googleapis.com">
-		<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-		<meta name="msapplication-config" content="browserconfig.xml">
-		<meta property="og:title" content="PolicyFly">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="">
-		<meta property="og:site_name" content="Finsure">
-		<meta property="og:url" content="https://finsure.us/">
-		<meta property="og:image" content="">		
-		<meta name="twitter:title" content="PolicyFly">
-		<meta name="twitter:description" content="">
-		<meta name="twitter:site" content="Finsure">
-		<meta name="twitter:card" content="">
-		<meta name="twitter:image" content="">
-		<script type="application/ld+json">
-			[
-				{
-					"@context": "http://schema.org/",
-					"@type": "Organization",
-					"url": "https://finsure.us/",
-					"name": "Finsure",
-					"legalName": "Finsure",
-					"description": "",
-					"logo": "",
-					"image": "",
-					"contactPoint": {
-						"@type": "ContactPoint",
-						"contactType": "Customer service",
-						"telephone": ""
-					},
-					"address": {
-						"@type": "PostalAddress",
-						"streetAddress": "",
-						"addressLocality": "",
-						"addressRegion": "",
-						"postalCode": "",
-						"addressCountry": ""
-					}
-				},
-				{ 
-					"@context": "http://schema.org", 
-					"@type": "WebSite", 
-					"url": "https://finsure.us/", 
-					"name": "Finsure",
-					"description": "",
-					"author": {
-						"@type": "Organization",
-						"url": "https://psdhtml.me",
-						"name": "psdHTML.me",
-						"description": "Figma to responsive HTML coding"
-					}
-				}
-			]
-		</script>
-	</head>
-	<body>
-		<div id="root">
-			<header id="top">
-				<p id="logo"><a href="/" accesskey="h">Finsure</a></p>
-				<nav id="skip">
-					<ul>
-						<li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
-						<li><a href="#content" accesskey="c">Skip to content (c)</a></li>
-						<li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
-					</ul>
-				</nav>
-				<nav id="nav" aria-label="Navigation">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em></li>
-						<li><a accesskey="2" href="/events.html">Events</a> <em>(2)</em></li>
-						<li class="sub"><a accesskey="3" href="/coming-soon.html">Insurtech ecosystem</a> <em>(3)</em>
-							<ul>
-								<li><a href="/ecosystem/insurtech-guide-to.html">Insurtech guide to ...</a></li>
-								<li><a href="/ecosystem/policy/research.html">Research</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</header>             
-			<main id="content" class="width-1350">
-				<header class="header-wide">
-					<h1 class="size-55 margin-10">PolicyFly</h1>
-				</header>
-				<div class="cols-a">
-					<header>
-						<nav class="nav-aside">
-							<ul>
-								<!-- add section headers here -->
-								<!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
-								<!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
-								<!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
-								<li class="active"><a href="#who-they-serve">Who They Serve</a></li>
-								<li><a href="#what-they-do">What They Do</a></li>
-								<li><a href="#how-to-work-with-them">How to Work With Them</a></li>
-								<li><a href="#user-experience-details">User Experience Details</a></li>
-								<li><a href="#products">Products</a></li>
-								<li><a href="#locations">Locations</a></li>
-								<li><a href="#featured-customers">Featured Customers</a></li>
-							</ul>
-						</nav>
-					</header>
-					<article>
-						<!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
-						<section id="who-they-serve">
-							<h2>Who They Serve</h2>
-							<p>PolicyFly focuses primarily on <em>specialty insurance</em>: usually excess and surplus lines (E&amp;S) or niche program business. Their target market can be neatly defined in <em>two groups</em>:</p>
-							<ul>
-								<li>Anyone who "<em>has the pen</em>," the underwriting authority to quote on behalf of whoever it is they represent. This commonly includes business models like MGAs, MGUs, and carriers.</li>
-								<li>Teams who may not have the pen, but still have the <em>obligation of policy issuance and policy management</em>, including formal quote issuance, documentation issuance, and endorsements. In some cases that obligation can fall to coverholders, wholesalers, or London brokers, depending on the line of business. Some of these LOBs commonly have a dozen endorsements in a policy term. On a complex product that's quite an admin load.</li>
-							</ul>
-							<p>PolicyFly <em>can do</em> direct to consumer (D2C) flows and automated underwriting when the program allows. But they shine when an insurance program involves both agents and underwriters, as is common in specialty business. They work with clients consultatively to design an agent/underwriter experience targeted to your needs. So if you want to design your own agent experience soup to nuts, PolicyFly might be overkill. Consider PolicyFly instead if your biggest innovations lie outside the agent UX (say, in your insurance product itself). Finally, they don't do claims or accounting, in case you're looking for that all from the same vendor.</p>
-						</section>
-						<!-- notice the horizonal rule (hr) added after each section -->
-						<hr>
-						<section id="what-they-do">
-							<h2>What They Do</h2>
-							<!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
-							<h3 id="user-experience">User Experience</h3>
-							<p>PolicyFly focuses on the <em>experience</em> of selling, underwriting, and servicing policies. Here we quote their CEO Cory Crosland, not as marketing but because it succinctly articulates their approach:</p>
-							<!-- here the block quote really has to be handled in a different way -->
-							<p class="text-end">
-								<q>For us, experience is everything—the easier we make it for all parties the more those parties will want to write their business through your program. This is the future of insurance and PolicyFly enables us to get there.</q>
-								<span><span class="strong">-Cory Crosland</span><br> PolicyFly CEO</span>
-							</p>
-							<p>This UX centers around facilitating collaboration between agents, underwriters (including underwriting assistants and managers), and other stakeholders (like executives for director-level sign-off); supporting underwriters on complex products; and streamlining submission workflows. See <a href="#user-experience-details">User Experience Details</a> below for more.</p>
-							<!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
-							<hr class="compact">
-							<h3 id="speed">Speed</h3>
-							<p>A major part of their value proposition is also speed: both speed to market (see <a href="#how-to-work-with-them">How to Work With Them</a> below) and performance.</p>
-							<!-- link had to be changed from /considerations/APIs.md to /ecosystem/policy/consider/apis.html -->
-							<!-- it shouldn't have been rendered as .md, but even if it was rendered right we'd want to update the filepath -->
-							<p>As for performance, PolicyFly is built on microservices, like most of its peers. But also in its favor, it's the only vendor we've seen to prefer <a href="/ecosystem/policy/consider/apis.html#grpc">gRPC</a> and Protobuf messages internally to <a href="/ecosystem/policy/consider/apis.html#jsonrest">JSON/REST</a>. Protobuf is a binary—i.e. small and fast—format developed at Google and used for streaming at Netflix, Cisco, and Square. (PolicyFly also offers JSON externally, in case you're worried about integrations.)</p>
-							<hr class="compact">
-							<h3 id="deep-es-functionality">Deep E&amp;S Functionality</h3>
-							<p>PolicyFly supports multiple ways to cover the kinds of large risks common to the E&amp;S world.</p>
-							<p>One way to insure large risks in the E&amp;S world, supported by PolicyFly, is to stack multiple layers of coverage in a tower of carriers. The first carrier may handle any losses up to $10M, for example, the second any losses in excess of $10M, up to an additional $15M, and so on. This is most common in surplus liability lines. PolicyFly allows you configure multiple towers in your rater. Each layer of each tower can have its own rates, surplus taxes, minimum premiums, and so on. Underwriters can override rates for each layer individually. If you offer multiple variations on a quote, each one will automatically include only the layers that apply for that limit. All quote documents, dec pages, and other forms will include sections for all the carriers involved. Bordereaus you owe to each carrier will split everything out appropriately and automatically.</p>
-							<p>Another common risk-sharing mechanism is organized into <em>markets</em>, offered by particular <em>carriers</em>. Each market assembles multiple participants into a single facility (say 3 participants sharing the risk 40/40/20) with a common claims processing center. This risk-sharing structure doesn’t have thresholds at particular limits: carrier A for everything under $10M, carrier B for anything between $10M and $25M, etc. Instead every dollar of risk is shared: in this example, 40¢ to the first participant and 20¢ to each of the others. PolicyFy supports this more “horizontal” sharing structure as well. And when you select a market in PolicyFly, the deductible options, conditions, and form wordings will all change to match it.</p>
-							<p>Finally, if you have the pen with 2 or more markets, you can rate them all within PolicyFly and present them to the agent at the same time for selection.</p>
-							<p>These are all part of the standard PolicyFly demo—but that doesn’t mean it’s all they can do. If you're approaching E&amp;S risk sharing yet a different way, consider reaching out to PolicyFly to see if they either already support it or can make it happen for you.</p>
-							<hr class="compact">
-							<h3 id="focused-features">Focused Features</h3>
-							<p>PolicyFly is highly configurable, incorporating accessible, no-code approaches like Excel for rating and Word for forms and documents. But their differentiator is not providing configurable DIY building blocks. Rather, they take a consultative approach to help you nail your specific agent and underwriter experience. And then they fold what they've learned into the product so others can benefit from it.</p>
-							<p>This attention to detail has led to targeted features. For example:</p>
-							<ul>
-								<li>Commercial trucking insurers can copy-paste in lists of VINs. PolicyFly then integrates with <a rel="external" href="https://www.nhtsa.gov/">NHTSA</a> to look up all the vehicle years, makes, and models for the application or endorsement.</li>
-								<li>They've integrated with <a rel="external" href="https://www.inscipher.com/">InsCipher</a> to provide up to date and automated surplus lines taxes &amp; fees calculations for all transactions (new business, endorsements, etc.) along with state-specific nightmares (looking at you FL, KY, NJ and friends)—plus built-in surplus lines notices and disclosures as part of their issuance package. If the line of business requires TRIA, they fully automate the signature process, compliance and fees.</li>
-								<li>Rates and forms are more flexible in non-admitted lines. So with PolicyFly you can allow underwriters to manually adjust the rate, premium, or commission on an application—which would be bananas in admitted lines. Underwriters can override rates at the individual factor level.</li>
-								<li>PolicyFly also captures surplus lines agent licenses for convenience. If you don’t have it on file, the platform will prompt for it on bind.</li>
-								<li>Straight-through processing—automated quote, rate, and bind without any manual intervention—is less common in excess and surplus lines. But it’s both targeted and flexible in PolicyFly.
-									<ul>
-										<li>You might start by quoting only 20% of submissions automatically, for example.</li>
-										<li>But later, looking at the data, you notice that submissions in a particular state, under a particular total insured value, with particular characteristics, always end up quoted as-is anyway—your underwriters never change anything.</li>
-										<li>So you circle back to your team, discuss it, and decide to automate these cases as well.</li>
-									</ul>
-								</li>
-								<li>E&amp;S and non-admitted insurance can also involve a lot of back-and-forth between brokers and underwriters, with underwriters often providing multiple manual quotes for the broker and insured to consider. You can do as much manual quoting as you like with PolicyFly, of course, but the platform also offers automation to make things easier. Underwriters can quickly provide, say, 9 options—3 limits, 3 deductibles—all at once and skip the back-and-forth.</li>
-								<li>I mentioned Excel and Word above. That adds accessibility and easy configurability, but you shouldn’t worry that it would limit the flexibility of your rules and rates. PolicyFly has a fully configurable rules and rating engine of its own. For the geeks among us, the engine uses Lua scripting, widely recognized as one of the fastest and simplest programming languages out there (<a rel="external" href="https://www.youtube.com/watch?v=jUuqBZwwkQw">nerd details</a>).</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="how-to-work-with-them">
-							<h2>How to Work With Them</h2>
-							<h3 id="consultative-approach">Consultative Approach</h3>
-							<p>PolicyFly takes a consultative approach with customers. Paraphrasing from their succinct <a rel="external" href="https://www.policyfly.com/approach">approach</a> page:</p>
-							<!-- here Paul uses ul with a class of "compact"; when do we use that and when do we use ul without it? -->
-							<ul class="compact">
-								<li>They start by understanding your program. How can they streamline the process? What data providers can they use to cut down on questions?</li>
-								<li>From application to bind, they design the fastest way for agents or customers to interface with your program.</li>
-								<li>They then rapidly launch your program in weeks—not months, with the initial platform running in days.</li>
-							</ul>
-							<p>On that last note, the timeline for "weeks, not months" begins when they start work with you. However, PolicyFly sometimes has a backlog. At time of writing (February 2023), PolicyFly is filling spots for Q3. The backlog might be shorter as you read these words, or nonexistent. We encourage you to ask!</p>
-							<p>You don't need to have a developer team to use PolicyFly—unless you'd like to build your own API integrations with the platform. If that's the case, see if your dev team is interested in trying gRPC for speed. If not, PolicyFly is happy to use REST.</p>
-							<hr class="compact">
-							<h3 id="thoughtful-change-management-start-by-demonstrating-value">Thoughtful Change Management: Start by Demonstrating Value</h3>
-							<p>Once you stand up your program with a policy software platform like PolicyFly, agents will not automatically start using it. Many agents, especially in the surplus lines world, are still used to email for submitting applications and navigating the underwriting process. If they have more modern tools, they likely already use portals for other programs they're appointed with. How do you transition them to yours?</p>
-							<p>PolicyFly's approach is to offer value before asking agents to trust and adopt a new system. Assume that when you start, agents will continue submitting applications via email. Your underwriters can still use PoilcyFly to key in the data and start the process. This alone is better than Excel spreadsheets and folders of Word documents on a shared drive. You have a collaborative platform, if only internally, with review and approval workflows, task management and triage, integrated document storage, and a clear audit trail.</p>
-							<p>But when it's time to send something back to the agent, you email them a link to PolicyFly. The agent logs in from the link to read any messages, tasks, requirements, subjectivities, etc. They can respond by email, but it's frictionless to click through to PolicyFly and carry on the conversation there. Later when they want to know where to find a document, what's on risk, or how to make a change, it's all in PolicyFly. If they need assistance, PolicyFly offers agents customer support free of charge. In this way you offer value to your agents so they want to use the platform for more of the policy lifecycle.</p>
-						</section>
-						<hr>
-						<section id="user-experience-details">
-							<h2>User Experience Details</h2>
-							<!-- notice that Paul uses width and alignment classes. don't really see any need for that, but see the design template if you're interested -->
-							<!-- in the original design template, this line introduced document templates and a block of code -->
-							<p>Since user experience is so integral to why you'd choose PolicyFly, it seems fitting to describe that experience, based on demos we've seen.</p>
-							<!-- the design template uses the pattern of <span class="text-underline">underlined text here</span> for underlining -->
-							<!-- though that's very silly given that the example we provided was not just underlined; it was a link -->
-							<!-- anyway, consider whether we want to use that pattern for anything, or if simple links (in some places) and em tags (in others) do the trick -->
-							<!-- also see the design template for how it used hljs -->
-							<!-- in the "products" section, Paul uses a compact horizontal rule before the first subsection. following that example here and elsewhere -->
-							<hr class="compact">
-							<h3 id="applications">Applications</h3>
-							<p>PolicyFly offers a single agent sign-on for multiple insurance programs. Once I select a program to get started, I get a configurable modal telling me what is and isn't in appetite for the program, so I don't waste time.</p>
-							<p>The application itself is one scrolling page, top to bottom. Major sections are listed in links across the top in a sticky header, providing an easy way to jump between sections. If a section is missing required information It's indicated with a red X. Within a section, questions are listed in a linked TOC in the left-hand rail. Again here any missing required questions are marked with an X. So at a glance an agent can find and click through to any questions and sections they need.</p>
-							<p>Beyond ease of navigation, PolicyFly offers other UX enhancements you should expect from a modern UI, like data pre-fill and expanding question sets with conditional logic. It also supports complex inline validation rules and clear, informative messaging.</p>
-							<hr class="compact">
-							<h3 id="chat-tasks-doc-upload-and-audit-log">Chat, Tasks, Doc Upload, and Audit Log</h3>
-							<p>After the application's complete, PolicyFly features what we'd describe as a <em>central communication hub</em> for all things related to that application. Agents, underwriters, anyone who touches the application on the way to issuance sees this same view.</p>
-							<p>The hub supports chatting in real time, marking messages as read, assigning and managing tasks, marking tasks specifically as subjectivities, uploading and reviewing documents, and of course making policy decisions. All these communications build an audit log, or “policy feed,” that reads down the page like a Facebook timeline. You can see who viewed what items when. You can tag users in a message with an @ sign like it's Twitter or JIRA. Individual messages can also be designated “underwriter notes,” hidden to all but underwriters and admins.</p>
-							<hr class="compact">
-							<h3 id="configurable-workflow">Configurable Workflow</h3>
-							<p>At the top of this "communication hub" is a minimal progress bar showing the steps from application to active policy. The progress bar and the workflow behind it is fully configurable.</p>
-							<p>This workflow configurability is important for specialty insurance, which often involves more steps from more teams than admitted lines—like assistant underwriters, a dedicated issuance team, quality control, and director-level authorization for large accounts. With each decision, the application is automatically forwarded to the next team. PolicyFly's standard product demo shows this level of nuance.</p>
-							<p>Once the workflow's completed and a policy is active, the progress bar naturally goes away.</p>
-							<hr class="compact">
-							<h3 id="policy-dashboards-and-version-history">Policy Dashboards and Version History</h3>
-							<p>As you would expect, PolicyFly has configurable list views of applications, renewals, in-progress endorsements, and the like for agents and underwriters. Notifications show up here as well for any unread messages and open tasks. Likewise there are configurable views for users to see any tasks on their plate. All these views can be searched and filtered.</p>
-							<p>PolicyFly also provides an at-a-glance view of what has changed at every endorsement and renewal. This might seem like common sense, until you've worked somewhere where customer service reps didn't have them! PolicyFly's view works much like a <a rel="external" href="https://www.gitkraken.com/learn/git/git-diff">git diff</a>, with new items in green, deleted items in red, and edits clearly marked.</p>
-							<p>These are just the UX elements that stuck out to us in demos in Q2 2022. If you find them intriguing enough to add to your shortlist, we encourage you to check out their <a rel="external" href="https://www.policyfly.com/">website</a> and reach out for your own demo.</p>
-						</section>
-						<hr>
-						<section id="products">
-							<h2>Products</h2>
-							<p>We asked PolicyFly what products their customers are <em>currently actively selling or placing</em>. If you don't see your product on the list, we always recommend reaching out! This is not meant to be an exhaustive list of what PolicyFly supports.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>Personal Home</li>
-								<li>Umbrella</li>
-								<li>Commercial Auto</li>
-								<li>Commercial Property</li>
-								<li>Inland Marine</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="write-ins">Write-Ins</h3>
-							<p>They primarily focus on Specialty Insurance which is usually E&amp;S or niche Program business. This currently includes</p>
-							<ul>
-								<li>Cargo</li>
-								<li>Franchises</li>
-								<li>Homeowners (CAT)</li>
-								<li>Musical Instruments</li>
-								<li>Transportation</li>
-								<li>Trucking</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers">No Current Customers</h3>
-							<ul>
-								<li>Accident &amp; Health</li>
-								<li>BOP</li>
-								<li>Cyber</li>
-								<li>Embedded Insurance</li>
-								<li>General Liability</li>
-								<li>Life</li>
-								<li>Management Liability</li>
-								<li>Parametric Insurance</li>
-								<li>Personal Auto</li>
-								<li>Pet</li>
-								<li>Professional Liability</li>
-								<li>Rental Property Owners</li>
-								<li>Renters</li>
-								<li>Travel Insurance</li>
-								<li>Usage-Based Insurance</li>
-								<li>Workers Comp</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="locations">
-							<h2>Locations</h2>
-							<p>We asked PolicyFly where their customers are <em>currently actively selling or placing insurance</em>. If you don't see your region on the list, we recommend reaching out to ask! This is not meant to be an exhaustive list of where PolicyFly will do business.</p>
-							<hr class="compact">
-							<h3 id="customers-actively-selling-or-placing-insurance_1">Customers Actively Selling or Placing Insurance</h3>
-							<ul>
-								<li>United States</li>
-								<li>UK</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="no-current-customers_1">No Current Customers</h3>
-							<ul>
-								<li>Canada</li>
-								<li>Latin America</li>
-								<li>Continental Europe</li>
-								<li>Australia/Asia/Pacific</li>
-								<li>Africa</li>
-							</ul>
-							<hr class="compact">
-							<h3 id="important-notes">Important Notes</h3>
-							<ul>
-								<li>PolicyFly doesn’t yet have anything live outside the US and UK. But they are designed soup to nuts with <em>multi-currency support</em>, and are working with a few companies now on potential EU programs.</li>
-							</ul>
-						</section>
-						<hr>
-						<section id="featured-customers">
-							<h2>Featured Customers</h2>
-							<p>The PolicyFly news page<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> has public press releases for the following customers<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
-							<ul>
-								<li><a rel="external" href="https://www.tysers.com/">Tysers</a></li>
-								<li><a rel="external" href="https://www.bellandclements.com/">Bell &amp; Clements</a></li>
-								<li><a rel="external" href="https://www.sterlingrisk.com/">SterlingRisk</a></li>
-								<li><a rel="external" href="https://www.assuredpartners.com/">AssuredPartners</a></li>
-								<li><a rel="external" href="https://www.slbig.com/">SLB Insurance Group</a></li>
-								<li><a rel="external" href="https://www.whiteoakuw.com/">WhiteOak</a></li>
-								<li><a rel="external" href="https://www.breckgrp.com/">Breckenridge</a></li>
-							</ul>
-						</section>
-						<hr>
-						<!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
-						<section id="footnotes">
-							<h2>Footnotes</h2>
-							<!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
-							<!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
-							<ol>
-								<li id="fn:1">
-									<!-- notice we add the explicit link so it can open in a new tab -->
-									<p><a rel="external" href="https://www.policyfly.com/news">https://www.policyfly.com/news</a>, captured <a rel="external" href="https://web.archive.org/web/20221021233120/https://www.policyfly.com/news">2022-10-21</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-								</li>
-								<li id="fn:2">
-									<p>The last 5 customers listed are not on the site but were provided on 2023-02-26 upon request.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-								</li>
-							</ol>
-						</section>
-					</article>
-				</div>
-			</main>
-			<footer id="footer">
-				<div>
-					<p><i aria-hidden="true" class="icon-logo"></i> Copyright <span class="date">2023</span> Finsure - All rights reserved</p>
-					<nav>
-						<h3>Info</h3>
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/about-us.html">About us</a></li>
-							<li><a href="/events.html">Events</a></li>
-							<li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
-						</ul>
-					</nav>
-					<div>
-						<h3>Follow us</h3>
-						<ul class="list-social">
-							<li><a rel="external" href="https://www.linkedin.com/company/finsureconsulting/"><i aria-hidden="true" class="icon-linkedin"></i> <span class="hidden">LinkedIn</span></a></li>
-							<li><a rel="external" href="https://savvycal.com/Michelle-Bothe/22eb851d"><i aria-hidden="true" class="icon-calendar"></i> <span class="hidden">Calendar</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
-		<script>window.jQuery || document.write('<script src="/javascript/jquery.js"><\/script>');</script>
-		<script defer src="/javascript/scripts.js"></script>
-		<script defer src="/javascript/custom.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>PolicyFly</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#7551c3" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <meta name="author" content="https://psdhtml.me" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="preload" as="style" href="/styles/screen.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="/styles/fonts/icomoon.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="/styles/screen.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#47485e" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="//ajax.googleapis.com" />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta property="og:title" content="PolicyFly" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Finsure" />
+    <meta property="og:url" content="https://finsure.us/" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="PolicyFly" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="Finsure" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:image" content="" />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org/",
+          "@type": "Organization",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "legalName": "Finsure",
+          "description": "",
+          "logo": "",
+          "image": "",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer service",
+            "telephone": ""
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": ""
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://finsure.us/",
+          "name": "Finsure",
+          "description": "",
+          "author": {
+            "@type": "Organization",
+            "url": "https://psdhtml.me",
+            "name": "psdHTML.me",
+            "description": "Figma to responsive HTML coding"
+          }
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <header id="top">
+        <p id="logo"><a href="/" accesskey="h">Finsure</a></p>
+        <nav id="skip">
+          <ul>
+            <li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
+            <li><a href="#content" accesskey="c">Skip to content (c)</a></li>
+            <li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
+          </ul>
+        </nav>
+        <nav id="nav" aria-label="Navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+              <a accesskey="1" href="/about-us.html">About us</a> <em>(1)</em>
+            </li>
+            <li>
+              <a accesskey="2" href="/events.html">Events</a> <em>(2)</em>
+            </li>
+            <li class="sub">
+              <a accesskey="3">Insurtech ecosystem</a> <em>(3)</em>
+              <ul>
+                <li>
+                  <a href="/ecosystem/insurtech-guide-to.html"
+                    >Insurtech guide to ...</a
+                  >
+                </li>
+                <li><a href="/ecosystem/policy/research.html">Research</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="content" class="width-1350">
+        <header class="header-wide">
+          <h1 class="size-55 margin-10">PolicyFly</h1>
+        </header>
+        <div class="cols-a">
+          <header>
+            <nav class="nav-aside">
+              <ul>
+                <!-- add section headers here -->
+                <!-- for now only one header deep; markdown is rendered to TOC with multiple layers -->
+                <!-- currently markdown uses title case in headers; using that for now, even though original from Paul used sentence case -->
+                <!-- if I can get the TOC to render at only one level deep (or if we use multiple on the site) I can take the TOC wholesale -->
+                <li class="active">
+                  <a href="#who-they-serve">Who They Serve</a>
+                </li>
+                <li><a href="#what-they-do">What They Do</a></li>
+                <li>
+                  <a href="#how-to-work-with-them">How to Work With Them</a>
+                </li>
+                <li>
+                  <a href="#user-experience-details">User Experience Details</a>
+                </li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#featured-customers">Featured Customers</a></li>
+              </ul>
+            </nav>
+          </header>
+          <article>
+            <!-- then for each section, currently it's rendered as 'h2 id="who-they-serve"' and some paragraph tags; that should be changed to sections like this -->
+            <section id="who-they-serve">
+              <h2>Who They Serve</h2>
+              <p>
+                PolicyFly focuses primarily on <em>specialty insurance</em>:
+                usually excess and surplus lines (E&amp;S) or niche program
+                business. Their target market can be neatly defined in
+                <em>two groups</em>:
+              </p>
+              <ul>
+                <li>
+                  Anyone who "<em>has the pen</em>," the underwriting authority
+                  to quote on behalf of whoever it is they represent. This
+                  commonly includes business models like MGAs, MGUs, and
+                  carriers.
+                </li>
+                <li>
+                  Teams who may not have the pen, but still have the
+                  <em>obligation of policy issuance and policy management</em>,
+                  including formal quote issuance, documentation issuance, and
+                  endorsements. In some cases that obligation can fall to
+                  coverholders, wholesalers, or London brokers, depending on the
+                  line of business. Some of these LOBs commonly have a dozen
+                  endorsements in a policy term. On a complex product that's
+                  quite an admin load.
+                </li>
+              </ul>
+              <p>
+                PolicyFly <em>can do</em> direct to consumer (D2C) flows and
+                automated underwriting when the program allows. But they shine
+                when an insurance program involves both agents and underwriters,
+                as is common in specialty business. They work with clients
+                consultatively to design an agent/underwriter experience
+                targeted to your needs. So if you want to design your own agent
+                experience soup to nuts, PolicyFly might be overkill. Consider
+                PolicyFly instead if your biggest innovations lie outside the
+                agent UX (say, in your insurance product itself). Finally, they
+                don't do claims or accounting, in case you're looking for that
+                all from the same vendor.
+              </p>
+            </section>
+            <!-- notice the horizonal rule (hr) added after each section -->
+            <hr />
+            <section id="what-they-do">
+              <h2>What They Do</h2>
+              <!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
+              <h3 id="user-experience">User Experience</h3>
+              <p>
+                PolicyFly focuses on the <em>experience</em> of selling,
+                underwriting, and servicing policies. Here we quote their CEO
+                Cory Crosland, not as marketing but because it succinctly
+                articulates their approach:
+              </p>
+              <!-- here the block quote really has to be handled in a different way -->
+              <p class="text-end">
+                <q
+                  >For us, experience is everything—the easier we make it for
+                  all parties the more those parties will want to write their
+                  business through your program. This is the future of insurance
+                  and PolicyFly enables us to get there.</q
+                >
+                <span
+                  ><span class="strong">-Cory Crosland</span><br />
+                  PolicyFly CEO</span
+                >
+              </p>
+              <p>
+                This UX centers around facilitating collaboration between
+                agents, underwriters (including underwriting assistants and
+                managers), and other stakeholders (like executives for
+                director-level sign-off); supporting underwriters on complex
+                products; and streamlining submission workflows. See
+                <a href="#user-experience-details">User Experience Details</a>
+                below for more.
+              </p>
+              <!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
+              <hr class="compact" />
+              <h3 id="speed">Speed</h3>
+              <p>
+                A major part of their value proposition is also speed: both
+                speed to market (see
+                <a href="#how-to-work-with-them">How to Work With Them</a>
+                below) and performance.
+              </p>
+              <!-- link had to be changed from /considerations/APIs.md to /ecosystem/policy/consider/apis.html -->
+              <!-- it shouldn't have been rendered as .md, but even if it was rendered right we'd want to update the filepath -->
+              <p>
+                As for performance, PolicyFly is built on microservices, like
+                most of its peers. But also in its favor, it's the only vendor
+                we've seen to prefer
+                <a href="/ecosystem/policy/consider/apis.html#grpc">gRPC</a> and
+                Protobuf messages internally to
+                <a href="/ecosystem/policy/consider/apis.html#jsonrest"
+                  >JSON/REST</a
+                >. Protobuf is a binary—i.e. small and fast—format developed at
+                Google and used for streaming at Netflix, Cisco, and Square.
+                (PolicyFly also offers JSON externally, in case you're worried
+                about integrations.)
+              </p>
+              <hr class="compact" />
+              <h3 id="deep-es-functionality">Deep E&amp;S Functionality</h3>
+              <p>
+                PolicyFly supports multiple ways to cover the kinds of large
+                risks common to the E&amp;S world.
+              </p>
+              <p>
+                One way to insure large risks in the E&amp;S world, supported by
+                PolicyFly, is to stack multiple layers of coverage in a tower of
+                carriers. The first carrier may handle any losses up to $10M,
+                for example, the second any losses in excess of $10M, up to an
+                additional $15M, and so on. This is most common in surplus
+                liability lines. PolicyFly allows you configure multiple towers
+                in your rater. Each layer of each tower can have its own rates,
+                surplus taxes, minimum premiums, and so on. Underwriters can
+                override rates for each layer individually. If you offer
+                multiple variations on a quote, each one will automatically
+                include only the layers that apply for that limit. All quote
+                documents, dec pages, and other forms will include sections for
+                all the carriers involved. Bordereaus you owe to each carrier
+                will split everything out appropriately and automatically.
+              </p>
+              <p>
+                Another common risk-sharing mechanism is organized into
+                <em>markets</em>, offered by particular <em>carriers</em>. Each
+                market assembles multiple participants into a single facility
+                (say 3 participants sharing the risk 40/40/20) with a common
+                claims processing center. This risk-sharing structure doesn’t
+                have thresholds at particular limits: carrier A for everything
+                under $10M, carrier B for anything between $10M and $25M, etc.
+                Instead every dollar of risk is shared: in this example, 40¢ to
+                the first participant and 20¢ to each of the others. PolicyFy
+                supports this more “horizontal” sharing structure as well. And
+                when you select a market in PolicyFly, the deductible options,
+                conditions, and form wordings will all change to match it.
+              </p>
+              <p>
+                Finally, if you have the pen with 2 or more markets, you can
+                rate them all within PolicyFly and present them to the agent at
+                the same time for selection.
+              </p>
+              <p>
+                These are all part of the standard PolicyFly demo—but that
+                doesn’t mean it’s all they can do. If you're approaching E&amp;S
+                risk sharing yet a different way, consider reaching out to
+                PolicyFly to see if they either already support it or can make
+                it happen for you.
+              </p>
+              <hr class="compact" />
+              <h3 id="focused-features">Focused Features</h3>
+              <p>
+                PolicyFly is highly configurable, incorporating accessible,
+                no-code approaches like Excel for rating and Word for forms and
+                documents. But their differentiator is not providing
+                configurable DIY building blocks. Rather, they take a
+                consultative approach to help you nail your specific agent and
+                underwriter experience. And then they fold what they've learned
+                into the product so others can benefit from it.
+              </p>
+              <p>
+                This attention to detail has led to targeted features. For
+                example:
+              </p>
+              <ul>
+                <li>
+                  Commercial trucking insurers can copy-paste in lists of VINs.
+                  PolicyFly then integrates with
+                  <a rel="external" href="https://www.nhtsa.gov/">NHTSA</a> to
+                  look up all the vehicle years, makes, and models for the
+                  application or endorsement.
+                </li>
+                <li>
+                  They've integrated with
+                  <a rel="external" href="https://www.inscipher.com/"
+                    >InsCipher</a
+                  >
+                  to provide up to date and automated surplus lines taxes &amp;
+                  fees calculations for all transactions (new business,
+                  endorsements, etc.) along with state-specific nightmares
+                  (looking at you FL, KY, NJ and friends)—plus built-in surplus
+                  lines notices and disclosures as part of their issuance
+                  package. If the line of business requires TRIA, they fully
+                  automate the signature process, compliance and fees.
+                </li>
+                <li>
+                  Rates and forms are more flexible in non-admitted lines. So
+                  with PolicyFly you can allow underwriters to manually adjust
+                  the rate, premium, or commission on an application—which would
+                  be bananas in admitted lines. Underwriters can override rates
+                  at the individual factor level.
+                </li>
+                <li>
+                  PolicyFly also captures surplus lines agent licenses for
+                  convenience. If you don’t have it on file, the platform will
+                  prompt for it on bind.
+                </li>
+                <li>
+                  Straight-through processing—automated quote, rate, and bind
+                  without any manual intervention—is less common in excess and
+                  surplus lines. But it’s both targeted and flexible in
+                  PolicyFly.
+                  <ul>
+                    <li>
+                      You might start by quoting only 20% of submissions
+                      automatically, for example.
+                    </li>
+                    <li>
+                      But later, looking at the data, you notice that
+                      submissions in a particular state, under a particular
+                      total insured value, with particular characteristics,
+                      always end up quoted as-is anyway—your underwriters never
+                      change anything.
+                    </li>
+                    <li>
+                      So you circle back to your team, discuss it, and decide to
+                      automate these cases as well.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  E&amp;S and non-admitted insurance can also involve a lot of
+                  back-and-forth between brokers and underwriters, with
+                  underwriters often providing multiple manual quotes for the
+                  broker and insured to consider. You can do as much manual
+                  quoting as you like with PolicyFly, of course, but the
+                  platform also offers automation to make things easier.
+                  Underwriters can quickly provide, say, 9 options—3 limits, 3
+                  deductibles—all at once and skip the back-and-forth.
+                </li>
+                <li>
+                  I mentioned Excel and Word above. That adds accessibility and
+                  easy configurability, but you shouldn’t worry that it would
+                  limit the flexibility of your rules and rates. PolicyFly has a
+                  fully configurable rules and rating engine of its own. For the
+                  geeks among us, the engine uses Lua scripting, widely
+                  recognized as one of the fastest and simplest programming
+                  languages out there (<a
+                    rel="external"
+                    href="https://www.youtube.com/watch?v=jUuqBZwwkQw"
+                    >nerd details</a
+                  >).
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <section id="how-to-work-with-them">
+              <h2>How to Work With Them</h2>
+              <h3 id="consultative-approach">Consultative Approach</h3>
+              <p>
+                PolicyFly takes a consultative approach with customers.
+                Paraphrasing from their succinct
+                <a rel="external" href="https://www.policyfly.com/approach"
+                  >approach</a
+                >
+                page:
+              </p>
+              <!-- here Paul uses ul with a class of "compact"; when do we use that and when do we use ul without it? -->
+              <ul class="compact">
+                <li>
+                  They start by understanding your program. How can they
+                  streamline the process? What data providers can they use to
+                  cut down on questions?
+                </li>
+                <li>
+                  From application to bind, they design the fastest way for
+                  agents or customers to interface with your program.
+                </li>
+                <li>
+                  They then rapidly launch your program in weeks—not months,
+                  with the initial platform running in days.
+                </li>
+              </ul>
+              <p>
+                On that last note, the timeline for "weeks, not months" begins
+                when they start work with you. However, PolicyFly sometimes has
+                a backlog. At time of writing (February 2023), PolicyFly is
+                filling spots for Q3. The backlog might be shorter as you read
+                these words, or nonexistent. We encourage you to ask!
+              </p>
+              <p>
+                You don't need to have a developer team to use PolicyFly—unless
+                you'd like to build your own API integrations with the platform.
+                If that's the case, see if your dev team is interested in trying
+                gRPC for speed. If not, PolicyFly is happy to use REST.
+              </p>
+              <hr class="compact" />
+              <h3
+                id="thoughtful-change-management-start-by-demonstrating-value"
+              >
+                Thoughtful Change Management: Start by Demonstrating Value
+              </h3>
+              <p>
+                Once you stand up your program with a policy software platform
+                like PolicyFly, agents will not automatically start using it.
+                Many agents, especially in the surplus lines world, are still
+                used to email for submitting applications and navigating the
+                underwriting process. If they have more modern tools, they
+                likely already use portals for other programs they're appointed
+                with. How do you transition them to yours?
+              </p>
+              <p>
+                PolicyFly's approach is to offer value before asking agents to
+                trust and adopt a new system. Assume that when you start, agents
+                will continue submitting applications via email. Your
+                underwriters can still use PoilcyFly to key in the data and
+                start the process. This alone is better than Excel spreadsheets
+                and folders of Word documents on a shared drive. You have a
+                collaborative platform, if only internally, with review and
+                approval workflows, task management and triage, integrated
+                document storage, and a clear audit trail.
+              </p>
+              <p>
+                But when it's time to send something back to the agent, you
+                email them a link to PolicyFly. The agent logs in from the link
+                to read any messages, tasks, requirements, subjectivities, etc.
+                They can respond by email, but it's frictionless to click
+                through to PolicyFly and carry on the conversation there. Later
+                when they want to know where to find a document, what's on risk,
+                or how to make a change, it's all in PolicyFly. If they need
+                assistance, PolicyFly offers agents customer support free of
+                charge. In this way you offer value to your agents so they want
+                to use the platform for more of the policy lifecycle.
+              </p>
+            </section>
+            <hr />
+            <section id="user-experience-details">
+              <h2>User Experience Details</h2>
+              <!-- notice that Paul uses width and alignment classes. don't really see any need for that, but see the design template if you're interested -->
+              <!-- in the original design template, this line introduced document templates and a block of code -->
+              <p>
+                Since user experience is so integral to why you'd choose
+                PolicyFly, it seems fitting to describe that experience, based
+                on demos we've seen.
+              </p>
+              <!-- the design template uses the pattern of <span class="text-underline">underlined text here</span> for underlining -->
+              <!-- though that's very silly given that the example we provided was not just underlined; it was a link -->
+              <!-- anyway, consider whether we want to use that pattern for anything, or if simple links (in some places) and em tags (in others) do the trick -->
+              <!-- also see the design template for how it used hljs -->
+              <!-- in the "products" section, Paul uses a compact horizontal rule before the first subsection. following that example here and elsewhere -->
+              <hr class="compact" />
+              <h3 id="applications">Applications</h3>
+              <p>
+                PolicyFly offers a single agent sign-on for multiple insurance
+                programs. Once I select a program to get started, I get a
+                configurable modal telling me what is and isn't in appetite for
+                the program, so I don't waste time.
+              </p>
+              <p>
+                The application itself is one scrolling page, top to bottom.
+                Major sections are listed in links across the top in a sticky
+                header, providing an easy way to jump between sections. If a
+                section is missing required information It's indicated with a
+                red X. Within a section, questions are listed in a linked TOC in
+                the left-hand rail. Again here any missing required questions
+                are marked with an X. So at a glance an agent can find and click
+                through to any questions and sections they need.
+              </p>
+              <p>
+                Beyond ease of navigation, PolicyFly offers other UX
+                enhancements you should expect from a modern UI, like data
+                pre-fill and expanding question sets with conditional logic. It
+                also supports complex inline validation rules and clear,
+                informative messaging.
+              </p>
+              <hr class="compact" />
+              <h3 id="chat-tasks-doc-upload-and-audit-log">
+                Chat, Tasks, Doc Upload, and Audit Log
+              </h3>
+              <p>
+                After the application's complete, PolicyFly features what we'd
+                describe as a <em>central communication hub</em> for all things
+                related to that application. Agents, underwriters, anyone who
+                touches the application on the way to issuance sees this same
+                view.
+              </p>
+              <p>
+                The hub supports chatting in real time, marking messages as
+                read, assigning and managing tasks, marking tasks specifically
+                as subjectivities, uploading and reviewing documents, and of
+                course making policy decisions. All these communications build
+                an audit log, or “policy feed,” that reads down the page like a
+                Facebook timeline. You can see who viewed what items when. You
+                can tag users in a message with an @ sign like it's Twitter or
+                JIRA. Individual messages can also be designated “underwriter
+                notes,” hidden to all but underwriters and admins.
+              </p>
+              <hr class="compact" />
+              <h3 id="configurable-workflow">Configurable Workflow</h3>
+              <p>
+                At the top of this "communication hub" is a minimal progress bar
+                showing the steps from application to active policy. The
+                progress bar and the workflow behind it is fully configurable.
+              </p>
+              <p>
+                This workflow configurability is important for specialty
+                insurance, which often involves more steps from more teams than
+                admitted lines—like assistant underwriters, a dedicated issuance
+                team, quality control, and director-level authorization for
+                large accounts. With each decision, the application is
+                automatically forwarded to the next team. PolicyFly's standard
+                product demo shows this level of nuance.
+              </p>
+              <p>
+                Once the workflow's completed and a policy is active, the
+                progress bar naturally goes away.
+              </p>
+              <hr class="compact" />
+              <h3 id="policy-dashboards-and-version-history">
+                Policy Dashboards and Version History
+              </h3>
+              <p>
+                As you would expect, PolicyFly has configurable list views of
+                applications, renewals, in-progress endorsements, and the like
+                for agents and underwriters. Notifications show up here as well
+                for any unread messages and open tasks. Likewise there are
+                configurable views for users to see any tasks on their plate.
+                All these views can be searched and filtered.
+              </p>
+              <p>
+                PolicyFly also provides an at-a-glance view of what has changed
+                at every endorsement and renewal. This might seem like common
+                sense, until you've worked somewhere where customer service reps
+                didn't have them! PolicyFly's view works much like a
+                <a
+                  rel="external"
+                  href="https://www.gitkraken.com/learn/git/git-diff"
+                  >git diff</a
+                >, with new items in green, deleted items in red, and edits
+                clearly marked.
+              </p>
+              <p>
+                These are just the UX elements that stuck out to us in demos in
+                Q2 2022. If you find them intriguing enough to add to your
+                shortlist, we encourage you to check out their
+                <a rel="external" href="https://www.policyfly.com/">website</a>
+                and reach out for your own demo.
+              </p>
+            </section>
+            <hr />
+            <section id="products">
+              <h2>Products</h2>
+              <p>
+                We asked PolicyFly what products their customers are
+                <em>currently actively selling or placing</em>. If you don't see
+                your product on the list, we always recommend reaching out! This
+                is not meant to be an exhaustive list of what PolicyFly
+                supports.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>Personal Home</li>
+                <li>Umbrella</li>
+                <li>Commercial Auto</li>
+                <li>Commercial Property</li>
+                <li>Inland Marine</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="write-ins">Write-Ins</h3>
+              <p>
+                They primarily focus on Specialty Insurance which is usually
+                E&amp;S or niche Program business. This currently includes
+              </p>
+              <ul>
+                <li>Cargo</li>
+                <li>Franchises</li>
+                <li>Homeowners (CAT)</li>
+                <li>Musical Instruments</li>
+                <li>Transportation</li>
+                <li>Trucking</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers">No Current Customers</h3>
+              <ul>
+                <li>Accident &amp; Health</li>
+                <li>BOP</li>
+                <li>Cyber</li>
+                <li>Embedded Insurance</li>
+                <li>General Liability</li>
+                <li>Life</li>
+                <li>Management Liability</li>
+                <li>Parametric Insurance</li>
+                <li>Personal Auto</li>
+                <li>Pet</li>
+                <li>Professional Liability</li>
+                <li>Rental Property Owners</li>
+                <li>Renters</li>
+                <li>Travel Insurance</li>
+                <li>Usage-Based Insurance</li>
+                <li>Workers Comp</li>
+              </ul>
+            </section>
+            <hr />
+            <section id="locations">
+              <h2>Locations</h2>
+              <p>
+                We asked PolicyFly where their customers are
+                <em>currently actively selling or placing insurance</em>. If you
+                don't see your region on the list, we recommend reaching out to
+                ask! This is not meant to be an exhaustive list of where
+                PolicyFly will do business.
+              </p>
+              <hr class="compact" />
+              <h3 id="customers-actively-selling-or-placing-insurance_1">
+                Customers Actively Selling or Placing Insurance
+              </h3>
+              <ul>
+                <li>United States</li>
+                <li>UK</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="no-current-customers_1">No Current Customers</h3>
+              <ul>
+                <li>Canada</li>
+                <li>Latin America</li>
+                <li>Continental Europe</li>
+                <li>Australia/Asia/Pacific</li>
+                <li>Africa</li>
+              </ul>
+              <hr class="compact" />
+              <h3 id="important-notes">Important Notes</h3>
+              <ul>
+                <li>
+                  PolicyFly doesn’t yet have anything live outside the US and
+                  UK. But they are designed soup to nuts with
+                  <em>multi-currency support</em>, and are working with a few
+                  companies now on potential EU programs.
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <section id="featured-customers">
+              <h2>Featured Customers</h2>
+              <p>
+                The PolicyFly news page<sup id="fnref:1"
+                  ><a class="footnote-ref" href="#fn:1">1</a></sup
+                >
+                has public press releases for the following customers<sup
+                  id="fnref:2"
+                  ><a class="footnote-ref" href="#fn:2">2</a></sup
+                >:
+              </p>
+              <ul>
+                <li>
+                  <a rel="external" href="https://www.tysers.com/">Tysers</a>
+                </li>
+                <li>
+                  <a rel="external" href="https://www.bellandclements.com/"
+                    >Bell &amp; Clements</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.sterlingrisk.com/"
+                    >SterlingRisk</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.assuredpartners.com/"
+                    >AssuredPartners</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.slbig.com/"
+                    >SLB Insurance Group</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.whiteoakuw.com/"
+                    >WhiteOak</a
+                  >
+                </li>
+                <li>
+                  <a rel="external" href="https://www.breckgrp.com/"
+                    >Breckenridge</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <!-- the rendered HTML has this as a div with a class of "footnote"; here it's changed to a section like all the others -->
+            <section id="footnotes">
+              <h2>Footnotes</h2>
+              <!-- not sure why footnotes are an unordered list in Paul's version, with no links back to the original -->
+              <!-- added reference and backreference, both of which are created automatically in the rendered HTML -->
+              <ol>
+                <li id="fn:1">
+                  <!-- notice we add the explicit link so it can open in a new tab -->
+                  <p>
+                    <a rel="external" href="https://www.policyfly.com/news"
+                      >https://www.policyfly.com/news</a
+                    >, captured
+                    <a
+                      rel="external"
+                      href="https://web.archive.org/web/20221021233120/https://www.policyfly.com/news"
+                      >2022-10-21</a
+                    >&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:1"
+                      title="Jump back to footnote 1 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+                <li id="fn:2">
+                  <p>
+                    The last 5 customers listed are not on the site but were
+                    provided on 2023-02-26 upon request.&#160;<a
+                      class="footnote-backref"
+                      href="#fnref:2"
+                      title="Jump back to footnote 2 in the text"
+                      >&#8617;</a
+                    >
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div>
+          <p>
+            <i aria-hidden="true" class="icon-logo"></i> Copyright
+            <span class="date">2023</span> Finsure - All rights reserved
+          </p>
+          <nav>
+            <h3>Info</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us.html">About us</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/coming-soon.html">Insurtech ecosystem</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3>Follow us</h3>
+            <ul class="list-social">
+              <li>
+                <a
+                  rel="external"
+                  href="https://www.linkedin.com/company/finsureconsulting/"
+                  ><i aria-hidden="true" class="icon-linkedin"></i>
+                  <span class="hidden">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  rel="external"
+                  href="https://savvycal.com/Michelle-Bothe/22eb851d"
+                  ><i aria-hidden="true" class="icon-calendar"></i>
+                  <span class="hidden">Calendar</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="/javascript/jquery.js"><\/script>');
+    </script>
+    <script defer src="/javascript/scripts.js"></script>
+    <script defer src="/javascript/custom.js"></script>
+  </body>
 </html>
