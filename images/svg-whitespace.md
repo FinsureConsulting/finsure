@@ -80,7 +80,6 @@ I'll walk you through how to troubleshoot these below.
 
 filename | error row and column
 -------- | --------------------
-/images/ams/ams-360.svg | error at 1:8517.
 /images/ams/applied.svg | error at 1:6518.
 /images/ams/better-agency.svg | error at 1:9942.
 /images/ams/bind-hq.svg | error at 1:28677.
