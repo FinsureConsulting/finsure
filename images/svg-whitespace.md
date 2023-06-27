@@ -10,7 +10,7 @@ Of course use the real filename instead of `C:\path\to\your\file.svg`.
 And this makes a new file alongside the original file,
 so if it works, just delete the original and rename the new one to the old name.
 
-My script managed 59 files with no trouble:
+My script managed 60 files with no trouble:
 
 filepath | result
 -------- | ------
