@@ -39,13 +39,13 @@
     <link rel="preconnect" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
     <meta name="msapplication-config" content="browserconfig.xml" />
-    <meta property="og:title" content="Design sample" />
+    <meta property="og:title" content="APIs" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="" />
     <meta property="og:site_name" content="Finsure" />
     <meta property="og:url" content="https://finsure.us/" />
     <meta property="og:image" content="" />
-    <meta name="twitter:title" content="Design sample" />
+    <meta name="twitter:title" content="APIs" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:site" content="Finsure" />
     <meta name="twitter:card" content="" />
@@ -127,572 +127,88 @@
       </header>
       <main id="content" class="width-1350">
         <header class="header-wide">
-          <h1 class="size-55 margin-10">Design Sample</h1>
+          <h1 class="size-55 margin-10">APIs</h1>
         </header>
         <div class="cols-a">
           <header>
             <nav class="nav-aside">
               <ul>
-                <li class="active"><a href="#section-a">Who they serve</a></li>
-                <li><a href="#section-b">What they do</a></li>
-                <li><a href="#section-c">How to work with them</a></li>
-                <li><a href="#section-d">User Experience</a></li>
-                <li><a href="#section-e">Numbered Lists</a></li>
-                <li><a href="#section-f">Tables</a></li>
-                <li><a href="#section-g">Products</a></li>
-                <li><a href="#section-h">Locations</a></li>
-                <li><a href="#section-i">Featured Customers</a></li>
+                <li class="active"><a href="#what-are-they">What Are They</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#protocols">Protocols</a>
+                <li><a href="#apis-and-data">APIs and Data</a></li>
               </ul>
             </nav>
           </header>
           <article>
-            <section id="section-a">
-              <h2>Who they serve</h2>
+            <!-- split each h2 into a section (with ID) and a separate h2 -->
+            <section id="what-are-they">
+              <h2>What Are They</h2>
+              <p>An API, or application programming interface, is just a structured way for two applications to talk to each other. For example, your quoting engine might ask your rating engine for premiums on a quote. All APIs have this same structure: a client-side application sending a <em>request</em>, and a server-side application sending a <em>response</em>. The content of an API request or response is called its <em>payload</em>.</p>
+            <!-- close each section and add a horizontal rule -->
+            </section>
+            <hr />
+            <section id="documentation">
+              <h2>Documentation</h2>
+              <p>APIs should have documentation: thorough, accurate, up-to-date docs in plain English, with working examples, aimed at someone new to the API, for everything the API does. This might sound like a trivial implementation detail, but coding with shoddy documentation is like running through knee-deep seawater: slow and difficult. At best your team will have to find the right people to talk to about this or that critical functionality. At worst, they won't find what they need at all, even though the functionality may be there. Or you'll be indefinitely dependent on integration specialists because they alone know the tool.</p>
+              <p>The need for documentation goes for anything you build on your own as well. Think of your team today as a vendor, and your team tomorrow as their customer. Have them write documentation such that tomorrow's team thanks them—even if tomorrow's team is themselves!</p>
+              <p>We've seen three kinds of good documentation in the policy software vendor space.</p>
               <ul>
-                <li>
-                  PolicyFly primarily focuses on specialty insurance: usually
-                  excess and surplus lines (E&amp;S) or niche program business.
-                </li>
-                <li>
-                  They work with carriers, MGAs, and MGUs, who might write
-                  business on their own paper. They also work with wholesalers,
-                  who still handle distribution and administer the policies.
-                </li>
-                <li>
-                  They're perfectly fine for direct to consumer (D2C) flows and
-                  automated underwriting, but they shine when an insurance
-                  program involves both agents and underwriters, as is common in
-                  specialty business.
-                </li>
-                <li>
-                  They work consultatively and design an agent/underwriter
-                  experience targeted to your needs. So they'll complement your
-                  business well if your biggest innovations lie elsewhere (not
-                  in UX).
-                </li>
-                <li>
-                  They don't do claims or accounting, if you're looking for that
-                  all from the same vendor. But they do automate bordereaux.
-                </li>
-              </ul>
-            </section>
-            <hr />
-            <section id="section-b">
-              <h2>What They Do</h2>
-              <h3>User Experience</h3>
-              <p>
-                PolicyFly focuses on the experience of selling, underwriting,
-                and servicing policies. Here we quote their CEO Cory Crosland,
-                not as marketing but because it succinctly articulates their
-                approach:
-              </p>
-              <p class="text-end">
-                <q
-                  >For us, experience is everything—the easier we make it for
-                  all parties the more those parties will want to write their
-                  business through your program. This is the future of insurance
-                  and PolicyFly enables us to get there.</q
-                >
-                <span
-                  ><span class="strong">-Cory Crosland</span><br />
-                  PolicyFly CEO</span
-                >
-              </p>
-              <hr class="compact" />
-              <h3>Speed</h3>
-              <p>
-                A major part of their value proposition is also speed: both
-                speed to market (see
-                <a href="#section-c">How to work with them</a> below) and
-                performance.
-              </p>
-              <p>
-                As for performance, PolicyFly is built on microservices, like
-                most of its peers. But also in its favor, it's the only vendor
-                we've seen to prefer <a href=".">gRPC</a> and Protobuf messages
-                internally to <a href=".">JSON/REST</a>. Protobuf is a
-                binary—i.e. small and fast—format developed at Google and used
-                for streaming at Netflix, Cisco, and Square. (PolicyFly also
-                offers JSON externally, in case you're worried about
-                integrations.)
-              </p>
-              <hr class="compact" />
-              <h3>Insurance Product Library</h3>
-              <p>
-                Here we paste in a section from the
-                <a href=".">InsureMO</a> draft that has headings down to the
-                fourth level.
-              </p>
-              <h4>US &amp; Global Insurance Products</h4>
-              <p>
-                InsureMO comes with a pre-built library of insurance products to
-                draw from. The selection is wide, including both P&C and life
-                and health, commercial lines and personal. InsureMO also has a
-                sizable international footprint, in case you're either starting
-                outside the US or considering later expansions.
-              </p>
-              <p>
-                All these products come with forms, rates, rules, and the data
-                structure to back them up: coverages, limits, deductibles, risk
-                objects, attributes, and the like. You can use any of their
-                products off the shelf or make a copy and modify them to your
-                purposes. This beats building them all from scratch.
-              </p>
-              <h4>ISO Electronic Rating Content</h4>
-              <p>
-                In US commercial P&amp;C, for any of a dozen lines of business,
-                it's common to use variations of Verisk's ISO rates, forms, and
-                rules. (See our write-up on
-                <a href=".">bureau integrations</a> or more on this.) InsureMO
-                integrates with ISO to make these products available out of the
-                box.
-              </p>
-              <p>
-                Since insurance costs and regulations change over time, ISO also
-                keeps their products current updates via frequent circulars, or
-                update notices. If you use an ISO product through InsureMO, you
-                can accept these updates automatically as they come in with a
-                click of a button.
-              </p>
-              <p>
-                This also works seamlessly if you modify the product. Any
-                changes you make are stored in their own layer, separate from
-                the underlying ISO product. When a new automated update comes
-                in, it only affects the ISO layer, leaving your changes intact.
-                You get to resolve any conflicts manually if your modifications
-                clash with the update—say if you'd changed a rating factor, and
-                that factor's now removed.
-              </p>
-              <h4>Universal Product Data Model</h4>
-              <p>
-                Insurance products across InsureMO follow a common data model.
-                This simplifies the developer experience, since what your team
-                learns in one part of the platform will apply everywhere. It
-                also simplifies any back-end integrations, if you're using
-                InsureMO alongside a policy admin system (see
-                <a href=".">cc</a> below). And it means you can use the same
-                data model to build your own insurance product from scratch, if
-                it's truly not close to anything in the InsureMO library.
-              </p>
-            </section>
-            <hr />
-            <section id="section-c">
-              <h2>How to Work With Them</h2>
-              <p>
-                PolicyFly takes a consultative approach with customers.
-                Paraphrasing from their succinct
-                <a rel="external" href=".">approach</a> page:
-              </p>
-              <ul class="compact">
-                <li>
-                  They start by understanding your program. How can they
-                  streamline the process? What data providers can they use to
-                  cut down on questions?
-                </li>
-                <li>
-                  From application to bind, they design the fastest way for
-                  agents or customers to interface with your program.
-                </li>
-                <li>
-                  They then rapidly launch your program in weeks—not months,
-                  with the initial platform running in days.
-                </li>
-              </ul>
-              <p>
-                On that last note, the timeline for "weeks, not months" begins
-                when they start work with you. However, PolicyFly sometimes has
-                a backlog. At time of writing (October 2022) if you sign up with
-                PolicyFly it may take 8 months until your solution is in
-                production. The backlog might be shorter as you read these
-                words, or nonexistent. We encourage you to ask!
-              </p>
-              <p>
-                You don't need to have a developer team to use PolicyFly—unless
-                you'd like to build your own API integrations with the platform.
-                If that's the case, see if your dev team is interested in trying
-                gRPC for speed. If not, PolicyFly is happy to use REST.
-              </p>
-            </section>
-            <hr />
-            <section id="section-d">
-              <h2>User Experience</h2>
-              <p class="width-800 align-center">
-                Since user experience is so integral to why you'd choose
-                PolicyFly, it seems fitting to describe that experience, based
-                on demos we've seen.
-              </p>
-              <p>
-                <span class="text-underline"
-                  >Document templates in Socotra</span
-                >
-                are configured using an open-source language called
-                <span class="text-underline">Liquid</span>, developed by
-                eCommerce giant <span class="text-underline">Shopify</span>.
-                Liquid feels similar to other templating frameworks like
-                <span class="text-underline">Hugo</span> (for the Go programming
-                language) or <span class="text-underline">Django</span> (for
-                <span class="text-underline">Python</span>). You're writing HTML
-                and CSS, as you would for a non-interactive web page. But you
-                add dynamic content in curly braces: {{ like this }}. Socotra
-                adds to Liquid some well documented
-                <span class="text-underline">extended features</span> of its
-                own, for things like formatting, easy date/time calculations,
-                and lookups.
-              </p>
-              <!--<link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-							<noscript><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"></noscript>
-							<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-							<script>hljs.highlightAll();</script>-->
-              <pre><code>#!js hl_lines="21"
-
-function UserException(message) {
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
-this.message = message;
-this.name = 'UserException';
-}
-
-async function quickScrape(selector, attribute = null, property = null) {
-let response = [];
-if (attribute) {
-document
-.querySelectorAll(selector)
-.forEach((n) => {response.push(n.getAttribute(attribute))});
-} else if (property) {
-document
-.querySelectorAll(selector)
-.forEach((n) => {response.push(eval(`n.${property}`))});
-} else {
-throw new UserException('no attribute or property specified');
-}
-const json = JSON.stringify(response); // make sure you stringify the response
-const fileHandle = await window.showSaveFilePicker();
-const fileStream = await fileHandle.createWritable();
-await fileStream.write(new Blob([json], {type: 'text/plain'}));
-await fileStream.close();
-}</code></pre>
-              <hr class="compact" />
-              <h3>Applications</h3>
-              <p>
-                PolicyFly offers a single agent sign-on for multiple insurance
-                programs. Once I select a program to get started, I get a
-                configurable modal telling me what is and isn't in appetite for
-                the program, so I don't waste time.
-              </p>
-              <p>
-                The application itself is one scrolling page, top to bottom.
-                Major sections are listed in links across the top in a sticky
-                header, providing an easy way to jump between sections. If a
-                section is missing required information It's indicated with a
-                red X. Within a section, questions are listed in a linked TOC in
-                the left-hand rail. Again here any missing required questions
-                are marked with an X. So at a glance an agent can find and click
-                through to any questions and sections they need.
-              </p>
-              <p>
-                Beyond ease of navigation, PolicyFly offers other UX
-                enhancements you should expect from a modern UI, like data
-                pre-fill and expanding question sets with conditional logic. It
-                also supports complex inline validation rules and clear,
-                informative messaging.
-              </p>
-              <hr class="compact" />
-              <h3>Chat, Tasks, Doc Upload, and Audit Log</h3>
-              <p>
-                After the application's complete, PolicyFly features what we'd
-                describe as a central communication hub for all things related
-                to that application. Agents, underwriters, anyone who touches
-                the application on the way to issuance sees this same view.
-              </p>
-              <p>
-                The hub supports chatting in real time, marking messages as
-                read, assigning and managing tasks, uploading and reviewing
-                documents, and of course making policy decisions. All these
-                communications build an audit log, or “policy feed,” that reads
-                down the page like a Facebook timeline. You can tag users in a
-                message with an @ sign like it's Twitter or JIRA. Individual
-                messages can also be designated “underwriter notes,” hidden to
-                all but underwriters and admins.
-              </p>
-              <hr class="compact" />
-              <h3>Configurable Workflow</h3>
-              <p>
-                At the top of this "communication hub" is a minimal progress bar
-                showing the steps from application to active policy. The
-                progress bar and the workflow behind it is fully configurable.
-              </p>
-              <p>
-                This workflow configurability is important for specialty
-                insurance, which often involves more steps from more teams than
-                admitted lines—like assistant underwriters, a dedicated issuance
-                team, quality control, and director-level authorization for
-                large accounts. With each decision, the application is
-                automatically forwarded to the next team. PolicyFly's standard
-                product demo shows this level of nuance.
-              </p>
-              <p>
-                Once the workflow's completed and a policy is active, the
-                progress bar naturally goes away.
-              </p>
-              <hr class="compact" />
-              <h3>Policy Dashboards and Version History</h3>
-              <p>
-                As you would expect, PolicyFly has configurable list views of
-                applications, renewals, in-progress endorsements, and the like
-                for agents and underwriters. Notifications show up here as well
-                for any unread messages and open tasks. Likewise there are
-                configurable views for users to see any tasks on their plate.
-                All these views can be searched and filtered.
-              </p>
-              <p>
-                PolicyFly also provides an at-a-glance view of what has changed
-                at every endorsement and renewal. This might seem like common
-                sense, until you've worked somewhere where customer service reps
-                didn't have them! PolicyFly's view works much like a git diff,
-                with new items in green, deleted items in red, and edits clearly
-                marked.
-              </p>
-              <p>
-                These are just the UX elements that stuck out to us in demos in
-                Q2 2022. If you find them intriguing enough to add to your
-                shortlist, we encourage you to check out their website and reach
-                out for your own demo.
-              </p>
-            </section>
-            <hr />
-            <section id="section-e">
-              <h2>Why do captive insurers user fronting arrangements?</h2>
-              <p>
-                There are several reasons why a captive might choose to use a
-                fronting arrangement.
-              </p>
-              <p>
-                The first reason is that it allows the captive to comply with
-                state insurance laws. In most states, an insurer must be
-                licensed to sell insurance policies. However, captives are not
-                licensed insurers. As a result, they cannot legally sell
-                insurance policies in most states.
-              </p>
-              <p>
-                A fronting arrangement allows the captive to get around this
-                problem by having a licensed insurer sell the policy on its
-                behalf. The licensed insurer is known as the fronting company.
-              </p>
-              <p>
-                The second reason is that a fronting arrangement can help the
-                captive save money on taxes. In most states, premiums paid to
-                licensed insurers are subject to premium taxes. However,
-                premiums paid to unlicensed insurers are not subject to premium
-                taxes. As a result, a captive can save money on premium taxes by
-                having a fronting company sell the policy and pay the premium
-                tax on its behalf. The fronting company will typically charge
-                the captive a fee for this service, which is typically between 5
-                and 10 percent of the premium.
-              </p>
-              <p>
-                The third reason is that a fronting arrangement can help the
-                captive reduce its risk of insolvency. In most states, an
-                insurer must post a bond or other security to prove that it has
-                the financial resources to pay claims. However, captives are not
-                required to post a bond or other security. As a result, a
-                fronting arrangement can help the captive reduce its risk of
-                insolvency by having the fronting company post the bond or other
-                security on its behalf. The fronting company will typically
-                charge the captive a fee for this service, which is typically
-                between 4 and 6 percent of gross written premium in the United
-                States.
-              </p>
-              <p>
-                The fourth reason is that a fronting arrangement can help the
-                captive access the capital markets. In most states, an insurer
-                must have a certain amount of capital (reserves) to be able to
-                sell insurance policies. However, captives are not subject to
-                this requirement. As a result, a fronting arrangement can help
-                the captive access the capital markets by having the fronting
-                company sell the policy on its behalf.
-              </p>
-            </section>
-            <hr />
-            <section id="section-f">
-              <h2>Numbered Lists</h2>
-              <ol>
-                <li>
-                  Simply tell your agents not to bind coverage in certain
-                  regions.
-                  <ol>
-                    <li>This is a sub-point.</li>
-                    <li>This is a second sub-point.</li>
-                    <li>
-                      Sub-points should probably use lowercase letters instead
-                      of numbers, though I'm open to notes from the designer on
-                      that.
-                    </li>
-                  </ol>
-                </li>
-                <li>
-                  Make it impossible in your
-                  <a href="." class="text-underline">front end</a> for an agent
-                  or consumer to bind insurance.
-                </li>
-                <li>
-                  Make it impossible in your back end, regardless of where the
-                  request is coming from.
-                </li>
-              </ol>
-              <p>
-                The key is you want to ensure that your binding restrictions are
-                reliable and that there are no surprises.
-              </p>
-            </section>
-            <hr />
-            <section id="section-g">
-              <h2>Tables</h2>
-              <table>
-                <tr>
-                  <th>Left</th>
-                  <th class="text-center">Center</th>
-                  <th class="text-end">Right</th>
-                </tr>
-                <tr>
-                  <td>This column is left-justified</td>
-                  <td class="text-center">This column is centered.</td>
-                  <td class="text-end">
-                    This column may be numbers so is right-justified
-                  </td>
-                </tr>
-                <tr>
-                  <td>This column is left-justified</td>
-                  <td class="text-center">This column is centered.</td>
-                  <td class="text-end">
-                    This column may be numbers so is right-justified
-                  </td>
-                </tr>
-                <tr>
-                  <td>This column is left-justified</td>
-                  <td class="text-center">This column is centered.</td>
-                  <td class="text-end">
-                    This column may be numbers so is right-justified
-                  </td>
-                </tr>
-              </table>
-            </section>
-            <hr />
-            <section id="section-h">
-              <h2>Products</h2>
-              <p>
-                We asked PolicyFly what products their customers are currently
-                actively selling or placing. If you don't see your product on
-                the list, we always recommend reaching out! This is not meant to
-                be an exhaustive list of what PolicyFly supports.
-              </p>
-              <hr class="compact" />
-              <h3>Customers Actively Selling or Placing Insurance</h3>
-              <ul>
-                <li>Personal Home</li>
-                <li>Umbrella</li>
-                <li>Commercial Auto</li>
-                <li>Commercial Property</li>
-                <li>Inland Marine</li>
-              </ul>
-              <h3>Write-Ins</h3>
-              <p>
-                We primarily focus on Specialty Insurance which is usually
-                E&amp;S or niche Program business. This currently includes:
-              </p>
-              <ul>
-                <li>Cargo</li>
-                <li>Franchises</li>
-                <li>Homeowners (CAT)</li>
-                <li>Musical Instruments</li>
-                <li>Transportation</li>
-                <li>
-                  Trucking
+                <li>Some vendors we've spoken with document their APIs <em>publicly</em>: You can simply head to their website and read it today.</li>
+                <li>Others have documentation, but ask you to <em>contact the vendor</em> first.
                   <ul>
-                    <li>Like this trucking</li>
-                    <li>
-                      And this trucking
-                      <ul>
-                        <li>Which has multiple kinds</li>
-                        <li>Like these</li>
-                      </ul>
-                    </li>
+                    <li>In some cases (e.g. <a href="/ecosystem/policy/solutions/policyfly.html">PolicyFly</a>) this is because their internal data structure is proprietary.</li>
+                    <li>In others they may simply want to gauge interest. If you're far enough along to be looking at documentation, it's natural to want to talk to you.</li>
                   </ul>
                 </li>
+                <li>Still others offer <em>dynamic</em> documentation. The API takes shape as you build your insurance product. So the structure's different for each insurer, but documentation is generated on the fly to match it.</li>
+              </ul>
+              <p>In the case of <a href="/ecosystem/policy/solutions/insuremo.html">InsureMO</a>, you simply have to sign up for a free account on their portal.</p>
+              <p>All vendors we've included so far said their APIs are fully documented. We look forward to rounding out this good news with first-hand reports from customers.</p>
+            </section>
+            <hr />
+            <section id="protocols">
+              <h2>Protocols</h2>
+              <p>APIs in general follow one of several protocols that have developed over the years. For example:</p>
+              <ul>
+                <li>SOAP/XML</li>
+                <li>JSON/REST</li>
+                <li>GraphQL</li>
+                <li>gRPC</li>
+                <li>tRPC</li>
+              </ul>
+              <p>This is by no means an exhaustive list of ways that clients and servers communicate, but these five are good ones to know.</p>
+              <!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
+              <hr class="compact" />
+              <!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
+              <h3 id="soapxml">SOAP/XML</h3>
+              <p>Extensible Markup Language (XML) is a plain-text data structure that looks like HTML on steroids. SOAP is a communication protocol for sending and receiving XML messages. The API world (and specifically the World Wide Web Consortium) rallied around SOAP in the early 2000s, after Microsoft introduced it in the late 90s.</p>
+              <p>XML is still quite common in the data world. It especially has traction in the insurance world because of at least three influences:</p>
+              <ul>
+                <li>Major policy software vendors like Duck Creek and Guidewire use it.</li>
+                <li>Insurtechs often have to integrate with traditional insurers, who may have their interfaces written for XML.</li>
+                <li>Many vendors and insurers support the ACORD XML format. Among other things, the Association for Cooperative Operations Research and Development (ACORD) works to standardize insurance data interfaces so the industry isn't splintered into a thousand disparate formats.</li>
               </ul>
               <hr class="compact" />
-              <h3>No Current Customers</h3>
-              <ul>
-                <li>Accident</li>
-                <li>BOP</li>
-                <li>Cyber</li>
-                <li>Embedded Insurance</li>
-                <li>General Liability</li>
-                <li>Health</li>
-                <li>Life</li>
-                <li>Management Liability</li>
-                <li>Parametric Insurance</li>
-                <li>Personal Auto</li>
-                <li>Pet</li>
-                <li>Professional Liability</li>
-                <li>Rental Property Owners</li>
-                <li>Renters</li>
-                <li>Travel Insurance</li>
-                <li>Usage-Based Insurance</li>
-                <li>Workers Comp</li>
-              </ul>
-            </section>
-            <hr />
-            <section id="section-i">
-              <h2>Locations</h2>
-              <p>
-                We asked PolicyFly where their customers are currently actively
-                selling or placing insurance. If you don't see your region on
-                the list, we recommend reaching out to ask! This is not meant to
-                be an exhaustive list of where PolicyFly will do business.
-              </p>
-              <h3>Customers Actively Selling or Placing Insurance</h3>
-              <ul>
-                <li>United States</li>
-                <li>UK</li>
-              </ul>
+              <h3 id="jsonrest">JSON/REST</h3>
+              <p>JavaScript Object Notation (JSON) is a minimal, elegant data format used by much of the internet today. You can spend just a few minutes on the json.org website and learn everything there is to know about the specs. It's native to JavaScript, as the name suggests, but it also translates directly to dictionaries and lists in another common language, Python. Because JSON is so simple and ubiquitous, most any language your team uses will have lightweight libraries to work with it. Bottom line: XML is a perfectly valid, robust format, but your team may prefer to work with JSON.</p>
+              <p>Representational State Transfer, or REST, is the architectural style most web APIs are built on today. In general, not all REST APIs are JSON—you could just as easily have an XML payload—but all JSON APIs use REST. REST protocols are generally considered simpler to implement and easier to debug than SOAP.</p>
               <hr class="compact" />
-              <h3>No Current Customers</h3>
-              <ul>
-                <li>Canada</li>
-                <li>Latin America</li>
-                <li>Continental Europe</li>
-                <li>Australia/Asia/Pacific</li>
-                <li>Africa</li>
-              </ul>
+              <h3 id="grpc">gRPC</h4>
+              <p>gRPC is an API structure open-sourced by Google in 2015 and used by teams at Netflix, Cisco, and Square. It supports 11 common languages, it's very fast, and it allows for bi-directional data transfer.</p>
+              <hr class="compact" />
+              <h3 id="protocols-we-havent-seen-from-vendors">Protocols We Haven't Seen from Vendors</h3>
+              <p>There are a few other formats we have our eye on but haven't seen get any adoption in the policy software space. We mention them in case you'd like to use them in your own builds.</p>
+              <h4 id="graphql">GraphQL</h4>
+              <p>GraphQL is a more recent API protocol, developed by Facebook in 2012 and released publicly in 2015. It offers a concise, highly flexible way to query data from a server. The name is inspired by SQL, or Structured Query Language, used to get data from databases since the 70s.</p>
+              <h4 id="trpc">tRPC</h4>
+              <p>tRPC is a lightweight, performant way to structure APIs in JavaScript. The tRPC product team puts a lot of thought into providing a delightful developer experience and making it easy for teams to iterate rapidly. Still, tRPC is the only of these 5 protocols to be language-dependent. So while tRPC has been gathering momentum in JavaScript and Typescript developer communities, we have yet to see it embraced externally by a policy software vendor.</p>
             </section>
             <hr />
-            <section id="section-j">
-              <h2>Featured Customers</h2>
-              <p>
-                The PolicyFly news page 1 has public press releases for the
-                following customers:
-              </p>
-              <ul>
-                <li>
-                  <a rel="external" href="https://www.tysers.com/">Tysers</a>
-                </li>
-                <li>
-                  <a rel="external" href="https://www.bellandclements.com/"
-                    >Bell &amp; Clements</a
-                  >
-                </li>
-              </ul>
-            </section>
-            <hr />
-            <section id="section-k">
-              <h2>Footnotes</h2>
-              <ul>
-                <li>
-                  <a rel="external" href="https://www.policyfly.com/news"
-                    >https://www.policyfly.com/news</a
-                  >
-                  captured 2022-10-21
-                </li>
-              </ul>
+            <section id="apis-and-data">
+              <h2>APIs and Data</h2>
+              <p>Beyond production, it's common to save your API payloads for later data storage and analysis. For example, you'll likely want to store all the information you used to underwrite and rate each risk, along with your underwriting decision and premiums. One of the easiest ways to capture all that information is to hold onto your rating engine's request and response payloads.</p>
+              <p>This means that the data structures you use for your API payloads—JSON, XML, or something else—are the same structures your data and analytics team will be mining to inform and improve your business. Big-name providers like Snowflake and Databricks have functionality to read both JSON and XML data. But if you have a data team, we highly recommend involving them in any conversations you have around API design and selection.</p>
             </section>
           </article>
         </div>
