@@ -168,22 +168,41 @@ jQuery(function () {
 
 /*!*/
 hljs.highlightAll();
-
+var originalEvents;
 function sortEvents() {
   // Get the parent element
   var parent = document.querySelector(".list-events");
 
-  // Get the event list items
-  var events = Array.from(parent.children);
+  // Get the original list of events and clone them for future use if not done already
+  if (!originalEvents) {
+    originalEvents = Array.from(parent.children).map(function (node) {
+      return node.cloneNode(true);
+    });
+  }
+
+  // Work with a copy of the original events
+  var events = originalEvents.map(function (node) {
+    return node.cloneNode(true);
+  });
+
+  // Check if the checkbox is checked
+  var ffcChecked = document.querySelector("#ffc").checked;
 
   // Map each event to an object containing the event element and its date
   var eventsWithDates = events.map(function (event) {
-    // Extract the date string
-    var dateString = event.querySelector(".icon-date").parentNode.textContent;
+    // Try to find the .icon-date element
+    var iconDate = event.querySelector(".icon-date");
+
+    // If the .icon-date element does not exist, return null
+    if (!iconDate) {
+      return null;
+    }
+
+    // Extract the ISO date string
+    var isoDateString = iconDate.dataset.isodate;
 
     // Parse the date with moment.js
-    // Since the date format is consistent and simple, we don't need to provide a format string
-    var date = moment(dateString, "MMMM D–D, YYYY");
+    var date = moment(isoDateString);
 
     // Return an object containing the event element and its date
     return {
@@ -192,15 +211,32 @@ function sortEvents() {
     };
   });
 
-  // Sort the array of objects by date
-  eventsWithDates.sort(function (a, b) {
-    return a.date - b.date;
+  // Filter out any null values
+  eventsWithDates = eventsWithDates.filter(function (eventWithDate) {
+    return eventWithDate !== null;
   });
 
-  // Remove the original event elements from the DOM
-  events.forEach(function (event) {
-    parent.removeChild(event);
+  if (ffcChecked) {
+    // If the checkbox is checked, filter out events that aren't in the past
+    eventsWithDates = eventsWithDates.filter(function (eventWithDate) {
+      return eventWithDate.date.isBefore(moment());
+    });
+  } else {
+    // If the checkbox is not checked, filter out events that aren't in the future
+    eventsWithDates = eventsWithDates.filter(function (eventWithDate) {
+      return eventWithDate.date.isAfter(moment());
+    });
+  }
+
+  // Sort the array of objects by date (most recent first if checkbox is checked)
+  eventsWithDates.sort(function (a, b) {
+    return ffcChecked ? b.date - a.date : a.date - b.date;
   });
+
+  // Clear the parent element
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
 
   // Insert the sorted events back into the DOM
   eventsWithDates.forEach(function (eventWithDate) {
@@ -208,5 +244,8 @@ function sortEvents() {
   });
 }
 
-// Call sort events only once it has loaded
-window.addEventListener("DOMContentLoaded", sortEvents);
+// Call sort events only once everything has loaded
+window.onload = function () {
+  sortEvents();
+  document.querySelector("#ffc").addEventListener("change", sortEvents);
+};
