@@ -464,7 +464,7 @@ table { display: table; width: 100%; table-layout: fixed; border-collapse: colla
 	.list-logo li { margin: 0 0 var(--dist); border-left: var(--dist) solid rgba(0,0,0,0); }
 	h1 + .list-logo, h2 + .list-logo, h3 + .list-logo, h4 + .list-logo, h5 + .list-logo, h6 + .list-logo { margin-top: min(3.5vw, 75px); }
 	.list-logo + h1, .list-logo + h2, .list-logo + h3, .list-logo + h4, .list-logo + h5, .list-logo + h6 { margin-top: min(12.5vw, 220px); }
-	.list-logo img { max-height: 70px !important; -o-object-fit: contain; object-fit: contain; -o-object-position: center center; object-position: center center; }
+	.list-logo img { width: 120px; -o-object-fit: contain; object-fit: contain; -o-object-position: center center; object-position: center center; }
 .list-logo.is-slider { display: block; margin-left: 0; }
 	.list-logo .owl-carousel .owl-stage-outer { overflow: visible; }
 	.list-logo .owl-item { width: auto !important; }
