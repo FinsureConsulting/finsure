@@ -989,3 +989,12 @@ table { --b2r: 16px; }
 .list-events > li { display: block; }
 #root .mobile-hide, #root .tablet-only, #nav > ul > li > a:before, #footer nav, html:not(.menu-active) #nav { display: none; }
 }
+
+/* All images that are a child of the hotfix-1 class add padding */
+.hotfix-1{
+	padding: 20px;
+}
+
+.hotfix-2 {
+	padding-top:14px;
+}
