@@ -133,82 +133,74 @@
           <header>
             <nav class="nav-aside">
               <ul>
-                <li class="active"><a href="#what-are-they">What Are They</a></li>
-                <li><a href="#documentation">Documentation</a></li>
-                <li><a href="#protocols">Protocols</a></li>
-                <li><a href="#apis-and-data">APIs and Data</a></li>
+                <li class="active"><a href="#modularity-in-policy-software-platforms">Modularity in Policy Software Platforms</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#where-does-the-product-logic-live">Where Does The Product Logic Live</a></li>
+                <li><a href="#configuring-the-integrations">Configuring the Integrations</a></li>
               </ul>
             </nav>
           </header>
           <article>
             <!-- split each h2 into a section (with ID) and a separate h2 -->
-            <section id="what-are-they">
-              <h2>What Are They</h2>
-              <p>An API, or application programming interface, is just a structured way for two applications to talk to each other. For example, your quoting engine might ask your rating engine for premiums on a quote. All APIs have this same structure: a client-side application sending a <em>request</em>, and a server-side application sending a <em>response</em>. The content of an API request or response is called its <em>payload</em>.</p>
+            <section id="modularity-in-policy-software-platforms">
+              <h2>Modularity in Policy Software Platforms</h2>
+              <p>Many policy software platforms serve as a <a href="/ecosystem/policy/consider/system-of-record.html">system of record</a> for managing your book of business and provide core functionality such as quoting and application flows, rating and underwriting logic, policy lifecycle management, forms and document generation, and data and carrier reporting. Many others, though, work best alongside an existing system of record in a modular way. (Still others can be used either way: as a system or record or alongside one.) Let's explore the use cases and advantages of this kind of modularity in policy software platforms:</p>
             <!-- close each section and add a horizontal rule -->
             </section>
             <hr />
-            <section id="documentation">
-              <h2>Documentation</h2>
-              <p>APIs should have documentation: thorough, accurate, up-to-date docs in plain English, with working examples, aimed at someone new to the API, for everything the API does. This might sound like a trivial implementation detail, but coding with shoddy documentation is like running through knee-deep seawater: slow and difficult. At best your team will have to find the right people to talk to about this or that critical functionality. At worst, they won't find what they need at all, even though the functionality may be there. Or you'll be indefinitely dependent on integration specialists because they alone know the tool.</p>
-              <p>The need for documentation goes for anything you build on your own as well. Think of your team today as a vendor, and your team tomorrow as their customer. Have them write documentation such that tomorrow's team thanks them—even if tomorrow's team is themselves!</p>
-              <p>We've seen three kinds of good documentation in the policy software vendor space.</p>
-              <ul>
-                <li>Some vendors we've spoken with document their APIs <em>publicly</em>: You can simply head to their website and read it today.</li>
-                <li>Others have documentation, but ask you to <em>contact the vendor</em> first.
-                  <ul>
-                    <li>In some cases (e.g. <a href="/ecosystem/policy/solutions/policyfly.html">PolicyFly</a>) this is because their internal data structure is proprietary.</li>
-                    <li>In others they may simply want to gauge interest. If you're far enough along to be looking at documentation, it's natural to want to talk to you.</li>
-                  </ul>
-                </li>
-                <li>Still others offer <em>dynamic</em> documentation. The API takes shape as you build your insurance product. So the structure's different for each insurer, but documentation is generated on the fly to match it.</li>
-              </ul>
-              <p>In the case of <a href="/ecosystem/policy/solutions/insuremo.html">InsureMO</a>, you simply have to sign up for a free account on their portal.</p>
-              <p>All vendors we've included so far said their APIs are fully documented. We look forward to rounding out this good news with first-hand reports from customers.</p>
-            </section>
-            <hr />
-            <section id="protocols">
-              <h2>Protocols</h2>
-              <p>APIs in general follow one of several protocols that have developed over the years. For example:</p>
-              <ul>
-                <li>SOAP/XML</li>
-                <li>JSON/REST</li>
-                <li>GraphQL</li>
-                <li>gRPC</li>
-                <li>tRPC</li>
-              </ul>
-              <p>This is by no means an exhaustive list of ways that clients and servers communicate, but these five are good ones to know.</p>
+            <section id="use-cases">
+              <h2>Use Cases</h2>
+              <h3 id="speed-to-market">Speed to Market</h3>
+              <p>One of the key use cases for modular policy software platforms is the need for speed to market. Many MGAs and carriers find their existing legacy systems to be slow in adapting to change. By using a separate policy software platform for rating and distribution, you can easily and quickly make changes in a low-code or no-code environment, enabling faster product launches.</p>
               <!-- add a compact horizontal rule (hr class="compact") before each 3rd-level header (h3), unless it's immediately after a 2nd-level header -->
               <hr class="compact" />
               <!-- include the id for the h3 level. this is a good practice because we may link to those headers elsewhere -->
-              <h3 id="soapxml">SOAP/XML</h3>
-              <p>Extensible Markup Language (XML) is a plain-text data structure that looks like HTML on steroids. SOAP is a communication protocol for sending and receiving XML messages. The API world (and specifically the World Wide Web Consortium) rallied around SOAP in the early 2000s, after Microsoft introduced it in the late 90s.</p>
-              <p>XML is still quite common in the data world. It especially has traction in the insurance world because of at least three influences:</p>
-              <ul>
-                <li>Major policy software vendors like Duck Creek and Guidewire use it.</li>
-                <li>Insurtechs often have to integrate with traditional insurers, who may have their interfaces written for XML.</li>
-                <li>Many vendors and insurers support the ACORD XML format. Among other things, the Association for Cooperative Operations Research and Development (ACORD) works to standardize insurance data interfaces so the industry isn't splintered into a thousand disparate formats.</li>
-              </ul>
+              <h3 id="new-product-lines">New Product Lines</h3>
+              <p>When launching a new insurance program or introducing a new product, your current system of record may not be suitable or fast enough to support the project. Using another policy software platform alongside your existing system allows you to test the viability of the new product without the need to extensively modify your current system.</p>
               <hr class="compact" />
-              <h3 id="jsonrest">JSON/REST</h3>
-              <p>JavaScript Object Notation (JSON) is a minimal, elegant data format used by much of the internet today. You can spend just a few minutes on the json.org website and learn everything there is to know about the specs. It's native to JavaScript, as the name suggests, but it also translates directly to dictionaries and lists in another common language, Python. Because JSON is so simple and ubiquitous, most any language your team uses will have lightweight libraries to work with it. Bottom line: XML is a perfectly valid, robust format, but your team may prefer to work with JSON.</p>
-              <p>Representational State Transfer, or REST, is the architectural style most web APIs are built on today. In general, not all REST APIs are JSON—you could just as easily have an XML payload—but all JSON APIs use REST. REST protocols are generally considered simpler to implement and easier to debug than SOAP.</p>
+              <h3 id="product-libraries-and-bureau-integrations">Product Libraries and Bureau Integrations</h3>
+              <p>Some policy software vendors offer product libraries that provide pre-built product logic, including rates, forms, and rules (e.g. <a href="/ecosystem/policy/solutions/insuremo.html">InsureMO</a>). Leveraging such platforms can accelerate the process of creating and launching new products. Additionally, certain vendors provide <a href="/ecosystem/policy/consider/bureau-integrations.html">easy integrations</a> with bureaus like ISO or NCCI, reducing the workload associated with managing insurance products.</p>
               <hr class="compact" />
-              <h3 id="grpc">gRPC</h4>
-              <p>gRPC is an API structure open-sourced by Google in 2015 and used by teams at Netflix, Cisco, and Square. It supports 11 common languages, it's very fast, and it allows for bi-directional data transfer.</p>
+              <h3 id="workflow-orchestration-and-integrations">Workflow Orchestration and Integrations</h3>
+              <p>Integrations can often be a bottleneck in insurance systems, causing slow and costly projects. Modular policy software platforms that offer both product logic and seamless integrations can empower you to experiment, iterate quickly, and meet the evolving needs of insureds. This enables greater flexibility and reduces the risk associated with making changes.</p>
               <hr class="compact" />
-              <h3 id="protocols-we-havent-seen-from-vendors">Protocols We Haven't Seen from Vendors</h3>
-              <p>There are a few other formats we have our eye on but haven't seen get any adoption in the policy software space. We mention them in case you'd like to use them in your own builds.</p>
-              <h4 id="graphql">GraphQL</h4>
-              <p>GraphQL is a more recent API protocol, developed by Facebook in 2012 and released publicly in 2015. It offers a concise, highly flexible way to query data from a server. The name is inspired by SQL, or Structured Query Language, used to get data from databases since the 70s.</p>
-              <h4 id="trpc">tRPC</h4>
-              <p>tRPC is a lightweight, performant way to structure APIs in JavaScript. The tRPC product team puts a lot of thought into providing a delightful developer experience and making it easy for teams to iterate rapidly. Still, tRPC is the only of these 5 protocols to be language-dependent. So while tRPC has been gathering momentum in JavaScript and Typescript developer communities, we have yet to see it embraced externally by a policy software vendor.</p>
+              <h3 id="an-easy-and-modern-front-end">An Easy and Modern Front End</h3>
+              <p>Sometimes, what you need is a visually appealing front end without the need to build it from scratch. No-code policy software platforms can provide elegant front ends with minimal effort and development resources. This is particularly beneficial if you work with agents and are transitioning from paper applications. By using a front end designed specifically for insurance, you can streamline the application process and avoid the need to build extensive insurance logic into a generic cross-vertical front end.</p>
+              <hr class="compact" />
+              <h3 id="migrating-to-a-new-system-of-record">Migrating to a New System of Record</h3>
+              <p>During a migration from one system of record to another, breaking the process into modular chunks can be helpful. By moving rating, pricing, and quoting to a separate platform, and then workflow orchestration and integrations, you can gradually transition to the new system of record while maintaining continuity in other areas. This approach provides flexibility and reduces the complexity of migrating all functions at once.</p>
+              <hr class="compact" />
+              <h3 id="multiple-systems-of-record">Multiple Systems of Record</h3>
+              <p>In some cases, an organization may have multiple systems of record. This can be due to new product lines added over time (see <a href="#new-product-lines">New Product Lines</a> above) or mergers and acquisitions. Managing multiple systems of record can be challenging. However, by consolidating product logic within a central platform, you can simplify product management across multiple systems, reducing duplication and improving efficiency.</p>
+              <p>This approach can be particularly attractive with a vendor that offers product management features like an insurance product library or bureau integrations.</p>
+              <hr class="compact" />
+              <h3 id="avoiding-vendor-lock-in">Avoiding Vendor Lock-In</h3>
+              <p>Adopting a modular pattern from the outset allows you to avoid vendor lock-in and keep your options open for the future. Modular policy software platforms typically offer modern APIs and their own front ends, making it easier to transition to a new system of record if needed. This flexibility ensures that you can adapt and evolve your technology stack without significant disruptions.</p>
             </section>
             <hr />
-            <section id="apis-and-data">
-              <h2>APIs and Data</h2>
-              <p>Beyond production, it's common to save your API payloads for later data storage and analysis. For example, you'll likely want to store all the information you used to underwrite and rate each risk, along with your underwriting decision and premiums. One of the easiest ways to capture all that information is to hold onto your rating engine's request and response payloads.</p>
-              <p>This means that the data structures you use for your API payloads—JSON, XML, or something else—are the same structures your data and analytics team will be mining to inform and improve your business. Big-name providers like Snowflake and Databricks have functionality to read both JSON and XML data. But if you have a data team, we highly recommend involving them in any conversations you have around API design and selection.</p>
+            <section id="where-does-the-product-logic-live">
+              <h2>Where Does The Product Logic Live</h2>
+              <p>When using a separate policy software platform alongside a system of record, <strong>all the product logic resides in the modular platform</strong>. The hand-offs between the platforms occur at different stages:</p>
+              <ul>
+                <li>The modular platform handles the sales funnel, including quoting and application flows. This is often a strength of these platforms: They make it very easy to update your UX flows.</li>
+                <li>Once a purchase is made, the platform sends the data to the system of record via a <a href="/ecosystem/policy/consider/webhooks.html">webhook</a>. The system of record then takes over as the central repository of policy data.</li>
+                <li>For endorsements or renewals, your customer service rep manages the process within the system of record. However, the system of record relies on the modular platform to apply the appropriate rules, rates, and forms for the product via <a href="/ecosystem/policy/consider/APIs.html">API</a>.</li>
+              </ul>
+              <p>This list isn't prescriptive. For example it's just as common to handle events like endorsements and renewals within the modular platform as well. The critical point is that the product logic lives in just one place, simplifying maintenance and reducing duplication. This approach allows you to leverage the strengths of each platform and optimize your overall workflow.</p>
+            </section>
+            <hr />
+            <section id="configuring-the-integrations">
+              <h2>Configuring the Integrations</h2>
+              <p>Configuring webhooks and APIs for the integration between a separate policy software platform and a system of record can be done in several ways:</p>
+              <ol>
+                <li><strong>Pre-built</strong>: Some platforms already have pre-configured connections for popular system-of-record solutions.</li>
+                <li><strong>Configurable</strong>: Platforms provide configuration options to set up the integration according to your specific needs. This can range from low-code to no-code solutions.</li>
+                <li><strong>Managed</strong>: Platform vendors offer assistance in configuring the connections between the platforms.</li>
+                <li><strong>Middleware</strong>: In cases where a platform has established webhook and API specifications, you (or a systems integrator) can develop lightweight middleware to facilitate communication between the platforms.</li>
+              </ol>
+              <p>The four strategies mentioned above may overlap. For example, if a pre-built connector is not available (solution 1), the platform team may build one for you (solution 3), making it pre-built for future users (1). Additionally, configurable platforms (2) or those using middleware (4) often provide initial set-up support (similar to solution 3).</p>
+              <p>To get detailed instructions on how to work with specific vendors and their integration options, refer to the individual product pages or documentation provided by each vendor.</p>
+              <p>By embracing modularity in policy software platforms, you can unlock flexibility, accelerate innovation, and adapt to changing business needs more effectively.</p>
             </section>
           </article>
         </div>
