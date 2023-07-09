@@ -40,7 +40,7 @@
 				'aria-haspopup': 'true',
 				'href': '#' + $(this).attr('data-title')
 			});
-			$('<a class="close" href="/">Close</a>').appendTo($(this).find('.box-outer, .box-inset'));
+			$('<a class="close" href="./">Close</a>').appendTo($(this).find('.box-outer, .box-inset'));
 			$(this).find('.close, button[type="reset"]').on('click', function () {
 				co.filter('.shown').removeClass('shown').attr({
 					'focusable': false,
