@@ -167,7 +167,12 @@ jQuery(function () {
 });
 
 /*!*/
-hljs.highlightAll();
+//hljs.highlightAll();
+document.addEventListener('DOMContentLoaded', (event) => {
+	document.querySelectorAll('code').forEach((el) => {
+		hljs.highlightElement(el);
+	});
+});
 var originalEvents;
 
 function sortEvents() {

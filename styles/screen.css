@@ -332,8 +332,9 @@ sub, sup { position: relative; font-size: .55em; vertical-align: baseline; }
 .strong { font-weight: var(--fw_bold); }
 .em { font-style: italic; }
 
-code { display: block; overflow-x: auto; margin: 0 0 var(--mr_main); padding: 24px; background: #f8f6fc; }
-
+code { display: block; overflow-x: auto; position: relative; margin: 0 0 var(--mr_main); padding: 24px; background: #f8f6fc; }
+	p code { margin: var(--mr_main) 0; }
+	
 .hljs-comment { color: #696666; }
 .hljs-punctuation, .hljs-tag { color: #444; }
 .hljs-tag .hljs-attr, .hljs-tag .hljs-name { color: #444; }
@@ -348,8 +349,9 @@ code { display: block; overflow-x: auto; margin: 0 0 var(--mr_main); padding: 24
 .hljs-keyword { color: #A40606; }
 
 .hljs-copy-wrapper { position: relative; z-index: 2; }
-	.hljs-copy-wrapper code { padding-top: 75px; }
+	pre.hljs-copy-wrapper > code { padding-top: 75px; }
 	.hljs-copy-wrapper .hljs-copy-button { display: block; position: absolute; right: 22px; top: 22px; z-index: 9; min-width: 92px; margin: 0; padding: 10px 20px; box-shadow: 0 1px 10px var(--theme); border: 1px solid var(--theme); background: var(--white); color: var(--theme); font-size: 12px; font-weight: 600; }
+		.hljs-copy-wrapper:not(pre) > .hljs-copy-button { display: none; }
 		.hljs-copy-wrapper .hljs-copy-button:before { background: var(--white); }
 
 .text-start { text-align: var(--ta_start); --justify: flex-start; }
@@ -616,6 +618,7 @@ fieldset, hr { min-width: 0; margin: 0; padding: 0; border-width: 0; }
 .clear { clear: both; }
 summary::-webkit-details-marker { display: none; }
 .hidden, [hidden], template, #nav em, #top:after, #root .form-filters:not(.toggle, .a) .check, #top > a.menu, #root .owl-carousel .disabled, .popup-a, .popup-a .box-inset, .popup-a .box-outer > .close, .text-slider .owl-nav, .nav-aside > a.sub, .list-social a:after, .link-btn a[rel*="external"]:after { display: none; }
+*:not(.hljs-copy-wrapper) > .hljs-copy-button { display: none; }
 article, aside, details, dialog, div, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary, .popup-a.ready, .popup-a.shown, .popup-a.shown .box-inset, .popup-a.shown .box-outer .close { display: block; }
 
 hr { display: block; overflow: hidden; width: 100%; height: 1px; margin: calc(var(--mr_main) * 2) 0; padding: 0; border: 0; border-top: 1px solid var(--mystic); background: none; font-size: 0; } 
