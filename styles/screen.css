@@ -117,7 +117,7 @@ ul.compact { list-style: disc; }
 
 /*! Mixins --------- */
 /* cl:b */	.owl-carousel .owl-stage:after, .owl-carousel .owl-stage-outer:after, form p:after { content: ""; display: block; overflow: hidden; clear: both; }
-/* fill */	.input-search:before, .list-box li:not(.link-btn) a:before, .list-box li:after, .list-box li:before, th:before, td:before, .nav-aside a:before, #nav > ul > li ul li a:before, .popup-a .box-inset:before, .popup-a .box-inset:after, .list-testimonials li:before, .list-testimonials li:after, .list-team > li:before, .list-team > li:after, #top:before, button:before, .link-btn a:before, #footer:before, #footer:after, #nav > ul > li > a:before { content: ""; display: block; overflow: hidden; position: absolute; left: 0; top: 0; right: 0; bottom: 0; z-index: -1; text-align: left; text-indent: -3000em; direction: ltr; }
+/* fill */	p code:before, .input-search:before, .list-box li:not(.link-btn) a:before, .list-box li:after, .list-box li:before, th:before, td:before, .nav-aside a:before, #nav > ul > li ul li a:before, .popup-a .box-inset:before, .popup-a .box-inset:after, .list-testimonials li:before, .list-testimonials li:after, .list-team > li:before, .list-team > li:after, #top:before, button:before, .link-btn a:before, #footer:before, #footer:after, #nav > ul > li > a:before { content: ""; display: block; overflow: hidden; position: absolute; left: 0; top: 0; right: 0; bottom: 0; z-index: -1; text-align: left; text-indent: -3000em; direction: ltr; }
 /* wide */	.header-wide:before, .module-wide:before, .module-featured article:before { content: ""; display: block; position: absolute; left: 50%; right: auto; top: 0; bottom: 0; z-index: -1; width: 100vw; margin: 0 0 0 -50vw; }
 /* icon */ 	.input-search:after, #nav > ul > li.sub > a:after, .accordion-a summary:before, .module-featured .link-btn a:after, .popup-a .box-inset > a.close:before, .owl-nav button:after, #top > a.menu:before, .form-filters p a:before, .link-btn > .cta + a:after { display: block; position: absolute; left: 0; right: 0; top: 50%; margin: -10px 0 0; font-weight: 400; font-family: i; line-height: 20px; text-align: center; text-indent: 0; letter-spacing: normal; }
 /* zi:9 */	.list-box li:not(.link-btn) a:before { z-index: 8; }
@@ -332,8 +332,9 @@ sub, sup { position: relative; font-size: .55em; vertical-align: baseline; }
 .strong { font-weight: var(--fw_bold); }
 .em { font-style: italic; }
 
-code { display: block; overflow-x: auto; position: relative; margin: 0 0 var(--mr_main); padding: 24px; background: #f8f6fc; }
-	p code { margin: var(--mr_main) 0; }
+code { display: block; overflow-x: auto; position: relative; z-index: 2; margin: 0 0 var(--mr_main); padding: 24px; background: #f8f6fc; }
+	p code { display: inline-block; overflow: visible; margin: 0; padding: 0 10px; background: none; }
+	p code:before { top: -2px; bottom: -2px; background: #f8f6fc; }
 	
 .hljs-comment { color: #696666; }
 .hljs-punctuation, .hljs-tag { color: #444; }
