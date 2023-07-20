@@ -117,7 +117,7 @@ ul.compact { list-style: disc; }
 
 /*! Mixins --------- */
 /* cl:b */	.owl-carousel .owl-stage:after, .owl-carousel .owl-stage-outer:after, form p:after { content: ""; display: block; overflow: hidden; clear: both; }
-/* fill */	.input-search:before, .list-box li:not(.link-btn) a:before, .list-box li:after, .list-box li:before, th:before, td:before, .nav-aside a:before, #nav > ul > li ul li a:before, .popup-a .box-inset:before, .popup-a .box-inset:after, .list-testimonials li:before, .list-testimonials li:after, .list-team > li:before, .list-team > li:after, #top:before, button:before, .link-btn a:before, #footer:before, #footer:after, #nav > ul > li > a:before { content: ""; display: block; overflow: hidden; position: absolute; left: 0; top: 0; right: 0; bottom: 0; z-index: -1; text-align: left; text-indent: -3000em; direction: ltr; }
+/* fill */	p code:before, .input-search:before, .list-box li:not(.link-btn) a:before, .list-box li:after, .list-box li:before, th:before, td:before, .nav-aside a:before, #nav > ul > li ul li a:before, .popup-a .box-inset:before, .popup-a .box-inset:after, .list-testimonials li:before, .list-testimonials li:after, .list-team > li:before, .list-team > li:after, #top:before, button:before, .link-btn a:before, #footer:before, #footer:after, #nav > ul > li > a:before { content: ""; display: block; overflow: hidden; position: absolute; left: 0; top: 0; right: 0; bottom: 0; z-index: -1; text-align: left; text-indent: -3000em; direction: ltr; }
 /* wide */	.header-wide:before, .module-wide:before, .module-featured article:before { content: ""; display: block; position: absolute; left: 50%; right: auto; top: 0; bottom: 0; z-index: -1; width: 100vw; margin: 0 0 0 -50vw; }
 /* icon */ 	.input-search:after, #nav > ul > li.sub > a:after, .accordion-a summary:before, .module-featured .link-btn a:after, .popup-a .box-inset > a.close:before, .owl-nav button:after, #top > a.menu:before, .form-filters p a:before, .link-btn > .cta + a:after { display: block; position: absolute; left: 0; right: 0; top: 50%; margin: -10px 0 0; font-weight: 400; font-family: i; line-height: 20px; text-align: center; text-indent: 0; letter-spacing: normal; }
 /* zi:9 */	.list-box li:not(.link-btn) a:before { z-index: 8; }
@@ -332,8 +332,10 @@ sub, sup { position: relative; font-size: .55em; vertical-align: baseline; }
 .strong { font-weight: var(--fw_bold); }
 .em { font-style: italic; }
 
-code { display: block; overflow-x: auto; margin: 0 0 var(--mr_main); padding: 24px; background: #f8f6fc; }
-
+code { display: block; overflow-x: auto; position: relative; z-index: 2; margin: 0 0 var(--mr_main); padding: 24px; background: #f8f6fc; }
+	p code { display: inline-block; overflow: visible; margin: 0; padding: 0 10px; background: none; }
+	p code:before { top: -2px; bottom: -2px; background: #f8f6fc; }
+	
 .hljs-comment { color: #696666; }
 .hljs-punctuation, .hljs-tag { color: #444; }
 .hljs-tag .hljs-attr, .hljs-tag .hljs-name { color: #444; }
@@ -348,8 +350,9 @@ code { display: block; overflow-x: auto; margin: 0 0 var(--mr_main); padding: 24
 .hljs-keyword { color: #A40606; }
 
 .hljs-copy-wrapper { position: relative; z-index: 2; }
-	.hljs-copy-wrapper code { padding-top: 75px; }
+	pre.hljs-copy-wrapper > code { padding-top: 75px; }
 	.hljs-copy-wrapper .hljs-copy-button { display: block; position: absolute; right: 22px; top: 22px; z-index: 9; min-width: 92px; margin: 0; padding: 10px 20px; box-shadow: 0 1px 10px var(--theme); border: 1px solid var(--theme); background: var(--white); color: var(--theme); font-size: 12px; font-weight: 600; }
+		.hljs-copy-wrapper:not(pre) > .hljs-copy-button { display: none; }
 		.hljs-copy-wrapper .hljs-copy-button:before { background: var(--white); }
 
 .text-start { text-align: var(--ta_start); --justify: flex-start; }
@@ -464,10 +467,13 @@ table { display: table; width: 100%; table-layout: fixed; border-collapse: colla
 	.list-logo li { margin: 0 0 var(--dist); border-left: var(--dist) solid rgba(0,0,0,0); }
 	h1 + .list-logo, h2 + .list-logo, h3 + .list-logo, h4 + .list-logo, h5 + .list-logo, h6 + .list-logo { margin-top: min(3.5vw, 75px); }
 	.list-logo + h1, .list-logo + h2, .list-logo + h3, .list-logo + h4, .list-logo + h5, .list-logo + h6 { margin-top: min(12.5vw, 220px); }
-	.list-logo img { width: 120px; -o-object-fit: contain; object-fit: contain; -o-object-position: center center; object-position: center center; }
+	.list-logo img { max-height: 90px !important; -o-object-fit: contain; object-fit: contain; -o-object-position: center center; object-position: center center; }
 .list-logo.is-slider { display: block; margin-left: 0; }
 	.list-logo .owl-carousel .owl-stage-outer { overflow: visible; }
-	.list-logo .owl-item { width: auto !important; }
+	.list-logo .owl-item { 
+		width: auto !important; max-width: 120px !important; 
+		-webkit-flex-shrink: 0; -ms-flex-shrink: 0; flex-shrink: 0;
+	}
 	.list-logo .owl-item li { border-width: 0; }
 	
 .list-social, #root .list-social { list-style: none; margin: 0 -10px calc(var(--mr_main) - 10px) 0; padding: 0; }
@@ -611,7 +617,9 @@ fieldset, hr { min-width: 0; margin: 0; padding: 0; border-width: 0; }
 	*, *:before, *:after { transition-property: visibility, background-color, border-color, color, opacity; }
 
 .clear { clear: both; }
-.hidden, [hidden], template, #nav em, #top:after, #root .form-filters:not(.toggle, .a) .check, #top > a.menu, #root .owl-carousel .disabled, .popup-a, .popup-a .box-inset, .popup-a .box-outer > .close, .text-slider .owl-nav, .nav-aside > a.sub, .list-social a:after { display: none; }
+summary::-webkit-details-marker { display: none; }
+.hidden, [hidden], template, #nav em, #top:after, #root .form-filters:not(.toggle, .a) .check, #top > a.menu, #root .owl-carousel .disabled, .popup-a, .popup-a .box-inset, .popup-a .box-outer > .close, .text-slider .owl-nav, .nav-aside > a.sub, .list-social a:after, .link-btn a[rel*="external"]:after { display: none; }
+*:not(.hljs-copy-wrapper) > .hljs-copy-button { display: none; }
 article, aside, details, dialog, div, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary, .popup-a.ready, .popup-a.shown, .popup-a.shown .box-inset, .popup-a.shown .box-outer .close { display: block; }
 
 hr { display: block; overflow: hidden; width: 100%; height: 1px; margin: calc(var(--mr_main) * 2) 0; padding: 0; border: 0; border-top: 1px solid var(--mystic); background: none; font-size: 0; } 
@@ -988,6 +996,9 @@ table { --b2r: 16px; }
 
 .list-events > li { display: block; }
 #root .mobile-hide, #root .tablet-only, #nav > ul > li > a:before, #footer nav, html:not(.menu-active) #nav { display: none; }
+}
+@media only screen and (max-width: 600px) {
+.module-featured .link-btn a:after { display: none; }
 }
 
 /* All images that are a child of the hotfix-1 class add padding */

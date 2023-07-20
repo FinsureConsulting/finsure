@@ -9,6 +9,7 @@ jQuery(function () {
 		skip_id = document.getElementById('skip'),
 		top_id = $(document.getElementById('top')),
 
+		accordion_a = $(document.getElementsByClassName('accordion-a')),
 		a_tag_external = document.querySelectorAll('a[rel*="external"]'),
 		form_children = document.querySelectorAll('form > *'),
 		form_filters = $(document.getElementsByClassName('form-filters')),
@@ -87,10 +88,18 @@ jQuery(function () {
 						if (nav_aside.length) {
 							nav_aside.find('li.toggle').removeClass('toggle');
 						}
+						if (accordion_a.length) {
+							accordion_a.find('summary').off();
+						}
 					}).register('screen and (min-width: 761px)', function () {
 						if (skip_id) {
 							Array.from(skip_id.querySelectorAll('a[href="#nav"], a[href="#mobile"]')).forEach(function (el) {
 								el.setAttribute('href', '#nav');
+							});
+						}
+						if (accordion_a.length) {
+							accordion_a.find('summary').on('click', function () {
+								$(this).parent().siblings().removeAttr('open');
 							});
 						}
 					});
@@ -209,7 +218,7 @@ jQuery(function () {
 						});
 					}
 					var loadPopup = function (id) {
-						loadRes('javascript/popup.js', function () {
+						loadRes('./javascript/popup.js', function () {
 							if ($.fn.semanticPopup !== undefined) {
 								var cde = $(document.querySelectorAll('[class^="popup-"]:not(html)'));
 								if (cde && !$(html_tag).is('.spi')) {
