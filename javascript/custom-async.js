@@ -1,4 +1,4 @@
-/*global jQuery, enquire, document, window, ariaRemove, ariaAdd */
+/*global jQuery, enquire, document, window, ariaRemove, ariaAdd, clearTimeout, setTimeout, IntersectionObserver */
 var html_tag = document.documentElement,
 	$ = jQuery.noConflict();
 jQuery(function () {
@@ -145,14 +145,28 @@ jQuery(function () {
 					}
 					if (list_iso.length) {
 						list_iso.each(function () {
+							var now = +new Date(),
+								event_date;
 							$(this).children('li').addClass('grid-item').each(function () {
 								if ($(this).has(':header')) {
 									$(this).attr('data-heading', $(this).find(':header:first').text().toLowerCase());
 								}
+								if ($(this).find('i[data-isodate]').length) {
+									$(this).attr('data-date', $(this).find('i[data-isodate]').attr('data-isodate'));
+									event_date = +new Date($(this).find('i[data-isodate]').attr('data-isodate'));
+									if (now > event_date) {
+										$(this).addClass('past');
+									}
+								}
 							});
 							var grid = $(this).isotope({
 									itemSelector: '.grid-item',
-									layoutMode: 'fitRows'
+									layoutMode: 'fitRows',
+									getSortData: {
+										date: '[data-date]'
+									},
+									sortBy: 'date',
+									filter: '*:not(.past)'
 								}),
 								formFilters = $(document.getElementsByClassName('form-filters')),
 								$checkboxes = formFilters.find('input[data-filter]'),
@@ -164,6 +178,8 @@ jQuery(function () {
 								$checkboxes.each(function (i, elem) {
 									if (elem.checked) {
 										inclusives.push(elem.getAttribute('data-filter'));
+									} else {
+										inclusives.push(':not(' + elem.getAttribute('data-filter') + ')');
 									}
 								});
 								filterValue = inclusives.length ? inclusives.join(', ') + ', .link-btn' : '*';
@@ -174,7 +190,7 @@ jQuery(function () {
 							});
 
 							// use value of search field to filter
-							var $quicksearch = formFilters.find('input[type="search"]').keyup(debounce(function () {
+							$quicksearch = formFilters.find('input[type="search"]').keyup(debounce(function () {
 								if ($(this).val()) {
 									filterValue = '[data-heading*="' + $(this).val().toLowerCase() + '"], .link-btn';
 								} else {
