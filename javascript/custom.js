@@ -173,6 +173,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		hljs.highlightElement(el);
 	});
 });
+/*
 var originalEvents;
 
 function sortEvents() {
@@ -267,3 +268,4 @@ window.onload = function () {
 		sortClick.addEventListener("change", sortEvents);
 	}
 };
+*/
