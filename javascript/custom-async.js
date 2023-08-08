@@ -178,11 +178,13 @@ jQuery(function () {
 								$checkboxes.each(function (i, elem) {
 									if (elem.checked) {
 										inclusives.push(elem.getAttribute('data-filter'));
-									} else {
+									} /*else {
 										inclusives.push(':not(' + elem.getAttribute('data-filter') + ')');
-									}
+									}*/
 								});
-								filterValue = inclusives.length ? inclusives.join(', ') + ', .link-btn' : '*';
+								filterValue = inclusives.length ? inclusives.join(', ') + ', .link-btn' : '.grid-item:not(.past)';
+								/*console.log(grid);*/
+								//console.log(filterValue);
 								grid.isotope({
 									filter: filterValue
 								});
@@ -262,7 +264,7 @@ jQuery(function () {
 
 
 
-var section_anchor = $(document.querySelectorAll('[id^="section-"]'));
+var section_anchor = $(document.querySelectorAll('[id^="section-"], .cols-a [id]:not(input)'));
 if (section_anchor.length) {
 	section_anchor.each(function () {
 		"use strict";
