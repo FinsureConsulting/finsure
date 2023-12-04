@@ -334,8 +334,8 @@ sub, sup { position: relative; font-size: .55em; vertical-align: baseline; }
 .em { font-style: italic; }
 
 code { display: block; overflow-x: auto; position: relative; z-index: 2; margin: 0 0 var(--mr_main); padding: 24px; background: #f8f6fc; }
-	p code { display: inline-block; overflow: visible; margin: 0; padding: 0 10px; background: none; }
-	p code:before { top: -2px; bottom: -2px; background: #f8f6fc; }
+	p code, li code { display: inline-block; overflow: visible; margin: 0; padding: 0 10px; background: none; }
+	p code:before, li code:before { top: -2px; bottom: -2px; background: #f8f6fc; }
 	
 .hljs-comment { color: #696666; }
 .hljs-punctuation, .hljs-tag { color: #444; }
